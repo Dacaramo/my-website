@@ -1,7 +1,8 @@
-import './globals.css';
+import { FC, ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import localFont from 'next/font/local';
+
+import './globals.css';
 
 const rubik = localFont({
   src: [
@@ -36,22 +37,28 @@ const rubik = localFont({
       style: 'italic',
     },
   ],
+  /* eslint-disable-next-line */
   variable: '--font-rubik',
 });
 
+/* eslint-disable-next-line */
 export const metadata: Metadata = {
   title: 'Daniel Ramírez Software',
   description: 'The Daniel Ramírez personal website',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+interface Props {
+  children: ReactNode;
+}
+
+const RootLayout: FC<Props> = ({ children }) => {
   return (
     <html lang='en'>
-      <body className={`${rubik.variable} font-sans`}>{children}</body>
+      <body className={`${rubik.variable} font-sans bg-pale-prune text-white`}>
+        {children}
+      </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
