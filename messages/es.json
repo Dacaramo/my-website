@@ -1,0 +1,420 @@
+{
+  "header": {
+    "navbar": {
+      "home-link": "Inicio",
+      "services-link": "Servicios",
+      "portfolio-link": "Portafolio",
+      "blog-link": "Blog",
+      "about-link": "Acerca de"
+    },
+    "select": {
+      "label": "Selecciona un idioma",
+      "placeholder": "Selecciona un idioma",
+      "opt-one": "Inglés 🇺🇸",
+      "opt-two": "Español 🇪🇸",
+      "opt-three": "Francés 🇫🇷"
+    }
+  },
+  "footer": {
+    "contact-info-section": {
+      "heading": "Información de contacto",
+      "phone": "Teléfono: +57 3106358522",
+      "email": "Correo electrónico: dankramirez@outlook.com",
+      "location": "Ubicación: Bogotá, Colombia 🇨🇴"
+    },
+    "quick-links-section": {
+      "heading": "Enlaces rápidos",
+      "my-content-platforms-subheading": "Mis plataformas de contenido",
+      "other-relevant-platforms-subheading": "Otras plataformas relevantes"
+    },
+    "other-info-section": {
+      "heading": "Información adicional",
+      "blog-sites-subsection": {
+        "heading": "Blogs donde escribo artículos",
+        "dev": "Dev",
+        "medium": "Medium",
+        "log-rocket": "Log Rocket"
+      },
+      "content-attribution-subsection": {
+        "heading": "Atribución de contenido",
+        "first-attribution": "Imagen personal en tono gris"
+      }
+    },
+    "copyright": "© 2023 Daniel Ramírez | Todos los derechos reservados"
+  },
+  "home-page": {
+    "first-part": {
+      "heading": "Finalmente nos conocemos, soy Daniel Ramírez",
+      "paragraph": "Tu confiable desarrollador full stack y consultor tecnológico. ¡Solo dime qué quieres construir y hagamos realidad tus sueños!",
+      "message-me-link": "Mensajeame",
+      "send-me-an-email-link": "Envíame un correo electrónico",
+      "download-my-cv-button": "Descarga mi CV",
+      "software-development": {
+        "heading": "Desarrollo de software",
+        "paragraph": "Entrego software completamente escalable que puede perdurar toda la vida. He aprendido las mejores prácticas de la industria para escribir código limpio que sea fácil de mantener y modificar."
+      },
+      "product-development": {
+        "heading": "Desarrollo de productos",
+        "paragraph": "Sé cómo reunir requisitos relevantes y cómo dar forma a tus productos de software rápidamente para que los usuarios estén listos para recibir lo que realmente desean. Cuéntame más sobre tu modelo de negocio y te ayudaré a desarrollar tu producto."
+      }
+    },
+    "my-software-skillset": {
+      "heading": "Mi conjunto de habilidades de software",
+      "strategic-approach": {
+        "heading": "Enfoque estratégico",
+        "paragraph": "Nunca entregaré código de baja calidad con complejidad innecesaria solo por la velocidad de envío de código. Siempre me tomo mi tiempo para buscar la mejor forma de implementar cualquier característica."
+      },
+      "internationalization": {
+        "heading": "Internacionalización",
+        "paragraph": "Sé cómo implementar correctamente el soporte multilingüe en cualquier tipo de aplicación. Incluso si mi cliente no quiere que su aplicación admita varios idiomas, me gusta dejar el código listo para integrar esa función más adelante."
+      },
+      "multiple-themes": {
+        "heading": "Temas múltiples",
+        "paragraph": "Tengo mi propio marco para permitir múltiples temas en cualquier tipo de aplicación. Ya sea que desees un tema o varios temas, siempre dejaré el código listo para permitir múltiples temas más adelante."
+      },
+      "state-management": {
+        "heading": "Gestión de estado",
+        "paragraph": "Sé cómo usar los Contextos de React para una gestión eficiente del estado global que no provoque renderizaciones innecesarias. También uso Zustand para gestionar el estado global."
+      },
+      "data-caching": {
+        "heading": "Caché de datos",
+        "paragraph": "Los datos recibidos de las solicitudes de red deben almacenarse en caché para que no se recuperen con demasiada frecuencia. Utilizo Axios y TanStack Query para ofrecer la mejor estrategia de caché de datos."
+      },
+      "error-behaviors": {
+        "heading": "Comportamientos de errores",
+        "paragraph": "Me gusta usar límites de errores de React para personalizar cómo se muestran todos los posibles errores dentro de tu aplicación. También ofrezco alternativas cuando ocurre un error para que tus usuarios no se queden confundidos."
+      },
+      "optimization": {
+        "heading": "Optimización",
+        "paragraph": "Sé cómo optimizar adecuadamente las aplicaciones. Las aplicaciones lentas y lentas no deberían existir. No estoy hablando solo de la complejidad de tiempo en los algoritmos de código, estoy hablando de evitar renderizaciones innecesarias y fugas de memoria."
+      },
+      "applied-mathematics": {
+        "heading": "Matemáticas aplicadas",
+        "paragraph": "Aprendí cómo aplicar las matemáticas avanzadas al desarrollo de software. Sé cómo usar álgebra lineal para crear un programa similar a Adobe Illustrator o física para desarrollar juegos o animaciones basadas en el movimiento."
+      },
+      "loading-behaviors": {
+        "heading": "Comportamientos de carga",
+        "paragraph": "Me gusta usar límites de suspense de React para personalizar cada escena de carga dentro de tu aplicación con carga diferida, indicadores de carga o esqueletos de contenido."
+      },
+      "accessibility": {
+        "heading": "Accesibilidad",
+        "paragraph": "Siempre desarrollo mi software pensando en todo tipo de personas. Mis aplicaciones siempre ofrecerán accesibilidad a los usuarios que tienen discapacidades como la ceguera, etc."
+      },
+      "complex-components": {
+        "heading": "Componentes complejos",
+        "paragraph": "Sé cómo crear componentes complejos que estén listos para bibliotecas, como gráficos de barras, campos de entrada personalizados, perillas de marcación, reproductores de audio y video, etc."
+      },
+      "bundle-size-reduction": {
+        "heading": "Reducción del tamaño del paquete",
+        "paragraph": "Siempre intento crear mis propios componentes o utilizar las bibliotecas más pequeñas disponibles para que no aumenten demasiado el tamaño del paquete de tu aplicación."
+      },
+      "css-animations": {
+        "heading": "Animaciones CSS",
+        "paragraph": "Sé cómo aplicar algunas animaciones CSS que harán que tus aplicaciones web luzcan impresionantes."
+      },
+      "responsiveness": {
+        "heading": "Adaptabilidad",
+        "paragraph": "Cuando desarrollo aplicaciones, siempre tengo en cuenta todo tipo de pantallas y relaciones de aspecto de dispositivos, para que no tengas que preocuparte por que tu aplicación se vea extraña en algunos dispositivos."
+      },
+      "deep-modules": {
+        "heading": "Módulos profundos",
+        "paragraph": "Las funciones, componentes, puntos finales y servicios deben ocultar una funcionalidad grande, compleja y útil detrás de una interfaz simple y fácil de usar. Esa es mi filosofía y siempre desarrollo mi software en consecuencia."
+      },
+      "seo": {
+        "heading": "Optimización para motores de búsqueda (SEO)",
+        "paragraph": "Cuando escribo HTML, me gusta hacer un uso correcto de las etiquetas semánticas y aplicar otras técnicas de optimización para motores de búsqueda para que tu sitio web sea fácilmente encontrado por el mundo."
+      },
+      "testing": {
+        "heading": "Pruebas",
+        "paragraph": "Siempre crearé las pruebas de software necesarias para que tu aplicación no se envíe con errores. Me gusta utilizar Jest y React Testing Library para escribir pruebas de integración, pruebas de ganchos, pruebas de captura de instantáneas y muchas más."
+      },
+      "authentication": {
+        "heading": "Autenticación",
+        "paragraph": "Utilizo constantemente servicios de autenticación como AWS Cognito que gestionarán toda la autenticación sin hacerte pagar una fortuna mensual."
+      },
+      "authorization": {
+        "heading": "Autorización",
+        "paragraph": "Sé cómo almacenar correctamente tokens de autorización, cómo validarlos e invalidarlos, y cómo obtener nuevos tokens del servicio de autenticación."
+      },
+      "api-consumption": {
+        "heading": "Consumo de API",
+        "paragraph": "Siempre aplico las mejores prácticas en cuanto al consumo de API, ya sea de nuestra propia API o de una API de terceros."
+      },
+      "payments-integration": {
+        "heading": "Integración de pagos",
+        "paragraph": "He integrado pagos en múltiples aplicaciones en el pasado para diversas plataformas, ya sea con Pagos dentro de la aplicación para iOS o Android, o métodos más tradicionales como pagos con tarjeta, pagos con PayPal, etc."
+      },
+      "file-handling": {
+        "heading": "Manipulación de archivos",
+        "paragraph": "He trabajado en programas que utilizan formatos abiertos como JSON para guardar el proyecto actual y restaurar el estado del proyecto al abrirlo."
+      },
+      "maps": {
+        "heading": "Mapas",
+        "paragraph": "He integrado mapas tanto en aplicaciones móviles como en aplicaciones web, ya sea con la API nativa de Google Maps o con bibliotecas de terceros que facilitan la tarea."
+      },
+      "e-commerce": {
+        "heading": "Comercio electrónico",
+        "paragraph": "He trabajado en sitios de comercio electrónico que deben centrarse en destacar productos, filtrado, paginación e integraciones de pago."
+      },
+      "ads-integration": {
+        "heading": "Integración de anuncios",
+        "paragraph": "Monetización a través de banners de anuncios en aplicaciones móviles y aplicaciones web."
+      },
+      "media-streaming": {
+        "heading": "Transmisión de medios",
+        "paragraph": "Cómo generar formatos de archivos en streaming como m3u8, cómo almacenarlos y servirlos a una aplicación cliente. En dispositivos móviles, he utilizado Expo AV para la reproducción de audio y video, incluida la reproducción en streaming."
+      },
+      "web-service-integration": {
+        "heading": "Integración de servicios web",
+        "paragraph": "Sé cómo integrar y gestionar algunos servicios de AWS y GCP en aplicaciones web y móviles."
+      },
+      "oauth": {
+        "heading": "OAuth",
+        "paragraph": "Sé cómo permitir que las aplicaciones accedan a los datos de usuario de servicios externos sin compartir credenciales de inicio de sesión."
+      }
+    },
+    "my-mastery-tech-stack": {
+      "heading": "My mastery tech stack",
+      "react-js": {
+        "heading": "React.js",
+        "paragraph": "If you want me to develop a large scale web application with advanced features such as user authentication, extensive data fetching, complex routing or data driven components."
+      },
+      "react-native": {
+        "heading": "React Native",
+        "paragraph": "If you want me to develop a cross platform mobile application that ships both for Android and iOS devices."
+      },
+      "next-js": {
+        "heading": "Next.js",
+        "paragraph": "If you want me to develop a SEO focused website that mainly offers static UI components and content"
+      },
+      "node-js": {
+        "heading": "Node.js",
+        "paragraph": "If you want me to develop a REST API that provides data and services for your client applications or programs"
+      },
+      "dynamo-db": {
+        "heading": "DynamoDB",
+        "paragraph": "If you want me to build and manage No-SQL databases for storing all of your business data."
+      },
+      "aws": {
+        "heading": "AWS",
+        "paragraph": "If you want me to integrate awesome web services to your application that won’t break the bank but still worth the money."
+      }
+    },
+    "other-tech-i-know": {
+      "heading": "Other tech I know",
+      "figma": "Figma",
+      "java": "Java",
+      "amplify": "Amplify",
+      "python": "Python",
+      "mongo-db": "MongoDB",
+      "firebase": "Firebase"
+    }
+  },
+  "services-page": {
+    "heading": "Descubre mis servicios",
+    "software-development": {
+      "heading": "Desarrollo de software",
+      "card-paragraph": "Puedo desarrollar software de calidad empresarial que sea completamente escalable, fácil de actualizar y mantener.",
+      "paragraph-one": "Puedo desarrollar software de calidad empresarial que sea completamente escalable, fácil de actualizar y mantener.",
+      "paragraph-two": "Puedo crear aplicaciones web, aplicaciones móviles, sitios web o APIs REST."
+    },
+    "software-maintenance": {
+      "heading": "Mantenimiento de software",
+      "card-paragraph": "Puedo mantener el código creado por cualquier desarrollador. Si lo deseas, puedo agregar nuevas funcionalidades complejas o refactorizar código desordenado.",
+      "paragraph-one": "Puedo mantener el código creado por cualquier desarrollador. Si lo deseas, puedo agregar nuevas funcionalidades complejas o refactorizar código desordenado.",
+      "paragraph-two": "Contrátame por un período fijo de tiempo o solo para cumplir con n tareas, de cualquier manera, te ofreceré un precio justo."
+    },
+    "database-design": {
+      "heading": "Diseño de bases de datos",
+      "card-paragraph": "Puedo diseñar toda tu base de datos según tus necesidades y requisitos. Ya sea que desees una base de datos relacional o una base de datos NoSQL, estás en buenas manos.",
+      "paragraph-one": "Puedo diseñar toda tu base de datos según tus necesidades y requisitos. Ya sea que desees una base de datos relacional o una base de datos NoSQL, estás en buenas manos.",
+      "paragraph-two": ""
+    },
+    "consulting": {
+      "heading": "Consultoría",
+      "card-paragraph": "Puedo poner mi conocimiento sobre la mesa y ofrecer mi experiencia en desarrollo de software para que puedas tomar decisiones acertadas en tu negocio.",
+      "paragraph-one": "Puedo poner mi conocimiento sobre la mesa y ofrecer mi experiencia en desarrollo de software para que puedas tomar decisiones acertadas en tu negocio.",
+      "paragraph-two": "Puedo orientarte en temas como tecnologías, bibliotecas y marcos de desarrollo en el front-end, eventos y JavaScript avanzado en el navegador. También tengo conocimientos útiles relacionados con decisiones de bases de datos, reutilización de código, buenas prácticas y diseño de APIs."
+    },
+    "prototyping": {
+      "heading": "Prototipado",
+      "card-paragraph": "Si deseas que cree prototipos visuales o productos mínimos viables para validar la propuesta de valor de tu producto de software.",
+      "paragraph-one": "Puedo crear prototipos visuales o productos mínimos viables para validar la propuesta de valor de tu producto de software.",
+      "paragraph-two": "Desde prototipos rápidos con presupuesto limitado hasta prototipos más complejos que pueden incluir funcionalidad parcial para que tus futuros usuarios puedan probar el producto que tienes en mente antes de tomar una decisión financiera."
+    }
+  },
+  "portfolio-page": {
+    "shape-creator": {
+      "first-part": {
+        "heading": "Creador de Formas",
+        "paragraph": "Una aplicación web que te permite crear, redimensionar, modificar y eliminar formas de un lienzo HTML.",
+        "device-description": "Esta es una aplicación web",
+        "see-online-button": "VER EN LÍNEA",
+        "browse-repo-button": "EXAMINAR REPOSITORIO"
+      },
+      "features": {
+        "feature-one": "Crea un polígono desde cero o agrega tantos nodos como desees a un polígono ya creado.",
+        "feature-two": "Selecciona varios nodos de polígono simultáneamente y muévelos o elimínalos.",
+        "feature-three": "Carga una imagen de fondo si deseas usar Shape Creator como un software de anotación.",
+        "feature-four": "Redimensiona el lienzo y todo el contenido se redimensionará automáticamente.",
+        "feature-five": "Exporta todo el lienzo como un archivo PNG."
+      },
+      "used-libraries": {
+        "react": {
+          "heading": "React",
+          "paragraph": "Para crear aplicaciones de página única escalables."
+        },
+        "zustand": {
+          "heading": "Zustand",
+          "paragraph": "Para gestionar el estado global de la aplicación."
+        },
+        "react-tooltip": {
+          "heading": "React Tooltip",
+          "paragraph": "Para los componentes de información sobre herramientas que aparecen sobre cada botón de la barra de herramientas al pasar el cursor sobre ellos."
+        }
+      }
+    },
+    "poke-bowl-store": {
+      "first-part": {
+        "heading": "Tienda de Poke Bowls",
+        "paragraph": "Una aplicación web de comercio electrónico que te permite comprar pokémones y objetos de pokémon de un catálogo enorme. Este es posiblemente el mejor sitio tipo pokédex que puedas visitar.",
+        "device-description": "Esta es una aplicación web",
+        "see-online-button": "VER EN LÍNEA",
+        "browse-repo-button": "EXAMINAR REPOSITORIO"
+      },
+      "features": {
+        "feature-one": "Paginación en memoria con un selector de página que te permitirá navegar por cualquier página de productos disponible.",
+        "feature-two": "Carrito de compras en memoria para que puedas agregar los productos que deseas comprar y realizar una sola transacción.",
+        "feature-three": "Amplia variedad de filtros orientados en memoria que se pueden aplicar simultáneamente.",
+        "feature-four": "Gran cantidad de datos de la API en caché para cada producto listado, se evita el envío de solicitudes innecesarias.",
+        "feature-five": "Puedes probar Poke Bowl Store en tu dispositivo móvil, ya que la aplicación es compatible con dispositivos móviles."
+      },
+      "used-libraries": {
+        "react": {
+          "heading": "React",
+          "paragraph": "Para crear aplicaciones de página única escalables."
+        },
+        "tanstack-query": {
+          "heading": "TanStack Query",
+          "paragraph": "Para gestionar datos de respuesta, estados de error y estados de carga relacionados con solicitudes de red."
+        },
+        "zustand": {
+          "heading": "Zustand",
+          "paragraph": "Para gestionar el estado global de la aplicación."
+        },
+        "react-router": {
+          "heading": "React Router",
+          "paragraph": "Para gestionar la navegación."
+        },
+        "axios": {
+          "heading": "Axios",
+          "paragraph": "Para enviar solicitudes de red."
+        },
+        "react-paginate": {
+          "heading": "React Paginate",
+          "paragraph": "Para el componente de selector de página."
+        },
+        "react-spinners": {
+          "heading": "React Spinners",
+          "paragraph": "Para los componentes de indicadores de carga que se muestran cuando algo se está cargando en la aplicación."
+        }
+      }
+    },
+    "rick-mortium": {
+      "first-part": {
+        "heading": "Rick Mortium",
+        "paragraph": "Un sitio web tipo enciclopedia de Rick y Morty donde puedes encontrar datos sobre tus personajes, lugares y episodios favoritos de toda la serie.",
+        "device-description": "Esta es una aplicación web",
+        "see-online-button": "VER EN LÍNEA",
+        "browse-repo-button": "EXAMINAR REPOSITORIO"
+      },
+      "features": {
+        "feature-one": "Paginación orientada al servidor con desplazamiento infinito cada vez que el usuario llega al final de la página.",
+        "feature-two": "Guardado de datos en memoria para que puedas ver tus personajes, lugares o episodios favoritos en otro momento mientras usas la aplicación.",
+        "feature-three": "Amplia variedad de filtros orientados al servidor que se pueden aplicar simultáneamente.",
+        "feature-four": "Puedes probar Rick Mortium en tu dispositivo móvil, ya que la aplicación es compatible con dispositivos móviles."
+      },
+      "used-libraries": {
+        "react": {
+          "heading": "React",
+          "paragraph": "Para crear aplicaciones de página única escalables."
+        },
+        "tanstack-query": {
+          "heading": "TanStack Query",
+          "paragraph": "Para gestionar datos de respuesta, estados de error y estados de carga relacionados con solicitudes de red."
+        },
+        "zustand": {
+          "heading": "Zustand",
+          "paragraph": "Para gestionar el estado global de la aplicación."
+        },
+        "axios": {
+          "heading": "Axios",
+          "paragraph": "Para enviar solicitudes de red."
+        },
+        "react-router": {
+          "heading": "React Router",
+          "paragraph": "Para gestionar la navegación."
+        },
+        "react-spinners": {
+          "heading": "React Spinners",
+          "paragraph": "Para los componentes de indicadores de carga que se muestran cuando algo se está cargando en la aplicación."
+        }
+      }
+    },
+    "company-website": {
+      "first-part": {
+        "heading": "Sitio web de la empresa",
+        "paragraph": "Un sitio web sencillo pero visualmente atractivo que se enfoca principalmente en mostrar los sitios web que puedo desarrollar para tu empresa.",
+        "device-description": "Esta es una aplicación web",
+        "see-online-button": "VER EN LÍNEA",
+        "browse-repo-button": "EXAMINAR REPOSITORIO"
+      },
+      "features": {
+        "feature-one": "Puedes probar el sitio web de la empresa en tu dispositivo móvil, ya que la aplicación es compatible con dispositivos móviles."
+      },
+      "used-libraries": {
+        "react": {
+          "heading": "React",
+          "paragraph": "Para crear aplicaciones de página única escalables."
+        },
+        "react-router": {
+          "heading": "React Router",
+          "paragraph": "Para gestionar la navegación."
+        }
+      }
+    }
+  },
+  "blog-page": {
+    "heading": "Blog",
+    "paragraph": "Aquí es donde enseño todo lo que aprendo en mi propio camino",
+    "input": {
+      "label": "Buscar por palabra clave del blog",
+      "placeholder": "Buscar por palabra clave del blog"
+    }
+  },
+  "about-page": {
+    "first-part": {
+      "heading": "Conoce acerca de mí",
+      "paragraph": "Soy un ingeniero de software nacido y criado en Colombia, con más de 5 años de experiencia en el campo de la ingeniería de software.",
+      "download-my-cv-button": "DESCARGAR MI CV"
+    },
+    "college": {
+      "description": "Poseo una licenciatura en Ingeniería de Software de la Pontificia Universidad Javeriana, una de las principales universidades de América Latina.",
+      "check-badge-button": "VER INSIGNIA"
+    },
+    "grade-project": {
+      "description": "Obtuve la mención honorífica al proyecto de grado de licenciatura para Visión Civil",
+      "browse-repo-button": "EXAMINAR REPOSITORIO",
+      "read-thesis-button": "LEER TESIS",
+      "check-badge-button": "VER INSIGNIA"
+    },
+    "jobs-description": "Estoy agradecido de haber trabajado para múltiples empresas, donde aprendí muchas habilidades útiles y buenas prácticas.",
+    "certifications-description": "Tengo más de 30 certificaciones relacionadas con el desarrollo de software en plataformas de aprendizaje en línea.",
+    "content-creation": {
+      "description": "Me gusta enseñar a las personas lo que he aprendido por mi cuenta publicando contenido educativo.",
+      "youtube-button": "YOUTUBE",
+      "tiktok-button": "TIKTOK",
+      "instagram-button": "INSTAGRAM"
+    }
+  }
+}
