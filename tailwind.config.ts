@@ -25,6 +25,11 @@ const config: Config = {
       fontFamily: {
         sans: ['var(--font-rubik)'],
       },
+      fontSize: {
+        paragraph: '18px',
+        subtitle: '30px',
+        title: '65px',
+      },
     },
   },
   plugins: [],
