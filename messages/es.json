@@ -19,7 +19,7 @@
     "contact-info-section": {
       "heading": "Información de contacto",
       "phone": "<notable>Teléfono:</notable> +57 3106358522",
-      "email": "<notable>Correo electrónico:</notable> dankramirez@outlook.com",
+      "email": "<notable>Email:</notable> dankramirez@outlook.com",
       "location": "<notable>Ubicación:</notable> Bogotá, Colombia 🇨🇴"
     },
     "quick-links-section": {
@@ -211,35 +211,35 @@
     }
   },
   "services-page": {
-    "heading": "Descubre mis servicios",
+    "heading": "Descubre mis <meaningful>servicios</meaningful>",
     "software-development": {
       "heading": "Desarrollo de software",
       "card-paragraph": "Puedo desarrollar software de calidad empresarial que sea completamente escalable, fácil de actualizar y mantener.",
       "paragraph-one": "Puedo desarrollar software de calidad empresarial que sea completamente escalable, fácil de actualizar y mantener.",
-      "paragraph-two": "Puedo crear aplicaciones web, aplicaciones móviles, sitios web o APIs REST."
+      "paragraph-two": "Puedo crear <meaningful>aplicaciones web</meaningful>, <meaningful>aplicaciones móviles</meaningful>, <meaningful>sitios web</meaningful> o <meaningful>APIs REST</meaningful>."
     },
     "software-maintenance": {
       "heading": "Mantenimiento de software",
       "card-paragraph": "Puedo mantener el código creado por cualquier desarrollador. Si lo deseas, puedo agregar nuevas funcionalidades complejas o refactorizar código desordenado.",
-      "paragraph-one": "Puedo mantener el código creado por cualquier desarrollador. Si lo deseas, puedo agregar nuevas funcionalidades complejas o refactorizar código desordenado.",
+      "paragraph-one": "Puedo mantener el código creado por cualquier desarrollador. Si lo deseas, puedo <meaningful>agregar nuevas funcionalidades</meaningful> complejas o <meaningful>refactorizar código desordenado</meaningful>.",
       "paragraph-two": "Contrátame por un período fijo de tiempo o solo para cumplir con n tareas, de cualquier manera, te ofreceré un precio justo."
     },
     "database-design": {
       "heading": "Diseño de bases de datos",
       "card-paragraph": "Puedo diseñar toda tu base de datos según tus necesidades y requisitos. Ya sea que desees una base de datos relacional o una base de datos NoSQL, estás en buenas manos.",
-      "paragraph-one": "Puedo diseñar toda tu base de datos según tus necesidades y requisitos. Ya sea que desees una base de datos relacional o una base de datos NoSQL, estás en buenas manos.",
+      "paragraph-one": "Puedo diseñar toda tu base de datos según tus necesidades y requisitos. Ya sea que desees una <meaningful>base de datos relacional</meaningful> o una <meaningful>base de datos NoSQL</meaningful>, estás en buenas manos.",
       "paragraph-two": ""
     },
     "consulting": {
       "heading": "Consultoría",
       "card-paragraph": "Puedo poner mi conocimiento sobre la mesa y ofrecer mi experiencia en desarrollo de software para que puedas tomar decisiones acertadas en tu negocio.",
       "paragraph-one": "Puedo poner mi conocimiento sobre la mesa y ofrecer mi experiencia en desarrollo de software para que puedas tomar decisiones acertadas en tu negocio.",
-      "paragraph-two": "Puedo orientarte en temas como tecnologías, bibliotecas y marcos de desarrollo en el front-end, eventos y JavaScript avanzado en el navegador. También tengo conocimientos útiles relacionados con decisiones de bases de datos, reutilización de código, buenas prácticas y diseño de APIs."
+      "paragraph-two": "Puedo orientarte en temas como <meaningful>tecnologías</meaningful>, <meaningful>bibliotecas</meaningful> y <meaningful>frameworks de desarrollo front-end</meaningful>, <meaningful>eventos</meaningful> y <meaningful>JavaScript avanzado en el navegador</meaningful>. También tengo conocimientos útiles relacionados con <meaningful>decisiones de bases de datos</meaningful>, <meaningful>reutilización de código</meaningful>, <meaningful>buenas prácticas</meaningful> y <meaningful>diseño de APIs</meaningful>."
     },
     "prototyping": {
       "heading": "Prototipado",
       "card-paragraph": "Si deseas que cree prototipos visuales o productos mínimos viables para validar la propuesta de valor de tu producto de software.",
-      "paragraph-one": "Puedo crear prototipos visuales o productos mínimos viables para validar la propuesta de valor de tu producto de software.",
+      "paragraph-one": "Puedo crear <meaningful>prototipos visuales</meaningful> o <meaningful>productos mínimos viables</meaningful> para validar la propuesta de valor de tu producto de software.",
       "paragraph-two": "Desde prototipos rápidos con presupuesto limitado hasta prototipos más complejos que pueden incluir funcionalidad parcial para que tus futuros usuarios puedan probar el producto que tienes en mente antes de tomar una decisión financiera."
     }
   },

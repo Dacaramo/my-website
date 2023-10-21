@@ -211,35 +211,35 @@
     }
   },
   "services-page": {
-    "heading": "Découvrez mes services",
+    "heading": "Découvrez mes <meaningful>services</meaningful>",
     "software-development": {
       "heading": "Développement de logiciels",
       "card-paragraph": "Je peux développer des logiciels de qualité entreprise entièrement évolutifs, faciles à mettre à jour et à entretenir.",
       "paragraph-one": "Je peux développer des logiciels de qualité entreprise entièrement évolutifs, faciles à mettre à jour et à entretenir.",
-      "paragraph-two": "Je peux créer des applications web, des applications mobiles, des sites web ou des API REST."
+      "paragraph-two": "Je peux créer des <meaningful>applications web</meaningful>, des <meaningful>applications mobiles</meaningful>, des <meaningful>sites web</meaningful> ou des <meaningful>API REST</meaningful>."
     },
     "software-maintenance": {
       "heading": "Maintenance de logiciels",
       "card-paragraph": "Je peux entretenir le code développé par n'importe quel développeur. Si vous le souhaitez, je peux ajouter de nouvelles fonctionnalités complexes ou réorganiser du code complexe et désordonné.",
-      "paragraph-one": "Je peux entretenir le code développé par n'importe quel développeur. Si vous le souhaitez, je peux ajouter de nouvelles fonctionnalités complexes ou réorganiser du code complexe et désordonné.",
+      "paragraph-one": "Je peux entretenir le code développé par n'importe quel développeur. Si vous le souhaitez, je peux <meaningful>ajouter de nouvelles fonctionnalités</meaningful> complexes ou <meaningful>réorganiser du code complexe et désordonné</meaningful>.",
       "paragraph-two": "Engagez-moi pour une période déterminée ou simplement pour accomplir n tâches, dans tous les cas, je vous proposerai un prix équitable."
     },
     "database-design": {
       "heading": "Conception de base de données",
       "card-paragraph": "Je peux concevoir l'ensemble de votre base de données en fonction de vos besoins et de vos exigences. Que vous souhaitiez une base de données relationnelle ou NoSQL, vous êtes entre de bonnes mains.",
-      "paragraph-one": "Je peux concevoir l'ensemble de votre base de données en fonction de vos besoins et de vos exigences. Que vous souhaitiez une base de données relationnelle ou NoSQL, vous êtes entre de bonnes mains.",
+      "paragraph-one": "Je peux concevoir l'ensemble de votre base de données en fonction de vos besoins et de vos exigences. Que vous souhaitiez une <meaningful>base de données relationnelle</meaningful> ou une <meaningful>base de données NoSQL</meaningful>, vous êtes entre de bonnes mains.",
       "paragraph-two": ""
     },
     "consulting": {
       "heading": "Consultation",
       "card-paragraph": "Je peux mettre mes connaissances sur la table et vous offrir mon expertise en développement de logiciels afin que vous puissiez prendre de bonnes décisions pour votre entreprise.",
       "paragraph-one": "Je peux mettre mes connaissances sur la table et vous offrir mon expertise en développement de logiciels afin que vous puissiez prendre de bonnes décisions pour votre entreprise.",
-      "paragraph-two": "Je peux vous orienter sur des sujets tels que les technologies frontales, les bibliothèques et les frameworks, les événements et le JavaScript avancé côté navigateur. J'ai également des connaissances utiles en matière de décisions relatives aux bases de données, de réutilisation de code, de bonnes pratiques et de conception d'API."
+      "paragraph-two": "Je peux vous orienter sur des sujets tels que les <meaningful>technologies de front-end</meaningful>, les <meaningful>bibliothèques</meaningful> et les <meaningful>frameworks</meaningful>, les <meaningful>événements</meaningful> et le <meaningful>JavaScript avancé côté navigateur</meaningful>. J'ai également des connaissances utiles en matière de <meaningful>décisions relatives aux bases de données</meaningful>, de <meaningful>réutilisation de code</meaningful>, de <meaningful>bonnes pratiques</meaningful> et de <meaningful>conception d'APIs</meaningful>."
     },
     "prototyping": {
       "heading": "Prototypage",
       "card-paragraph": "Si vous souhaitez que je crée des prototypes visuels ou des produits minimums viables pour valider la proposition de valeur de votre produit logiciel.",
-      "paragraph-one": "Je peux créer des prototypes visuels ou des produits minimums viables pour valider la proposition de valeur de votre produit logiciel.",
+      "paragraph-one": "Je peux créer des <meaningful>prototypes visuels</meaningful> ou des <meaningful>produits minimums viables</meaningful> pour valider la proposition de valeur de votre produit logiciel.",
       "paragraph-two": "Des prototypes rapides à faible budget aux prototypes plus complexes pouvant inclure des fonctionnalités partielles, afin que vos futurs utilisateurs puissent tester le produit que vous avez en tête avant de prendre une décision financière."
     }
   },

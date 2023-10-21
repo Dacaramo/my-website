@@ -211,35 +211,35 @@
     }
   },
   "services-page": {
-    "heading": "Discover my services",
+    "heading": "Discover my <meaningful>services</meaningful>",
     "software-development": {
       "heading": "Software development",
       "card-paragraph": "I can develop enterprise grade software that is fully scalable, easy to update and easy to maintain.",
       "paragraph-one": "I can develop enterprise grade software that is fully scalable, easy to update and easy to maintain.",
-      "paragraph-two": "I can build web apps, mobile apps, websites or REST APIs."
+      "paragraph-two": "I can build <meaningful>web apps</meaningful>, <meaningful>mobile apps</meaningful>, <meaningful>websites</meaningful> or <meaningful>REST APIs</meaningful>."
     },
     "software-maintenance": {
       "heading": "Software maintenance",
       "card-paragraph": "I can maintain code made by any developer. If you want, I can either add new complex functionalities or refactor spaghetti code.",
-      "paragraph-one": "I can maintain code made by any developer. If you want, I can either add new complex functionalities or refactor spaghetti code.",
+      "paragraph-one": "I can maintain code made by any developer. If you want, I can either <meaningful>add new complex functionalities</meaningful> or <meaningful>refactor spaghetti code</meaningful>.",
       "paragraph-two": "Hire me for a fixed period of time or just for accomplishing n tasks, either way I will give you a fair price."
     },
     "database-design": {
       "heading": "Database design",
       "card-paragraph": "I can design your whole database based on your needs and requirements. If you want either a relational database or a No-SQL database your good to go.",
-      "paragraph-one": "I can design your whole database based on your needs and requirements. If you want either a relational database or a No-SQL database your good to go.",
+      "paragraph-one": "I can design your whole database based on your needs and requirements. If you want either a <meaningful>relational database</meaningful> or a <meaningful>No-SQL database</meaningful> your good to go.",
       "paragraph-two": ""
     },
     "consulting": {
       "heading": "Consulting",
       "card-paragraph": "I can put my knowledge on the table and offer my software development knowledge so you can take good decisions regarding your business.",
       "paragraph-one": "I can put my knowledge on the table and offer my software development knowledge so you can take good decisions regarding your business.",
-      "paragraph-two": "I can orient you in topics such as front-end technologies, libraries and frameworks, events and advanced browser JavaScript. I also have useful knowledge regarding database related decisions, code re-utilization, good practices and also API design."
+      "paragraph-two": "I can orient you in topics such as <meaningful>front-end technologies</meaningful>, <meaningful>libraries</meaningful> and <meaningful>frameworks</meaningful>, <meaningful>events</meaningful> and <meaningful>advanced browser JavaScript</meaningful>. I also have useful knowledge regarding <meaningful>database related decisions</meaningful>, <meaningful>code re-utilization</meaningful>, <meaningful>good practices</meaningful> and also <meaningful>API design</meaningful>."
     },
     "prototyping": {
       "heading": "Prototyping",
       "card-paragraph": "If you want me to create visual prototypes or minimum viable products in order to validate the value proposition of your software product.",
-      "paragraph-one": "I can create visual prototypes or minimum viable products in order to validate the value proposition of your software product.",
+      "paragraph-one": "I can create <meaningful>visual prototypes</meaningful> or <meaningful>minimum viable products</meaningful> in order to validate the value proposition of your software product.",
       "paragraph-two": "From low budget quick prototypes all the way to more complex prototypes that can include partial functionality so your future users are able to test the product you have in mind before making the financial decision."
     }
   },

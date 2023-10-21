@@ -8,9 +8,15 @@ export interface CardProps {
   headingText: string;
   paragraphText: string;
   icon?: IconDefinition | ReactNode;
+  onClick?: () => void;
 }
 
-const Card: FC<CardProps> = ({ headingText, paragraphText, icon }) => {
+const Card: FC<CardProps> = ({
+  headingText,
+  paragraphText,
+  icon,
+  onClick: handleClick,
+}) => {
   let iconType: 'fontAwesome' | 'component' | 'none' = 'none';
   if (icon !== undefined) {
     if ('prefix' in (icon as IconDefinition)) {
@@ -21,7 +27,13 @@ const Card: FC<CardProps> = ({ headingText, paragraphText, icon }) => {
   }
 
   return (
-    <div className='p-5 flex flex-col justify-between gap-5 items-center text-pale-acid-green bg-prune rounded-xl shadow-classic hover:shadow-classic-hovered transition-all'>
+    <li
+      className='p-5 basis-[450px] flex-1 flex flex-col justify-between gap-5 items-center text-pale-acid-green bg-prune rounded-xl shadow-classic hover:shadow-classic-hovered transition-all'
+      style={{
+        cursor: handleClick ? 'pointer' : 'default',
+      }}
+      onClick={handleClick}
+    >
       <h3
         className='text-subtitle text-center font-bold text-acid-green'
         style={{ wordBreak: 'break-word' }}
@@ -37,7 +49,7 @@ const Card: FC<CardProps> = ({ headingText, paragraphText, icon }) => {
         />
       )}
       <p className='text-paragraph text-center text-white'>{paragraphText}</p>
-    </div>
+    </li>
   );
 };
 
