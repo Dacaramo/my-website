@@ -1,7 +1,11 @@
 'use client';
 
 import { FC, ReactNode, useRef, useState, useTransition } from 'react';
-import { faServicestack, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import {
+  faServicestack,
+  faWhatsapp,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import { faDev } from '@fortawesome/free-brands-svg-icons/faDev';
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
@@ -10,7 +14,9 @@ import { faStackOverflow } from '@fortawesome/free-brands-svg-icons/faStackOverf
 import { faTiktok } from '@fortawesome/free-brands-svg-icons/faTiktok';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
 import {
+  faAnglesUp,
   faArrowLeft,
+  faArrowUp,
   faBars,
   faBellConcierge,
   faBriefcase,
@@ -19,6 +25,7 @@ import {
   faHome,
   faQuestion,
   faRocket,
+  faUpLong,
   faX,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -78,6 +85,8 @@ const Layout: FC<Props> = ({ children }) => {
   const footerFlexColClasses = 'flex flex-col gap-2 justify-start items-center';
   const footerFlexRowClasses =
     'flex flex-row gap-2 justify-center items-center';
+  const floatingButtonClasses =
+    'fixed flex justify-center items-center rounded-full border-4 border-black bg-acid-green text-black transition-all';
   const localeLanguages: Record<string, string> = {
     en: 'English 🇺🇸',
     es: 'Español 🇪🇸',
@@ -103,6 +112,12 @@ const Layout: FC<Props> = ({ children }) => {
     }
 
     backLink.click();
+  };
+
+  const handleClickOnGoUp = () => {
+    const link = document.createElement('a');
+    link.href = '#';
+    link.click();
   };
 
   return (
@@ -267,149 +282,164 @@ const Layout: FC<Props> = ({ children }) => {
           />
         </nav>
       </header>
-      <>
-        <main className='w-full flex flex-col'>{children}</main>
-        <footer className='w-full flex flex-col'>
+      <main className='w-full flex flex-col'>{children}</main>
+      <footer className='w-full flex flex-col'>
+        <section
+          id='footer-content'
+          className='w-full px-[20px] sm:px-[65px] gap-5 py-5 flex flex-row flex-wrap justify-center sm:justify-between items-start bg-black'
+        >
           <section
-            id='footer-content'
-            className='w-full px-[20px] sm:px-[65px] gap-5 py-5 flex flex-row flex-wrap justify-center sm:justify-between items-start bg-black'
+            id='footer-contact-info-section'
+            className='flex flex-col gap-2 justify-start items-center'
           >
-            <section
-              id='footer-contact-info-section'
-              className='flex flex-col gap-2 justify-start items-center'
-            >
-              <h3 className={`${footerHeadingClasses}`}>
-                {t('footer.contact-info-section.heading')}
-              </h3>
-              <address className={`${footerFlexColClasses} not-italic`}>
-                <Link
-                  className='flex flex-row gap-2 items-center text-paragraph'
-                  href={getWhatsAppMessageMeLink(locale)}
-                  target='_blank'
-                >
-                  {t.rich('footer.contact-info-section.phone', {
-                    notable: (beforeText) => (
-                      <b className='font-medium'>{beforeText}</b>
-                    ),
-                  })}
-                  <WhatsAppIcon width={iconSize} />
-                </Link>
-                <Link
-                  className='flex flex-row gap-2 items-center text-paragraph'
-                  href={getMailToLink(locale)}
-                  target='_blank'
-                >
-                  {t.rich('footer.contact-info-section.email', {
-                    notable: (beforeText) => (
-                      <b className='font-medium'>{beforeText}</b>
-                    ),
-                  })}
-                  <FontAwesomeIcon
-                    icon={faEnvelope}
-                    style={{ fontSize: iconSize }}
-                  />
-                </Link>
-                <Link
-                  className='flex flex-row gap-2 items-center text-paragraph'
-                  href={LOCATION_GOOGLE_MAPS_LINK}
-                  target='_blank'
-                >
-                  {t.rich('footer.contact-info-section.location', {
-                    notable: (beforeText) => (
-                      <b className='font-medium'>{beforeText}</b>
-                    ),
-                  })}
-                </Link>
-              </address>
-            </section>
-            <div className='w-full h-[1px] bg-white sm:hidden' />
-            <section
-              id='footer-quick-links-section'
-              className={`${footerFlexColClasses}`}
-            >
-              <h3 className={`${footerHeadingClasses}`}>
-                {t('footer.quick-links-section.heading')}
-              </h3>
-              <h4 className={`${footerSubheadingClasses}`}>
-                {t(
-                  'footer.quick-links-section.my-content-platforms-subheading'
-                )}
-              </h4>
-              <nav className={`${footerFlexRowClasses}`}>
-                <QuickLink
-                  href={YOUTUBE_CHANNEL_LINK}
-                  icon={faYoutube}
-                />
-                <QuickLink
-                  href={INSTAGRAM_PROFILE_LINK}
-                  icon={faInstagram}
-                />
-                <QuickLink
-                  href={TIKTOK_PROFILE_LINK}
-                  icon={faTiktok}
-                />
-              </nav>
-              <h4 className={`${footerSubheadingClasses}`}>
-                {t(
-                  'footer.quick-links-section.other-relevant-platforms-subheading'
-                )}
-              </h4>
-              <nav className={footerFlexRowClasses}>
-                <QuickLink
-                  href={GITHUB_PROFILE_LINK}
-                  icon={faGithub}
-                />
-                <QuickLink
-                  href={STACK_OVERFLOW_PROFILE_LINK}
-                  icon={faStackOverflow}
-                />
-              </nav>
-            </section>
-            <div className='w-full h-[1px] bg-white sm:hidden' />
-            <section
-              id='footer-other-info-section'
-              className={`${footerFlexColClasses}`}
-            >
-              <h3 className={`${footerHeadingClasses}`}>
-                {t('footer.other-info-section.heading')}
-              </h3>
-              <h4 className={`${footerSubheadingClasses}`}>
-                {t('footer.other-info-section.blog-sites-subsection.heading')}
-              </h4>
-              <nav className={`${footerFlexRowClasses}`}>
-                <QuickLink
-                  href={DEV_PROFILE_LINK}
-                  icon={faDev}
-                />
-                <QuickLink
-                  href={MEDIUM_PROFILE_LINK}
-                  icon={faMediumM}
-                />
-              </nav>
-              <h4 className={`${footerSubheadingClasses}`}>
-                {t(
-                  'footer.other-info-section.content-attribution-subsection.heading'
-                )}
-              </h4>
+            <h3 className={`${footerHeadingClasses}`}>
+              {t('footer.contact-info-section.heading')}
+            </h3>
+            <address className={`${footerFlexColClasses} not-italic`}>
               <Link
-                className='text-paragraph text-center'
-                href='https://www.behance.net/dannalpez'
+                className='flex flex-row gap-2 items-center text-paragraph'
+                href={getWhatsAppMessageMeLink(locale)}
                 target='_blank'
               >
-                {t(
-                  'footer.other-info-section.content-attribution-subsection.first-attribution'
-                )}
+                {t.rich('footer.contact-info-section.phone', {
+                  notable: (beforeText) => (
+                    <b className='font-medium'>{beforeText}</b>
+                  ),
+                })}
+                <WhatsAppIcon width={iconSize} />
               </Link>
-            </section>
+              <Link
+                className='flex flex-row gap-2 items-center text-paragraph'
+                href={getMailToLink(locale)}
+                target='_blank'
+              >
+                {t.rich('footer.contact-info-section.email', {
+                  notable: (beforeText) => (
+                    <b className='font-medium'>{beforeText}</b>
+                  ),
+                })}
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  style={{ fontSize: iconSize }}
+                />
+              </Link>
+              <Link
+                className='flex flex-row gap-2 items-center text-paragraph'
+                href={LOCATION_GOOGLE_MAPS_LINK}
+                target='_blank'
+              >
+                {t.rich('footer.contact-info-section.location', {
+                  notable: (beforeText) => (
+                    <b className='font-medium'>{beforeText}</b>
+                  ),
+                })}
+              </Link>
+            </address>
           </section>
-          <p
-            id='footer-copyright'
-            className='w-full min-h-[7.5vh] px-[75px] py-5 flex justify-center items-center text-center bg-pale-black'
+          <div className='w-full h-[1px] bg-white sm:hidden' />
+          <section
+            id='footer-quick-links-section'
+            className={`${footerFlexColClasses}`}
           >
-            {t('footer.copyright')}
-          </p>
-        </footer>
-      </>
+            <h3 className={`${footerHeadingClasses}`}>
+              {t('footer.quick-links-section.heading')}
+            </h3>
+            <h4 className={`${footerSubheadingClasses}`}>
+              {t('footer.quick-links-section.my-content-platforms-subheading')}
+            </h4>
+            <nav className={`${footerFlexRowClasses}`}>
+              <QuickLink
+                href={YOUTUBE_CHANNEL_LINK}
+                icon={faYoutube}
+              />
+              <QuickLink
+                href={INSTAGRAM_PROFILE_LINK}
+                icon={faInstagram}
+              />
+              <QuickLink
+                href={TIKTOK_PROFILE_LINK}
+                icon={faTiktok}
+              />
+            </nav>
+            <h4 className={`${footerSubheadingClasses}`}>
+              {t(
+                'footer.quick-links-section.other-relevant-platforms-subheading'
+              )}
+            </h4>
+            <nav className={footerFlexRowClasses}>
+              <QuickLink
+                href={GITHUB_PROFILE_LINK}
+                icon={faGithub}
+              />
+              <QuickLink
+                href={STACK_OVERFLOW_PROFILE_LINK}
+                icon={faStackOverflow}
+              />
+            </nav>
+          </section>
+          <div className='w-full h-[1px] bg-white sm:hidden' />
+          <section
+            id='footer-other-info-section'
+            className={`${footerFlexColClasses}`}
+          >
+            <h3 className={`${footerHeadingClasses}`}>
+              {t('footer.other-info-section.heading')}
+            </h3>
+            <h4 className={`${footerSubheadingClasses}`}>
+              {t('footer.other-info-section.blog-sites-subsection.heading')}
+            </h4>
+            <nav className={`${footerFlexRowClasses}`}>
+              <QuickLink
+                href={DEV_PROFILE_LINK}
+                icon={faDev}
+              />
+              <QuickLink
+                href={MEDIUM_PROFILE_LINK}
+                icon={faMediumM}
+              />
+            </nav>
+            <h4 className={`${footerSubheadingClasses}`}>
+              {t(
+                'footer.other-info-section.content-attribution-subsection.heading'
+              )}
+            </h4>
+            <Link
+              className='text-paragraph text-center'
+              href='https://www.behance.net/dannalpez'
+              target='_blank'
+            >
+              {t(
+                'footer.other-info-section.content-attribution-subsection.first-attribution'
+              )}
+            </Link>
+          </section>
+        </section>
+        <p
+          id='footer-copyright'
+          className='w-full min-h-[7.5vh] px-[75px] py-5 flex justify-center items-center text-center bg-pale-black'
+        >
+          {t('footer.copyright')}
+        </p>
+      </footer>
+      <Link
+        href={getWhatsAppMessageMeLink(locale)}
+        target='_blank'
+        className={`${floatingButtonClasses} hidden sm:flex bottom-[60px] right-[5px] sm:bottom-[10px] sm:right-[45px] w-[50px] h-[50px] hover:w-[55px] hover:h-[55px] sm:w-[65px] sm:h-[65px] sm:hover:w-[70px] sm:hover:h-[70px] text-[25px] hover:text-[30px] sm:text-[35px] sm:hover:text-[40px] opacity-100`}
+        style={{
+          color: ACID_GREEN,
+          backgroundColor: BLACK,
+          borderColor: ACID_GREEN,
+        }}
+      >
+        <FontAwesomeIcon icon={faWhatsapp} />
+      </Link>
+      <button
+        type='button'
+        className={`${floatingButtonClasses} bottom-[5px] right-[5px] sm:bottom-[30px] sm:right-[10px] w-[50px] h-[50px] hover:w-[55px] hover:h-[55px] text-[25px] hover:text-[30px] opacity-50 sm:opacity-100`}
+        onClick={handleClickOnGoUp}
+      >
+        <FontAwesomeIcon icon={faAnglesUp} />
+      </button>
     </>
   );
 };
