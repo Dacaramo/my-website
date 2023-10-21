@@ -1,16 +1,20 @@
-import { FC, ReactNode } from 'react';
+import { FC, HTMLProps, ReactNode } from 'react';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
-interface Props {
+interface Props extends HTMLProps<HTMLAnchorElement> {
   text: string;
   icon?: IconDefinition | ReactNode;
+  isAnchorElement?: boolean;
   href: string;
 }
 
-const HomePageLink: FC<Props> = ({ text, icon, href }) => {
+const HomePageLink: FC<Props> = (props) => {
+  const { text, icon, isAnchorElement, href, ...anchorProps } = props;
   const iconSize = 20;
+  const linkClasses =
+    'px-3 py-2 flex flex-row justify-center items-center gap-2 border rounded-lg border-acid-green font-medium text-paragraph whitespace-nowrap text-acid-green hover:bg-acid-green hover:text-pale-black transition-all';
   let iconType: 'fontAwesome' | 'component' | 'none' = 'none';
   if (icon !== undefined) {
     if ('prefix' in (icon as IconDefinition)) {
@@ -20,21 +24,45 @@ const HomePageLink: FC<Props> = ({ text, icon, href }) => {
     }
   }
 
+  const innerComponentContent = (
+    <>
+      {text}
+      {iconType === 'component' && (icon as ReactNode)}
+      {iconType === 'fontAwesome' && (
+        <FontAwesomeIcon
+          style={{ fontSize: iconSize }}
+          icon={icon as IconDefinition}
+        />
+      )}
+    </>
+  );
+
   return (
     <>
-      <Link
-        className='px-3 py-2 flex flex-row items-center gap-2 border rounded-lg border-acid-green font-medium text-paragraph text-acid-green hover:bg-acid-green hover:text-pale-black transition-all'
-        href={href}
-      >
-        {text}
-        {iconType === 'component' && (icon as ReactNode)}
-        {iconType === 'fontAwesome' && (
-          <FontAwesomeIcon
-            style={{ fontSize: iconSize }}
-            icon={icon as IconDefinition}
-          />
-        )}
-      </Link>
+      {isAnchorElement ? (
+        <a
+          className={`${linkClasses}`}
+          href={href}
+          target='_blank'
+          rel='noreferrer'
+          {...anchorProps}
+        >
+          {innerComponentContent}
+        </a>
+      ) : (
+        <>
+          {/* @ts-ignore */}
+          <Link
+            className={`${linkClasses}`}
+            href={href}
+            target='_blank'
+            rel='noreferrer'
+            {...anchorProps}
+          >
+            {innerComponentContent}
+          </Link>
+        </>
+      )}
     </>
   );
 };

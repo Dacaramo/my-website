@@ -21,6 +21,7 @@ const config: Config = {
         prune: '#3C1642',
         'pale-black': '#1D1A1A',
         black: '#000000',
+        'translucid-black': 'rgba(0, 0, 0, 0.25)',
       },
       fontFamily: {
         sans: ['var(--font-rubik)'],
@@ -29,6 +30,12 @@ const config: Config = {
         paragraph: '18px',
         subtitle: '30px',
         title: '65px',
+      },
+      boxShadow: {
+        classic: '12px 10px 4px 0 rgba(0, 0, 0, 0.45)',
+        'classic-hovered': '6px 5px 4px 0 rgba(0, 0, 0, 0.45)',
+        'inverted-classic': '-12px -10px 4px 0 rgba(0, 0, 0, 0.45)',
+        'inverted-classic-hovered': '-6px -5px 4px 0 rgba(0, 0, 0, 0.45)',
       },
     },
   },

@@ -18,9 +18,9 @@
   "footer": {
     "contact-info-section": {
       "heading": "Coordonnées",
-      "phone": "Téléphone : +57 3106358522",
-      "email": "Email : dankramirez@outlook.com",
-      "location": "Emplacement : Bogotá, Colombie 🇨🇴"
+      "phone": "<notable>Téléphone:</notable> +57 3106358522",
+      "email": "<notable>Email:</notable> dankramirez@outlook.com",
+      "location": "<notable>Emplacement:</notable> Bogotá, Colombie 🇨🇴"
     },
     "quick-links-section": {
       "heading": "Liens rapides",
@@ -40,18 +40,18 @@
         "first-attribution": "Image personnelle grise de la page d'accueil"
       }
     },
-    "copyright": "© 2023 Daniel Ramirez | Tous droits réservés"
+    "copyright": "© 2023 Daniel Ramírez | Tous droits réservés"
   },
   "home-page": {
     "first-part": {
-      "heading": "Nous nous rencontrons enfin, je suis Daniel Ramírez",
+      "heading": "Nous nous rencontrons enfin, je suis <meaningful>Daniel Ramírez</meaningful>",
       "paragraph": "Votre développeur full-stack de confiance et consultant en technologie. Dites-moi simplement ce que vous souhaitez construire et réalisons vos rêves !",
       "message-me-link": "Envoyez-moi un message",
       "send-me-an-email-link": "Envoyez-moi un e-mail",
       "download-my-cv-button": "Téléchargez mon CV",
       "software-development": {
         "heading": "Développement de logiciels",
-        "paragraph": "Je crée des logiciels entièrement évolutifs qui peuvent perdurer toute une vie. J'ai appris les meilleures pratiques de l'industrie pour écrire un code propre, facile à entretenir et à modifier."
+        "paragraph": "Je crée des logiciels entièrement évolutifs qui peuvent perdurer toute une vie. J'ai appris les meilleures pratiques de l'industrie pour écrire un code propre, facile à comprendre et à modifier."
       },
       "product-development": {
         "heading": "Développement de produits",
@@ -121,7 +121,7 @@
         "paragraph": "Les fonctions, les composants, les points de terminaison et les services doivent dissimuler une grande fonctionnalité complexe et utile derrière une interface simple et conviviale. C'est ma philosophie et je développe toujours mes logiciels en conséquence."
       },
       "seo": {
-        "heading": "Optimisation pour les moteurs de recherche (SEO)",
+        "heading": "SEO",
         "paragraph": "Lors de la rédaction de HTML, j'aime faire un usage correct des balises sémantiques et appliquer d'autres techniques d'optimisation pour les moteurs de recherche afin que votre site web soit facilement trouvé par le monde entier."
       },
       "testing": {

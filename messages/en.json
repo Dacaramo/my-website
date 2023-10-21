@@ -18,9 +18,9 @@
   "footer": {
     "contact-info-section": {
       "heading": "Contact info",
-      "phone": "Phone: +57 3106358522",
-      "email": "Email: dankramirez@outlook.com",
-      "location": "Location: Bogotá, Colombia 🇨🇴"
+      "phone": "<notable>Phone:</notable> +57 3106358522",
+      "email": "<notable>Email:</notable> dankramirez@outlook.com",
+      "location": "<notable>Location:</notable> Bogotá, Colombia 🇨🇴"
     },
     "quick-links-section": {
       "heading": "Quick links",
@@ -37,14 +37,14 @@
       },
       "content-attribution-subsection": {
         "heading": "Content attribution",
-        "first-attribution": "Home gray personal picture"
+        "first-attribution": "Home gray self picture"
       }
     },
-    "copyright": "© 2023 Daniel Ramirez | All rights reserved"
+    "copyright": "© 2023 Daniel Ramírez | All rights reserved"
   },
   "home-page": {
     "first-part": {
-      "heading": "We finally meet, I'm Daniel Ramírez",
+      "heading": "We finally meet, I'm <meaningful>Daniel Ramírez</meaningful>",
       "paragraph": "Your trusted full stack developer and tech consultant. Just tell me what you want to build and let’s make your dreams come true!",
       "message-me-link": "Message me",
       "send-me-an-email-link": "Send me and email",

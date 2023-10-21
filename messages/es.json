@@ -18,9 +18,9 @@
   "footer": {
     "contact-info-section": {
       "heading": "Información de contacto",
-      "phone": "Teléfono: +57 3106358522",
-      "email": "Correo electrónico: dankramirez@outlook.com",
-      "location": "Ubicación: Bogotá, Colombia 🇨🇴"
+      "phone": "<notable>Teléfono:</notable> +57 3106358522",
+      "email": "<notable>Correo electrónico:</notable> dankramirez@outlook.com",
+      "location": "<notable>Ubicación:</notable> Bogotá, Colombia 🇨🇴"
     },
     "quick-links-section": {
       "heading": "Enlaces rápidos",
@@ -44,10 +44,10 @@
   },
   "home-page": {
     "first-part": {
-      "heading": "Finalmente nos conocemos, soy Daniel Ramírez",
+      "heading": "Finalmente nos conocemos, soy <meaningful>Daniel Ramírez</meaningful>",
       "paragraph": "Tu confiable desarrollador full stack y consultor tecnológico. ¡Solo dime qué quieres construir y hagamos realidad tus sueños!",
       "message-me-link": "Mensajeame",
-      "send-me-an-email-link": "Envíame un correo electrónico",
+      "send-me-an-email-link": "Envíame un email",
       "download-my-cv-button": "Descarga mi CV",
       "software-development": {
         "heading": "Desarrollo de software",
@@ -121,7 +121,7 @@
         "paragraph": "Las funciones, componentes, puntos finales y servicios deben ocultar una funcionalidad grande, compleja y útil detrás de una interfaz simple y fácil de usar. Esa es mi filosofía y siempre desarrollo mi software en consecuencia."
       },
       "seo": {
-        "heading": "Optimización para motores de búsqueda (SEO)",
+        "heading": "SEO",
         "paragraph": "Cuando escribo HTML, me gusta hacer un uso correcto de las etiquetas semánticas y aplicar otras técnicas de optimización para motores de búsqueda para que tu sitio web sea fácilmente encontrado por el mundo."
       },
       "testing": {

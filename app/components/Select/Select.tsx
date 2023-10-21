@@ -2,6 +2,7 @@
 
 import { CSSProperties, FC, useEffect, useRef, useState } from 'react';
 
+import { PRUNE } from '@/app/constants/colors';
 import useElementRect from '@/app/hooks/useElementRect';
 
 export interface Option {
@@ -20,6 +21,7 @@ interface Props {
   style?: CSSProperties;
   value: string;
   defaultValue?: string;
+  backgroundColor?: string;
   onChange: (selectedOption: Option | null) => void;
 }
 
@@ -34,6 +36,7 @@ const Select: FC<Props> = ({
   style,
   value,
   defaultValue,
+  backgroundColor = PRUNE,
   onChange: handleChange,
 }) => {
   const [areOptionsVisible, setAreOptionsVisible] = useState<boolean>(false);
@@ -44,10 +47,12 @@ const Select: FC<Props> = ({
   const ulRect = useElementRect(ulRef);
 
   const liClasses =
-    'p-2 bg-prune text-pale-acid-green font-medium hover:text-acid-green cursor-pointer whitespace-nowrap';
+    'p-2 text-paragraph text-pale-acid-green font-medium hover:text-acid-green cursor-pointer whitespace-nowrap';
 
   const getLiStyles = (i: number): CSSProperties => {
-    const liStyles: CSSProperties = {};
+    const liStyles: CSSProperties = {
+      backgroundColor,
+    };
     const liBorderRadius = '0.5rem';
 
     if (i === 0) {
@@ -86,7 +91,7 @@ const Select: FC<Props> = ({
 
   return (
     <div
-      className={`relative min-w-[75px] flex justify-center items-center ${
+      className={`relative min-w-[75px] flex justify-center items-center  ${
         className ?? ''
       }`}
       style={style}
@@ -101,14 +106,14 @@ const Select: FC<Props> = ({
         type='button'
         id={id}
         ref={buttonRef}
-        className='font-medium text-pale-acid-green hover:text-acid-green transition-all'
+        className='text-paragraph font-medium text-pale-acid-green hover:text-acid-green transition-all'
         onClick={() => setAreOptionsVisible((prev) => !prev)}
       >
         {value || defaultValue || placeholder}
       </button>
       <ul
         ref={ulRef}
-        className='absolute right-0 z-10 flex flex-col items-stretch'
+        className='absolute right-0 z-10 flex flex-col items-stretch rounded-lg shadow-classic-hovered'
         style={{
           visibility: areOptionsVisible ? 'visible' : 'hidden',
           ...(ulRect ? { bottom: -ulRect.height - 10 } : {}),
