@@ -4,6 +4,8 @@ export const YOUTUBE_CHANNEL_LINK =
   'https://www.youtube.com/channel/UCwurci10rEbYy8r2fzdgbaA';
 export const INSTAGRAM_PROFILE_LINK = 'https://www.instagram.com/dacaramo/';
 export const TIKTOK_PROFILE_LINK = 'https://www.tiktok.com/@ramzeis.software';
+export const LINKED_IN_PROFILE_LINK =
+  'https://www.linkedin.com/in/daniel-ramírez-molina-6465a1211';
 export const LOCATION_GOOGLE_MAPS_LINK =
   'https://www.google.com/maps/place/Bogot%C3%A1/@4.6486206,-74.2726166,11z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9bfd2da6cb29:0x239d635520a33914!8m2!3d4.7109886!4d-74.072092!16zL20vMDFkenlj?entry=ttu';
 export const GITHUB_PROFILE_LINK = 'https://github.com/Dacaramo';
@@ -93,8 +95,6 @@ export const getProjectRunningLink = (id: PortfolioProjectId): string => {
       return POKE_BOWL_STORE_PROJECT_RUNNING_LINK;
     case 'rick-mortium':
       return RICK_MORTIUM_PROJECT_RUNNING_LINK;
-    case 'company-website':
-      return COMPANY_WEBSITE_PROJECT_RUNNING_LINK;
     default:
       throw new NotFoundError(idNotFoundMessage);
   }
@@ -108,8 +108,6 @@ export const getProjectRepoLink = (id: PortfolioProjectId): string => {
       return POKE_BOWL_STORE_PROJECT_REPO_LINK;
     case 'rick-mortium':
       return RICK_MORTIUM_PROJECT_REPO_LINK;
-    case 'company-website':
-      return COMPANY_WEBSITE_PROJECT_REPO_LINK;
     default:
       throw new NotFoundError(idNotFoundMessage);
   }

@@ -2,6 +2,7 @@
 
 import { FC, ReactNode, useRef, useState, useTransition } from 'react';
 import {
+  faLinkedin,
   faServicestack,
   faWhatsapp,
   faYoutube,
@@ -50,6 +51,7 @@ import {
   getWhatsAppMessageMeLink,
   GITHUB_PROFILE_LINK,
   INSTAGRAM_PROFILE_LINK,
+  LINKED_IN_PROFILE_LINK,
   LOCATION_GOOGLE_MAPS_LINK,
   MEDIUM_PROFILE_LINK,
   STACK_OVERFLOW_PROFILE_LINK,
@@ -367,6 +369,10 @@ const Layout: FC<Props> = ({ children }) => {
               <QuickLink
                 href={TIKTOK_PROFILE_LINK}
                 icon={faTiktok}
+              />
+              <QuickLink
+                href={LINKED_IN_PROFILE_LINK}
+                icon={faLinkedin}
               />
             </nav>
             <h4 className={`${footerSubheadingClasses}`}>
