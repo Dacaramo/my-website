@@ -21,7 +21,8 @@ const config: Config = {
         prune: '#3C1642',
         'pale-black': '#1D1A1A',
         black: '#000000',
-        'translucid-black': 'rgba(0, 0, 0, 0.25)',
+        'translucid-black': 'rgba(0, 0, 0, 0.7)',
+        'translucid-acid-green': 'rgba(175, 252, 65, 0.20)',
       },
       fontFamily: {
         sans: ['var(--font-rubik)'],

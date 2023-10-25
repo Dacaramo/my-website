@@ -1,4 +1,4 @@
-import { FC, ReactNode } from 'react';
+import { CSSProperties, FC, ReactNode } from 'react';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -8,6 +8,7 @@ export interface CardProps {
   headingText: string;
   paragraphText: string;
   icon?: IconDefinition | ReactNode;
+  style?: CSSProperties;
   onClick?: () => void;
 }
 
@@ -15,6 +16,7 @@ const Card: FC<CardProps> = ({
   headingText,
   paragraphText,
   icon,
+  style,
   onClick: handleClick,
 }) => {
   let iconType: 'fontAwesome' | 'component' | 'none' = 'none';
@@ -31,6 +33,7 @@ const Card: FC<CardProps> = ({
       className='p-5 basis-[450px] flex-1 flex flex-col justify-between gap-5 items-center text-pale-acid-green bg-prune rounded-xl shadow-classic hover:shadow-classic-hovered transition-all'
       style={{
         cursor: handleClick ? 'pointer' : 'default',
+        ...style,
       }}
       onClick={handleClick}
     >

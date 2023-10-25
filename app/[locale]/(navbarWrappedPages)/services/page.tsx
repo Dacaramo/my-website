@@ -18,9 +18,9 @@ interface Props {}
 const ServicesPage: FC<Props> = () => {
   const t = useTranslations('services-page');
 
-  const serviceSectionClasses = 'w-[100vw] h-[100vh] bg-cover';
+  const serviceSectionClasses = 'w-[100vw] h-[100vh] bg-cover bg-center';
   const semiTransparentLayer =
-    'w-full h-full px-[20px] sm:px-[65px] py-5 bg-[rgba(29,26,26,0.6)] flex flex-col justify-center items-center gap-20';
+    'w-full h-full px-[20px] sm:px-[65px] py-5 bg-translucid-black flex flex-col justify-center items-center gap-10';
   const h2Classes = 'text-subtitle sm:text-title font-bold text-center';
   const pClasses = 'text-paragraph sm:text-subtitle text-center';
   const strongClasses = 'font-bold';
@@ -92,6 +92,7 @@ const ServicesPage: FC<Props> = () => {
             return (
               <Card
                 key={card.headingText}
+                style={{ flexBasis: 300 }}
                 {...card}
               />
             );

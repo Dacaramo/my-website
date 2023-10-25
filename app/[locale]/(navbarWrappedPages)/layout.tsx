@@ -135,11 +135,11 @@ const Layout: FC<Props> = ({ children }) => {
             width={20}
           />
         </a>
-        <nav
+        <div
           id='hamburger-menu'
-          className='absolute w-[100vw] h-[100vh] z-[100] px-[20px] top-0 left-[-100vw] flex flex-col justify-start items-start gap-4 target:left-0 bg-pale-black transition-all'
+          className='fixed w-[100vw] h-[100vh] z-[100] top-0 left-[-100vw] flex flex-col justify-start items-start gap-4 target:left-0 bg-pale-black transition-all'
         >
-          <div className='w-full min-h-[7.5vh] flex flex-row justify-between items-center'>
+          <div className='w-full min-h-[7.5vh] px-[20px] flex flex-row justify-between items-center'>
             <a
               ref={backLinkRef}
               href='#'
@@ -160,77 +160,85 @@ const Layout: FC<Props> = ({ children }) => {
                 { key: 'es', value: t('header.select.opt-two') },
                 { key: 'fr', value: t('header.select.opt-three') },
               ]}
-              backgroundColor={PALE_BLACK}
+              backgroundColor={BLACK}
               value={displayLanguage}
               onChange={handleLocaleChange}
             />
           </div>
-          <Link
-            className={`${hamburgerMenuLinkClasses}`}
-            style={pathname === '/' ? { color: ACID_GREEN } : {}}
-            href={'/'}
-            onClick={handleClickOnHamburgerMenuLink}
+          <nav className='px-[20px] flex flex-col justify-start items-start gap-4'>
+            <Link
+              className={`${hamburgerMenuLinkClasses}`}
+              style={pathname === '/' ? { color: ACID_GREEN } : {}}
+              href={'/'}
+              onClick={handleClickOnHamburgerMenuLink}
+            >
+              <FontAwesomeIcon
+                icon={faHome}
+                width={25}
+              />
+              {t('header.navbar.home-link')}
+            </Link>
+            {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
+            <Link
+              className={`${hamburgerMenuLinkClasses}`}
+              style={pathname === '/services' ? { color: ACID_GREEN } : {}}
+              href={'/services'}
+              onClick={handleClickOnHamburgerMenuLink}
+            >
+              <FontAwesomeIcon
+                icon={faBellConcierge}
+                width={25}
+              />
+              {t('header.navbar.services-link')}
+            </Link>
+            {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
+            <Link
+              className={`${hamburgerMenuLinkClasses}`}
+              style={pathname === '/portfolio' ? { color: ACID_GREEN } : {}}
+              href={'/portfolio'}
+              onClick={handleClickOnHamburgerMenuLink}
+            >
+              <FontAwesomeIcon
+                icon={faBriefcase}
+                width={25}
+              />
+              {t('header.navbar.portfolio-link')}
+            </Link>
+            {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
+            <Link
+              className={`${hamburgerMenuLinkClasses}`}
+              style={pathname === '/blog' ? { color: ACID_GREEN } : {}}
+              href={'/blog'}
+              onClick={handleClickOnHamburgerMenuLink}
+            >
+              <FontAwesomeIcon
+                icon={faFilePen}
+                width={25}
+              />
+              {t('header.navbar.blog-link')}
+            </Link>
+            {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
+            <Link
+              className={`${hamburgerMenuLinkClasses}`}
+              style={pathname === '/about' ? { color: ACID_GREEN } : {}}
+              href={'/about'}
+              onClick={handleClickOnHamburgerMenuLink}
+            >
+              <FontAwesomeIcon
+                icon={faQuestion}
+                width={25}
+              />
+              {t('header.navbar.about-link')}
+            </Link>
+            {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
+          </nav>
+          <p
+            id='footer-copyright'
+            className='w-full min-h-[7.5vh] px-[20px] py-5 mt-auto flex justify-center items-center text-center bg-black'
           >
-            <FontAwesomeIcon
-              icon={faHome}
-              width={25}
-            />
-            {t('header.navbar.home-link')}
-          </Link>
-          {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
-          <Link
-            className={`${hamburgerMenuLinkClasses}`}
-            style={pathname === '/services' ? { color: ACID_GREEN } : {}}
-            href={'/services'}
-            onClick={handleClickOnHamburgerMenuLink}
-          >
-            <FontAwesomeIcon
-              icon={faBellConcierge}
-              width={25}
-            />
-            {t('header.navbar.services-link')}
-          </Link>
-          {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
-          <Link
-            className={`${hamburgerMenuLinkClasses}`}
-            style={pathname === '/portfolio' ? { color: ACID_GREEN } : {}}
-            href={'/portfolio'}
-            onClick={handleClickOnHamburgerMenuLink}
-          >
-            <FontAwesomeIcon
-              icon={faBriefcase}
-              width={25}
-            />
-            {t('header.navbar.portfolio-link')}
-          </Link>
-          {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
-          <Link
-            className={`${hamburgerMenuLinkClasses}`}
-            style={pathname === '/blog' ? { color: ACID_GREEN } : {}}
-            href={'/blog'}
-            onClick={handleClickOnHamburgerMenuLink}
-          >
-            <FontAwesomeIcon
-              icon={faFilePen}
-              width={25}
-            />
-            {t('header.navbar.blog-link')}
-          </Link>
-          {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
-          <Link
-            className={`${hamburgerMenuLinkClasses}`}
-            style={pathname === '/about' ? { color: ACID_GREEN } : {}}
-            href={'/about'}
-            onClick={handleClickOnHamburgerMenuLink}
-          >
-            <FontAwesomeIcon
-              icon={faQuestion}
-              width={25}
-            />
-            {t('header.navbar.about-link')}
-          </Link>
-          {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
-        </nav>
+            {t('footer.copyright')}
+          </p>
+        </div>
         <nav className={`${flexRowClasses} hidden sm:flex`}>
           <Link
             className={`${navbarLinkClasses}`}
@@ -416,7 +424,7 @@ const Layout: FC<Props> = ({ children }) => {
         </section>
         <p
           id='footer-copyright'
-          className='w-full min-h-[7.5vh] px-[75px] py-5 flex justify-center items-center text-center bg-pale-black'
+          className='w-full min-h-[7.5vh] px-[20px] sm:px-[75px] py-5 flex justify-center items-center text-center bg-pale-black'
         >
           {t('footer.copyright')}
         </p>

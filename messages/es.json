@@ -244,12 +244,15 @@
     }
   },
   "portfolio-page": {
+    "mobile-select": "Mira otro proyecto ⏷",
+    "used-libraries-heading": "Librerías utilizadas",
     "shape-creator": {
       "first-part": {
-        "heading": "Creador de Formas",
+        "heading": "Shape Creator",
         "paragraph": "Una aplicación web que te permite crear, redimensionar, modificar y eliminar formas de un lienzo HTML.",
         "device-description": "Esta es una aplicación web",
-        "see-online-button": "VER EN LÍNEA",
+        "read-details-button": "CONOCER DETALLES",
+        "see-online-button": "PRUÉBALO",
         "browse-repo-button": "EXAMINAR REPOSITORIO"
       },
       "features": {
@@ -276,10 +279,11 @@
     },
     "poke-bowl-store": {
       "first-part": {
-        "heading": "Tienda de Poke Bowls",
+        "heading": "Poke Bowl Store",
         "paragraph": "Una aplicación web de comercio electrónico que te permite comprar pokémones y objetos de pokémon de un catálogo enorme. Este es posiblemente el mejor sitio tipo pokédex que puedas visitar.",
         "device-description": "Esta es una aplicación web",
-        "see-online-button": "VER EN LÍNEA",
+        "read-details-button": "CONOCER DETALLES",
+        "see-online-button": "PRUÉBALO",
         "browse-repo-button": "EXAMINAR REPOSITORIO"
       },
       "features": {
@@ -325,7 +329,8 @@
         "heading": "Rick Mortium",
         "paragraph": "Un sitio web tipo enciclopedia de Rick y Morty donde puedes encontrar datos sobre tus personajes, lugares y episodios favoritos de toda la serie.",
         "device-description": "Esta es una aplicación web",
-        "see-online-button": "VER EN LÍNEA",
+        "read-details-button": "CONOCER DETALLES",
+        "see-online-button": "PRUÉBALO",
         "browse-repo-button": "EXAMINAR REPOSITORIO"
       },
       "features": {
@@ -363,10 +368,11 @@
     },
     "company-website": {
       "first-part": {
-        "heading": "Sitio web de la empresa",
+        "heading": "Company website",
         "paragraph": "Un sitio web sencillo pero visualmente atractivo que se enfoca principalmente en mostrar los sitios web que puedo desarrollar para tu empresa.",
         "device-description": "Esta es una aplicación web",
-        "see-online-button": "VER EN LÍNEA",
+        "read-details-button": "CONOCER DETALLES",
+        "see-online-button": "PRUÉBALO",
         "browse-repo-button": "EXAMINAR REPOSITORIO"
       },
       "features": {
@@ -381,6 +387,12 @@
           "heading": "React Router",
           "paragraph": "Para gestionar la navegación."
         }
+      }
+    },
+    "other-projects": {
+      "first-part": {
+        "heading": "Otros proyectos",
+        "paragraph": "Durante mi carrera he completado múltiples proyectos de código, aquí puedes echar un vistazo a muchos de ellos."
       }
     }
   },

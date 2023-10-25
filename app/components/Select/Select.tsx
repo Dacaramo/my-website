@@ -67,6 +67,11 @@ const Select: FC<Props> = ({
     return liStyles;
   };
 
+  const handleClickOnLi = (opt: Option | null) => {
+    handleChange(opt);
+    setAreOptionsVisible(false);
+  };
+
   useEffect(() => {
     const handleClick = (e: MouseEvent) => {
       if (!buttonRef.current || !ulRef.current) {
@@ -123,7 +128,7 @@ const Select: FC<Props> = ({
           <li
             className={`${liClasses}`}
             style={getLiStyles(0)}
-            onClick={() => handleChange(null)}
+            onClick={() => handleClickOnLi(null)}
           >
             {'None'}
           </li>
@@ -134,7 +139,7 @@ const Select: FC<Props> = ({
               key={option.key}
               style={getLiStyles(isNoneOptionAvailable ? i + 1 : i)}
               className={`${liClasses}`}
-              onClick={() => handleChange(option)}
+              onClick={() => handleClickOnLi(option)}
             >
               {option.value}
             </li>

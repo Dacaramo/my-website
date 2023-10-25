@@ -29,6 +29,7 @@ import {
   faMobileButton,
   faMobileScreen,
   faPalette,
+  faPersonCircleCheck,
   faPuzzlePiece,
   faRectangleAd,
   faServer,
@@ -116,7 +117,7 @@ const HomePage: FC<Props> = () => {
     {
       headingText: t('my-software-skillset.accessibility.heading'),
       paragraphText: t('my-software-skillset.accessibility.paragraph'),
-      icon: faWheelchair,
+      icon: faPersonCircleCheck,
     },
     {
       headingText: t('my-software-skillset.complex-components.heading'),

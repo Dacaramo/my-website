@@ -1,3 +1,5 @@
+import { PortfolioProjectId } from '../model/PortfolioProject';
+
 export const YOUTUBE_CHANNEL_LINK =
   'https://www.youtube.com/channel/UCwurci10rEbYy8r2fzdgbaA';
 export const INSTAGRAM_PROFILE_LINK = 'https://www.instagram.com/dacaramo/';
@@ -9,6 +11,22 @@ export const STACK_OVERFLOW_PROFILE_LINK =
   'https://stackoverflow.com/users/13907814/dacaramo';
 export const DEV_PROFILE_LINK = 'https://dev.to/dacaramo';
 export const MEDIUM_PROFILE_LINK = 'https://medium.com/@Dankramirez';
+export const SHAPE_CREATOR_PROJECT_RUNNING_LINK =
+  'https://dacaramo.github.io/shape-creator/';
+export const POKE_BOWL_STORE_PROJECT_RUNNING_LINK =
+  'https://dacaramo.github.io/poke-bowl-store/';
+export const RICK_MORTIUM_PROJECT_RUNNING_LINK =
+  'https://dacaramo.github.io/rick-mortium/';
+export const COMPANY_WEBSITE_PROJECT_RUNNING_LINK =
+  'https://dacaramo.github.io/bloom-react-app/';
+export const SHAPE_CREATOR_PROJECT_REPO_LINK =
+  'https://github.com/Dacaramo/shape-creator';
+export const POKE_BOWL_STORE_PROJECT_REPO_LINK =
+  'https://github.com/Dacaramo/poke-bowl-store';
+export const RICK_MORTIUM_PROJECT_REPO_LINK =
+  'https://github.com/Dacaramo/rick-mortium';
+export const COMPANY_WEBSITE_PROJECT_REPO_LINK =
+  'https://github.com/Dacaramo/bloom-react-app';
 
 class NotFoundError extends Error {
   constructor(message: string) {
@@ -62,4 +80,37 @@ export const getMailToLink = (locale: string): string => {
   return `mailto:dankramirez@outlook.com?subject=${encodeURIComponent(
     subject
   )}&body=${encodeURIComponent(body)}`;
+};
+
+const idNotFoundMessage =
+  'Unknown id. The provided portfolio project id is incorrect or not yet supported';
+
+export const getProjectRunningLink = (id: PortfolioProjectId): string => {
+  switch (id) {
+    case 'shape-creator':
+      return SHAPE_CREATOR_PROJECT_RUNNING_LINK;
+    case 'poke-bowl-store':
+      return POKE_BOWL_STORE_PROJECT_RUNNING_LINK;
+    case 'rick-mortium':
+      return RICK_MORTIUM_PROJECT_RUNNING_LINK;
+    case 'company-website':
+      return COMPANY_WEBSITE_PROJECT_RUNNING_LINK;
+    default:
+      throw new NotFoundError(idNotFoundMessage);
+  }
+};
+
+export const getProjectRepoLink = (id: PortfolioProjectId): string => {
+  switch (id) {
+    case 'shape-creator':
+      return SHAPE_CREATOR_PROJECT_REPO_LINK;
+    case 'poke-bowl-store':
+      return POKE_BOWL_STORE_PROJECT_REPO_LINK;
+    case 'rick-mortium':
+      return RICK_MORTIUM_PROJECT_REPO_LINK;
+    case 'company-website':
+      return COMPANY_WEBSITE_PROJECT_REPO_LINK;
+    default:
+      throw new NotFoundError(idNotFoundMessage);
+  }
 };

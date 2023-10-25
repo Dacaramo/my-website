@@ -1,5 +1,5 @@
-import { FC, HTMLProps, ReactNode } from 'react';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { CSSProperties, FC, HTMLProps, ReactNode } from 'react';
+import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
@@ -7,14 +7,14 @@ interface Props extends HTMLProps<HTMLAnchorElement> {
   text: string;
   icon?: IconDefinition | ReactNode;
   isAnchorElement?: boolean;
-  href: string;
+  style?: CSSProperties;
 }
 
-const HomePageLink: FC<Props> = (props) => {
-  const { text, icon, isAnchorElement = false, href, ...anchorProps } = props;
-  const iconSize = 20;
+const TranslucidLink: FC<Props> = (props) => {
+  const { text, icon, isAnchorElement = false, style, ...anchorProps } = props;
+
   const linkClasses =
-    'px-3 py-2 flex flex-row justify-center items-center gap-2 border rounded-lg border-acid-green font-medium text-paragraph whitespace-nowrap text-acid-green hover:bg-acid-green hover:text-pale-black transition-all';
+    'w-full sm:w-auto px-3 py-2 flex flex-row justify-center items-center gap-2 text-center text-paragraph font-bold rounded-lg border border-acid-green bg-translucid-acid-green text-acid-green hover:text-black hover:bg-acid-green transition-all';
   let iconType: 'fontAwesome' | 'component' | 'none' = 'none';
   if (icon !== undefined) {
     if ('prefix' in (icon as IconDefinition)) {
@@ -26,12 +26,12 @@ const HomePageLink: FC<Props> = (props) => {
 
   const innerComponentContent = (
     <>
-      {text}
+      {text.toUpperCase()}
       {iconType === 'component' && (icon as ReactNode)}
       {iconType === 'fontAwesome' && (
         <FontAwesomeIcon
-          style={{ fontSize: iconSize }}
           icon={icon as IconDefinition}
+          style={{ fontSize: 30 }}
         />
       )}
     </>
@@ -42,9 +42,7 @@ const HomePageLink: FC<Props> = (props) => {
       {isAnchorElement ? (
         <a
           className={`${linkClasses}`}
-          href={href}
-          target='_blank'
-          rel='noreferrer'
+          style={{ ...style }}
           {...anchorProps}
         >
           {innerComponentContent}
@@ -54,9 +52,7 @@ const HomePageLink: FC<Props> = (props) => {
           {/* @ts-ignore */}
           <Link
             className={`${linkClasses}`}
-            href={href}
-            target='_blank'
-            rel='noreferrer'
+            style={{ ...style }}
             {...anchorProps}
           >
             {innerComponentContent}
@@ -67,4 +63,4 @@ const HomePageLink: FC<Props> = (props) => {
   );
 };
 
-export default HomePageLink;
+export default TranslucidLink;

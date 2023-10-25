@@ -244,12 +244,15 @@
     }
   },
   "portfolio-page": {
+    "mobile-select": "View other project ⏷",
+    "used-libraries-heading": "Used libraries",
     "shape-creator": {
       "first-part": {
         "heading": "Shape Creator",
         "paragraph": "A web application that lets you create, resize, modify and remove shapes from an HTML canvas.",
         "device-description": "This is a web app",
-        "see-online-button": "SEE ONLINE",
+        "read-details-button": "READ DETAILS",
+        "see-online-button": "TRY IT",
         "browse-repo-button": "BROWSE REPO"
       },
       "features": {
@@ -279,13 +282,14 @@
         "heading": "Poke Bowl Store",
         "paragraph": "An e-commerce web application that lets you buy pokemons and pokemon items from an enormous catalog. This is possibly the best pokédex type site you could visit.",
         "device-description": "This is a web app",
-        "see-online-button": "SEE ONLINE",
+        "read-details-button": "READ DETAILS",
+        "see-online-button": "TRY IT",
         "browse-repo-button": "BROWSE REPO"
       },
       "features": {
         "feature-one": "In-memory pagination with a page selector that will let you browse any product page available.",
-        "feature-two": "In-memory shopping cart so you can add the products you want to purchase and make a single transaction.",
-        "feature-three": "Expansive variety of in-memory oriented filters that can be applied simultaneously.",
+        "feature-two": "Expansive variety of in-memory oriented filters that can be applied simultaneously.",
+        "feature-three": "In-memory shopping cart so you can add the products you want to purchase and make a single transaction.",
         "feature-four": "Gigantic amount of API data cached for every listed product, any unnecessary request sending is avoided.",
         "feature-five": "You can try Poke Bowl Store on your mobile device since the app is mobile responsive."
       },
@@ -325,7 +329,8 @@
         "heading": "Rick Mortium",
         "paragraph": "A Rick and Morty encyclopedia type website where you can find data about your favorite characters, locations and episodes on the whole series.",
         "device-description": "This is a web app",
-        "see-online-button": "SEE ONLINE",
+        "read-details-button": "READ DETAILS",
+        "see-online-button": "TRY IT",
         "browse-repo-button": "BROWSE REPO"
       },
       "features": {
@@ -366,7 +371,8 @@
         "heading": "Company website",
         "paragraph": "A simple but visually attractive website that mainly focus on showing off the websites that I can develop for your company.",
         "device-description": "This is a web app",
-        "see-online-button": "SEE ONLINE",
+        "read-details-button": "READ DETAILS",
+        "see-online-button": "TRY IT",
         "browse-repo-button": "BROWSE REPO"
       },
       "features": {
@@ -381,6 +387,12 @@
           "heading": "React Router",
           "paragraph": "For managing navigation."
         }
+      }
+    },
+    "other-projects": {
+      "first-part": {
+        "heading": "Other projects",
+        "paragraph": "During my career I completed multiple code projects, here you can take a look at many of them."
       }
     }
   },
