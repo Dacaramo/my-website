@@ -10,11 +10,11 @@ interface Props extends HTMLProps<HTMLAnchorElement> {
   href: string;
 }
 
-const HomePageLink: FC<Props> = (props) => {
+const AboutPageLink: FC<Props> = (props) => {
   const { text, icon, isAnchorElement = false, href, ...anchorProps } = props;
   const iconSize = 20;
   const linkClasses =
-    'px-3 py-2 flex flex-row justify-center items-center gap-2 border rounded-lg border-acid-green font-medium text-paragraph whitespace-nowrap text-acid-green hover:bg-acid-green hover:text-pale-black transition-all';
+    'px-3 py-2 w-full sm:w-fit flex-1 sm:flex-initial flex flex-row justify-center items-center gap-2 border rounded-lg border-white font-medium text-paragraph whitespace-nowrap text-white hover:bg-white hover:text-pale-black transition-all';
   let iconType: 'fontAwesome' | 'component' | 'none' = 'none';
   if (icon !== undefined) {
     if ('prefix' in (icon as IconDefinition)) {
@@ -43,6 +43,7 @@ const HomePageLink: FC<Props> = (props) => {
         <a
           className={`${linkClasses}`}
           href={href}
+          target='_blank'
           rel='noreferrer'
           {...anchorProps}
         >
@@ -54,6 +55,7 @@ const HomePageLink: FC<Props> = (props) => {
           <Link
             className={`${linkClasses}`}
             href={href}
+            target='_blank'
             rel='noreferrer'
             {...anchorProps}
           >
@@ -65,4 +67,4 @@ const HomePageLink: FC<Props> = (props) => {
   );
 };
 
-export default HomePageLink;
+export default AboutPageLink;

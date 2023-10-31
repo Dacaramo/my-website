@@ -49,6 +49,7 @@
       "message-me-link": "Envoyez-moi un message",
       "send-me-an-email-link": "Envoyez-moi un e-mail",
       "download-my-cv-button": "Téléchargez mon CV",
+      "discover-my-skills-button": "Découvre mes compétences",
       "software-development": {
         "heading": "Développement de logiciels",
         "paragraph": "Je crée des logiciels entièrement évolutifs qui peuvent perdurer toute une vie. J'ai appris les meilleures pratiques de l'industrie pour écrire un code propre, facile à comprendre et à modifier."
@@ -419,7 +420,8 @@
     "first-part": {
       "heading": "En savoir plus sur moi",
       "paragraph": "Je suis un ingénieur en logiciel né et élevé en Colombie et j'ai plus de 5 ans d'expérience en ingénierie logicielle.",
-      "download-my-cv-button": "TÉLÉCHARGER MON CV"
+      "download-my-cv-button": "TÉLÉCHARGER MON CV",
+      "learn-more-button": "EN SAVOIR PLUS"
     },
     "college": {
       "description": "Je détiens un baccalauréat en génie logiciel de l'Université pontificale Javeriana, l'une des meilleures universités d'Amérique latine.",

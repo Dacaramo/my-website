@@ -11,13 +11,13 @@ import { faSearchengin } from '@fortawesome/free-brands-svg-icons/faSearchengin'
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import {
   faBoxesStacked,
+  faBrain,
   faChessRook,
   faCircleUser,
   faCogs,
   faCreditCard,
   faDatabase,
   faFile,
-  faFileArrowDown,
   faFileZipper,
   faFlaskVial,
   faKey,
@@ -328,6 +328,7 @@ const HomePage: FC<Props> = () => {
             <HomePageLink
               href={getWhatsAppMessageMeLink(locale)}
               text={t('first-part.message-me-link')}
+              target='_blank'
               icon={
                 <WhatsAppIcon
                   width={homePageButtonIconSize}
@@ -338,14 +339,21 @@ const HomePage: FC<Props> = () => {
             <HomePageLink
               href={getMailToLink(locale)}
               text={t('first-part.send-me-an-email-link')}
+              target='_blank'
               icon={faEnvelope}
             />
-            <HomePageLink
+            {/* <HomePageLink
               href={'/DanielRamírezCV.pdf'}
               download={'DanielRamírezCV.pdf'}
               target='_blank'
               text={t('first-part.download-my-cv-button')}
               icon={faFileArrowDown}
+            /> */}
+            <HomePageLink
+              href={'#my-software-skillset'}
+              isAnchorElement
+              text={t('first-part.discover-my-skills-button')}
+              icon={faBrain}
             />
           </nav>
         </section>

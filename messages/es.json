@@ -49,6 +49,7 @@
       "message-me-link": "Mensajeame",
       "send-me-an-email-link": "Envíame un email",
       "download-my-cv-button": "Descarga mi CV",
+      "discover-my-skills-button": "Descubre mis habilidades",
       "software-development": {
         "heading": "Desarrollo de software",
         "paragraph": "Entrego software completamente escalable que puede perdurar toda la vida. He aprendido las mejores prácticas de la industria para escribir código limpio que sea fácil de mantener y modificar."
@@ -419,7 +420,8 @@
     "first-part": {
       "heading": "Conoce acerca de mí",
       "paragraph": "Soy un ingeniero de software nacido y criado en Colombia, con más de 5 años de experiencia en el campo de la ingeniería de software.",
-      "download-my-cv-button": "DESCARGAR MI CV"
+      "download-my-cv-button": "DESCARGAR MI CV",
+      "learn-more-button": "CONOCE MÁS"
     },
     "college": {
       "description": "Poseo una licenciatura en Ingeniería de Software de la Pontificia Universidad Javeriana, una de las principales universidades de América Latina.",

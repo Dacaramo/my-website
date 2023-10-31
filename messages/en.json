@@ -49,6 +49,7 @@
       "message-me-link": "Message me",
       "send-me-an-email-link": "Send me and email",
       "download-my-cv-button": "Download my CV",
+      "discover-my-skills-button": "Discover my skills",
       "software-development": {
         "heading": "Software development",
         "paragraph": "I ship full scalable software that can survive over a lifetime. I have learned the bests industry practices in order to write clean code that is easy to maintain and modify."
@@ -419,7 +420,8 @@
     "first-part": {
       "heading": "Learn about me",
       "paragraph": "I’m a software engineer born and raised in Colombia and I have more than 5 years of experience working in software engineering.",
-      "download-my-cv-button": "DOWNLOAD MY CV"
+      "download-my-cv-button": "DOWNLOAD MY CV",
+      "learn-more-button": "LEAR MORE"
     },
     "college": {
       "description": "I hold a bachelor's degree in Software Engineering from the Pontifical Xavierian University, one of the top universities in Latin America.",

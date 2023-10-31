@@ -126,7 +126,7 @@ const Layout: FC<Props> = ({ children }) => {
   return (
     <>
       <header
-        className={`w-full min-h-[7.5vh] px-[20px] sm:px-[75px] ${flexRowClasses} justify-start`}
+        className={`w-full min-h-[7.5vh] px-[20px] sm:px-[65px] ${flexRowClasses} justify-start`}
       >
         <a
           href='#hamburger-menu'
