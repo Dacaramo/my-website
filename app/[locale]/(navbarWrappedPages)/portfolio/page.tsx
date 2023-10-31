@@ -111,7 +111,7 @@ const PortfolioPage: FC<Props> = () => {
           backgroundSize: 'cover',
         }}
       >
-        <div className='w-full h-full bg-translucid-black' />
+        <div className='w-full h-full bg-translucid-black-700' />
       </div>
       <section
         id='first-part'
@@ -196,7 +196,7 @@ const PortfolioPage: FC<Props> = () => {
             </div>
           </>
         ) : (
-          <ul className='py-[50px] flex flex-row gap-[20px] sm:gap-[50px] overflow-x-auto'>
+          <ul className='flex flex-row gap-[20px] sm:gap-[50px] overflow-x-auto'>
             <li>
               <Link
                 className='flex flex-col items-center gap-2'

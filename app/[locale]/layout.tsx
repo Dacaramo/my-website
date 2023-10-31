@@ -34,7 +34,7 @@ const rubik = localFont({
       style: 'normal',
     },
     {
-      path: '../../public/fonts/Rubik-LightItalic.ttf',
+      path: '../../public/fonts/Rubik-BoldItalic.ttf',
       weight: '700',
       style: 'italic',
     },
@@ -45,7 +45,7 @@ const rubik = localFont({
 
 /* eslint-disable-next-line */
 export const metadata: Metadata = {
-  title: 'Daniel Ramírez Software',
+  title: 'Ramzeis',
   description: 'The Daniel Ramírez personal website',
 };
 

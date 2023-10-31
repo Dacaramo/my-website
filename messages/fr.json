@@ -40,7 +40,7 @@
         "first-attribution": "Image personnelle grise de la page d'accueil"
       }
     },
-    "copyright": "© 2023 Daniel Ramírez | Tous droits réservés"
+    "copyright": "© 2023 Ramzeis Software | Tous droits réservés"
   },
   "home-page": {
     "first-part": {
@@ -399,10 +399,21 @@
   "blog-page": {
     "heading": "Blog",
     "paragraph": "C'est ici que j'enseigne tout ce que j'apprends dans mon propre cheminement",
+    "checkbox-group": {
+      "button-text": "Filtrer par tags",
+      "selected-text": "sélectionnés"
+    },
+    "clear-button-text": "Effacer les filtres",
     "input": {
-      "label": "Rechercher par mot-clé du blog",
-      "placeholder": "Rechercher par mot-clé du blog"
-    }
+      "label": "Rechercher des blogs",
+      "placeholder": "Rechercher des blogs"
+    },
+    "loading-entries-message": "À la recherche d'articles de blog",
+    "not-found-entries-message": "Aucun article de blog ne correspond à votre recherche"
+  },
+  "post-id-page": {
+    "author-prefix": "Par",
+    "tags-prefix": "Étiquettes:"
   },
   "about-page": {
     "first-part": {

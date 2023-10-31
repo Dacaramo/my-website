@@ -34,6 +34,7 @@ import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next-intl/client';
 
+import RamzeisIcon from '@/app/components/icons/RamzeisIcon';
 import WhatsAppIcon from '@/app/components/icons/WhatsAppIcon';
 import QuickLink from '@/app/components/QuickLink/QuickLink';
 import {
@@ -125,7 +126,7 @@ const Layout: FC<Props> = ({ children }) => {
   return (
     <>
       <header
-        className={`w-full min-h-[7.5vh] px-[20px] sm:px-[75px] ${flexRowClasses} justify-start sm:justify-end`}
+        className={`w-full min-h-[7.5vh] px-[20px] sm:px-[75px] ${flexRowClasses} justify-start`}
       >
         <a
           href='#hamburger-menu'
@@ -241,7 +242,14 @@ const Layout: FC<Props> = ({ children }) => {
             {t('footer.copyright')}
           </p>
         </div>
-        <nav className={`${flexRowClasses} hidden sm:flex`}>
+        <Link
+          href='/'
+          className='hidden sm:flex flex-row gap-2 font-light text-[20px] items-center text-pale-acid-green hover:text-acid-green transition-all'
+        >
+          <RamzeisIcon fontSize={35} />
+          RAMZEIS
+        </Link>
+        <nav className={`${flexRowClasses} hidden ml-auto sm:flex`}>
           <Link
             className={`${navbarLinkClasses}`}
             style={pathname === '/' ? { color: ACID_GREEN } : {}}

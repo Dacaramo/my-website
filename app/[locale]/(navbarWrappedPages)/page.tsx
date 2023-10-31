@@ -25,7 +25,6 @@ import {
   faLaptopCode,
   faLayerGroup,
   faMapLocationDot,
-  faMobile,
   faMobileButton,
   faMobileScreen,
   faPalette,
@@ -36,14 +35,10 @@ import {
   faShop,
   faSpinner,
   faSquareRootAlt,
-  faTowerBroadcast,
   faTowerCell,
   faTriangleExclamation,
-  faWheelchair,
 } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 
 import { CardProps } from '@/app/components/Card/Card';
@@ -308,6 +303,7 @@ const HomePage: FC<Props> = () => {
 
   return (
     <>
+      <div className='absolute top-0 w-full min-h-[100vh] -z-10 sm:hidden bg-translucid-black-200' />
       <section
         id='first-part'
         className={`w-full ${flexColClasses}`}
@@ -364,7 +360,6 @@ const HomePage: FC<Props> = () => {
             <p className={`w-[75%] ${pClasses}`}>
               {t('first-part.software-development.paragraph')}
             </p>
-            <div className='absolute top-[-597px] w-[1920px] h-[1080px] -z-10 sm:hidden bg-translucid-black' />
             <div className='absolute top-[-597px] left-[-115px] w-[712px] h-[597px] -z-20 sm:hidden'>
               <Image
                 src='/selfPicture.png'

@@ -29,6 +29,14 @@ export const RICK_MORTIUM_PROJECT_REPO_LINK =
   'https://github.com/Dacaramo/rick-mortium';
 export const COMPANY_WEBSITE_PROJECT_REPO_LINK =
   'https://github.com/Dacaramo/bloom-react-app';
+export const GITHUB_LOCALE_EN_TREE_LINK =
+  'https://api.github.com/repos/Dacaramo/my-blog-posts/git/trees/1863ddc0536eac0a015edecde32cf5a427d8846e';
+export const GITHUB_LOCALE_ES_TREE_LINK =
+  'https://api.github.com/repos/Dacaramo/my-blog-posts/git/trees/0be203ed1319aab66f08d1cd2d89b808a5f3e4b1';
+export const GITHUB_LOCALE_FR_TREE_LINK =
+  'https://api.github.com/repos/Dacaramo/my-blog-posts/git/trees/63f51443f4e47df4722505b81b81c7ca7e5430a7';
+export const GITHUB_RAW_CONTENT_BASE_URL =
+  'https://raw.githubusercontent.com/dacaramo/my-blog-posts/master';
 
 class NotFoundError extends Error {
   constructor(message: string) {
@@ -111,4 +119,26 @@ export const getProjectRepoLink = (id: PortfolioProjectId): string => {
     default:
       throw new NotFoundError(idNotFoundMessage);
   }
+};
+
+export const getGitHubLocaleTreeLink = (locale: string): string => {
+  if (locale === 'en') {
+    return GITHUB_LOCALE_EN_TREE_LINK;
+  } else if (locale === 'es') {
+    return GITHUB_LOCALE_ES_TREE_LINK;
+  } else if (locale === 'fr') {
+    return GITHUB_LOCALE_FR_TREE_LINK;
+  }
+
+  throw new NotFoundError(localeNotFoundMessage);
+};
+
+export const getGitHubLocaleRawContentLink = (locale: string): string => {
+  if (locale === 'en') {
+    return GITHUB_RAW_CONTENT_BASE_URL;
+  } else if (locale === 'es' || locale === 'fr') {
+    return `${GITHUB_RAW_CONTENT_BASE_URL}/${locale}`;
+  }
+
+  throw new NotFoundError(localeNotFoundMessage);
 };

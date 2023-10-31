@@ -40,7 +40,7 @@
         "first-attribution": "Home gray self picture"
       }
     },
-    "copyright": "© 2023 Daniel Ramírez | All rights reserved"
+    "copyright": "© 2023 Ramzeis Software | All rights reserved"
   },
   "home-page": {
     "first-part": {
@@ -398,11 +398,22 @@
   },
   "blog-page": {
     "heading": "Blog",
-    "paragraph": "Here’s where I teach everything that I learn in my own road",
+    "paragraph": "Here’s where I teach everything that I learn on my own road",
+    "checkbox-group": {
+      "button-text": "Filter by tags",
+      "selected-text": "chosen"
+    },
+    "clear-button-text": "Clear filters",
     "input": {
-      "label": "Search by blog keyword",
-      "placeholder": "Search by blog keyword"
-    }
+      "label": "Search blogs",
+      "placeholder": "Search blogs"
+    },
+    "loading-entries-message": "Looking for blog posts",
+    "not-found-entries-message": "There are no blog posts matching your search"
+  },
+  "post-id-page": {
+    "author-prefix": "By",
+    "tags-prefix": "Tags:"
   },
   "about-page": {
     "first-part": {

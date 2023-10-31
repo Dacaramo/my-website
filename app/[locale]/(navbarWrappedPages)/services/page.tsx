@@ -20,7 +20,7 @@ const ServicesPage: FC<Props> = () => {
 
   const serviceSectionClasses = 'w-[100vw] h-[100vh] bg-cover bg-center';
   const semiTransparentLayer =
-    'w-full h-full px-[20px] sm:px-[65px] py-5 bg-translucid-black flex flex-col justify-center items-center gap-10';
+    'w-full h-full px-[20px] sm:px-[65px] py-5 bg-translucid-black-700 flex flex-col justify-center items-center gap-10';
   const h2Classes = 'text-subtitle sm:text-title font-bold text-center';
   const pClasses = 'text-paragraph sm:text-subtitle text-center';
   const strongClasses = 'font-bold';
