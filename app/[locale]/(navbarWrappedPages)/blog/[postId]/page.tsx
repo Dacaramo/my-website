@@ -12,7 +12,7 @@ interface GenerateMetadataProps {
     locale: string;
     postId: string;
   };
-  parent: ResolvingMetadata;
+  searchParams: Record<string, string | Array<string> | undefined>;
 }
 
 /* eslint-disable-next-line */

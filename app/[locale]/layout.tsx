@@ -48,7 +48,7 @@ interface GenerateMetadataProps {
   params: {
     locale: string;
   };
-  parent: ResolvingMetadata;
+  searchParams: Record<string, string | Array<string> | undefined>;
 }
 
 /* eslint-disable-next-line */
