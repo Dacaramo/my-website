@@ -5,7 +5,7 @@
       "services-link": "Servicios",
       "portfolio-link": "Portafolio",
       "blog-link": "Blog",
-      "about-link": "Acerca de mí"
+      "about-link": "Acerca del fundador"
     },
     "select": {
       "label": "Selecciona un idioma",
@@ -24,20 +24,20 @@
     },
     "quick-links-section": {
       "heading": "Enlaces rápidos",
-      "my-content-platforms-subheading": "Mis plataformas de contenido",
+      "my-content-platforms-subheading": "Plataformas de contenido",
       "other-relevant-platforms-subheading": "Otras plataformas relevantes"
     },
     "other-info-section": {
       "heading": "Información adicional",
       "blog-sites-subsection": {
-        "heading": "Blogs donde escribo artículos",
+        "heading": "Blogs donde escribimos artículos",
         "dev": "Dev",
         "medium": "Medium",
         "log-rocket": "Log Rocket"
       },
       "content-attribution-subsection": {
         "heading": "Atribución de contenido",
-        "first-attribution": "Imagen personal en tono gris"
+        "first-attribution": "Imagen del fundador en tono gris"
       }
     },
     "copyright": "© 2023 Ramzeis Software | Todos los derechos reservados"
@@ -45,37 +45,37 @@
   "home-page": {
     "first-part": {
       "heading": "Finalmente nos conocemos, soy <meaningful>Daniel Ramírez</meaningful>",
-      "paragraph": "Tu confiable desarrollador full stack y consultor tecnológico. ¡Solo dime qué quieres construir y hagamos realidad tus sueños!",
-      "message-me-link": "Mensajeame",
-      "send-me-an-email-link": "Envíame un email",
+      "paragraph": "Fundador de Ramzeis, desarrollador full stack y consultor tecnológico. ¡Solo dime qué quieres construir y hagamos realidad tus sueños!",
+      "message-me-link": "Envíanos un mensaje",
+      "send-me-an-email-link": "Envíanos un email",
       "download-my-cv-button": "Descarga mi CV",
-      "discover-my-skills-button": "Descubre mis habilidades",
+      "discover-my-skills-button": "Descubre nuestras habilidades",
       "software-development": {
         "heading": "Desarrollo de software",
-        "paragraph": "Entrego software completamente escalable que puede perdurar toda la vida. He aprendido las mejores prácticas de la industria para escribir código limpio que sea fácil de mantener y modificar."
+        "paragraph": "Entregamos software completamente escalable que puede perdurar toda la vida. Hemos aprendido las mejores prácticas de la industria para escribir código limpio que sea fácil de mantener y modificar."
       },
       "product-development": {
         "heading": "Desarrollo de productos",
-        "paragraph": "Sé cómo reunir requisitos relevantes y cómo dar forma a tus productos de software rápidamente para que los usuarios estén listos para recibir lo que realmente desean. Cuéntame más sobre tu modelo de negocio y te ayudaré a desarrollar tu producto."
+        "paragraph": "Sabemos cómo reunir requisitos relevantes y cómo dar forma a tus productos de software rápidamente para que los usuarios estén listos para recibir lo que realmente desean. Cuéntanos más sobre tu modelo de negocio y te ayudaramos a desarrollar tu producto."
       }
     },
     "my-software-skillset": {
-      "heading": "Mi conjunto de habilidades de software",
+      "heading": "Nuestro conjunto de habilidades de software",
       "strategic-approach": {
         "heading": "Enfoque estratégico",
-        "paragraph": "Nunca entregaré código de baja calidad con complejidad innecesaria solo por la velocidad de envío de código. Siempre me tomo mi tiempo para buscar la mejor forma de implementar cualquier característica."
+        "paragraph": "Nunca entregaremos código de baja calidad con complejidad innecesaria solo por la velocidad de envío de código. Siempre nos tomamos el tiempo necesario para buscar la mejor forma de implementar cualquier característica."
       },
       "internationalization": {
         "heading": "Internacionalización",
-        "paragraph": "Sé cómo implementar correctamente el soporte multilingüe en cualquier tipo de aplicación. Incluso si mi cliente no quiere que su aplicación admita varios idiomas, me gusta dejar el código listo para integrar esa función más adelante."
+        "paragraph": "Sabemos cómo implementar correctamente el soporte multilingüe en cualquier tipo de aplicación. Incluso si nuestros clientes no quieren que su aplicación admita varios idiomas, nos gusta dejar el código listo para integrar esa función más adelante."
       },
       "multiple-themes": {
         "heading": "Temas múltiples",
-        "paragraph": "Tengo mi propio marco para permitir múltiples temas en cualquier tipo de aplicación. Ya sea que desees un tema o varios temas, siempre dejaré el código listo para permitir múltiples temas más adelante."
+        "paragraph": "Tenemos nuestro propio marco de referencia para permitir múltiples temas en cualquier tipo de aplicación. Ya sea que desees un tema o varios temas, siempre dejaremos el código listo para permitir múltiples temas más adelante."
       },
       "state-management": {
         "heading": "Gestión de estado",
-        "paragraph": "Sé cómo usar los Contextos de React para una gestión eficiente del estado global que no provoque renderizaciones innecesarias. También uso Zustand para gestionar el estado global."
+        "paragraph": "Sabemos cómo usar los contextos de React para una gestión eficiente del estado global que no provoque renderizaciones innecesarias. También usamos Zustand para gestionar el estado global."
       },
       "data-caching": {
         "heading": "Caché de datos",
@@ -83,79 +83,79 @@
       },
       "error-behaviors": {
         "heading": "Comportamientos de errores",
-        "paragraph": "Me gusta usar error boundaries de React para personalizar cómo se muestran todos los posibles errores dentro de tu aplicación. También ofrezco alternativas cuando ocurre un error para que tus usuarios no se queden confundidos."
+        "paragraph": "Nos gusta usar error boundaries de React para personalizar cómo se muestran todos los posibles errores dentro de tu aplicación. También ofrecemos alternativas cuando ocurre un error para que tus usuarios no se queden confundidos."
       },
       "optimization": {
         "heading": "Optimización",
-        "paragraph": "Sé cómo optimizar adecuadamente las aplicaciones. Las aplicaciones lentas y con lag no deberían existir. No estoy hablando solo de la complejidad de tiempo en los algoritmos de código, estoy hablando de evitar renderizaciones innecesarias y fugas de memoria."
+        "paragraph": "Sabemos cómo optimizar adecuadamente las aplicaciones. Las aplicaciones lentas y con lag no deberían existir. No estamos hablando solo de la complejidad de tiempo en los algoritmos de código, hablamos de evitar renderizaciones innecesarias y fugas de memoria."
       },
       "applied-mathematics": {
         "heading": "Matemáticas aplicadas",
-        "paragraph": "Aprendí cómo aplicar las matemáticas avanzadas al desarrollo de software. Sé cómo usar álgebra lineal para crear un programa similar a Adobe Illustrator o física para desarrollar juegos o animaciones basadas en el movimiento."
+        "paragraph": "Sabemos cómo aplicar las matemáticas avanzadas al desarrollo de software. Sabemos cómo usar álgebra lineal para crear un programa similar a Adobe Illustrator o física para desarrollar juegos o animaciones basadas en el movimiento."
       },
       "loading-behaviors": {
         "heading": "Comportamientos de carga",
-        "paragraph": "Me gusta usar suspense boundaries de React para personalizar cada escena de carga dentro de tu aplicación con carga diferida, indicadores de carga o esqueletos de contenido."
+        "paragraph": "Nos gusta usar suspense boundaries de React para personalizar cada escena de carga dentro de tu aplicación con carga diferida, indicadores de carga o esqueletos de contenido."
       },
       "accessibility": {
         "heading": "Accesibilidad",
-        "paragraph": "Siempre desarrollo mi software pensando en todo tipo de personas. Mis aplicaciones siempre ofrecerán accesibilidad a los usuarios que tienen discapacidades como la ceguera, etc."
+        "paragraph": "Siempre desarrollamos nuestro software pensando en todo tipo de personas. Nuestras aplicaciones siempre ofrecerán accesibilidad a los usuarios que tienen discapacidades como la ceguera, etc."
       },
       "complex-components": {
         "heading": "Componentes complejos",
-        "paragraph": "Sé cómo crear componentes complejos que estén listos para bibliotecas, como gráficos de barras, campos de entrada personalizados, perillas de marcación, reproductores de audio y video, etc."
+        "paragraph": "Sabemos cómo crear componentes complejos que estén listos para bibliotecas, como gráficos de barras, campos de entrada personalizados, perillas de marcación, reproductores de audio y video, etc."
       },
       "bundle-size-reduction": {
         "heading": "Reducción del tamaño del paquete",
-        "paragraph": "Siempre intento crear mis propios componentes o utilizar las bibliotecas más pequeñas disponibles para que no aumenten demasiado el tamaño del paquete de tu aplicación."
+        "paragraph": "Siempre intentamos crear nuestros propios componentes o utilizar las bibliotecas más pequeñas disponibles para que no aumenten demasiado el tamaño del paquete de tu aplicación."
       },
       "css-animations": {
         "heading": "Animaciones CSS",
-        "paragraph": "Sé cómo aplicar algunas animaciones CSS que harán que tus aplicaciones web luzcan impresionantes."
+        "paragraph": "Sabemos cómo aplicar algunas animaciones CSS que harán que tus aplicaciones web luzcan impresionantes."
       },
       "responsiveness": {
         "heading": "Adaptabilidad",
-        "paragraph": "Cuando desarrollo aplicaciones, siempre tengo en cuenta todo tipo de pantallas y relaciones de aspecto de dispositivos, para que no tengas que preocuparte por que tu aplicación se vea extraña en algunos dispositivos."
+        "paragraph": "Cuando desarrollamos aplicaciones, siempre tenemos en cuenta todo tipo de pantallas y relaciones de aspecto de dispositivos, para que no tengas que preocuparte por que tu aplicación se vea extraña en algunos dispositivos."
       },
       "deep-modules": {
         "heading": "Módulos profundos",
-        "paragraph": "Las funciones, componentes, puntos finales y servicios deben ocultar una funcionalidad grande, compleja y útil detrás de una interfaz simple y fácil de usar. Esa es mi filosofía y siempre desarrollo mi software en consecuencia."
+        "paragraph": "Las funciones, componentes, endpoints y servicios deben ocultar una funcionalidad grande, compleja y útil detrás de una interfaz simple y fácil de usar. Esa es nuestra filosofía y siempre desarrollamos nuestro software con esto en mente."
       },
       "seo": {
         "heading": "SEO",
-        "paragraph": "Cuando escribo HTML, me gusta hacer un uso correcto de las etiquetas semánticas y aplicar otras técnicas de optimización para motores de búsqueda para que tu sitio web sea fácilmente encontrado por el mundo."
+        "paragraph": "Cuando escribimos HTML, nos gusta hacer un uso correcto de las etiquetas semánticas y aplicar otras técnicas de optimización para motores de búsqueda para que tu sitio web sea fácilmente encontrado por el mundo."
       },
       "testing": {
         "heading": "Pruebas",
-        "paragraph": "Siempre crearé las pruebas de software necesarias para que tu aplicación no se envíe con errores. Me gusta utilizar Jest y React Testing Library para escribir pruebas de integración, pruebas de ganchos, pruebas de captura de instantáneas y muchas más."
+        "paragraph": "Siempre crearemos las pruebas de software necesarias para que tu aplicación no se lance con errores. Nos gusta utilizar Jest y React Testing Library para escribir pruebas de integración, pruebas de hooks, pruebas de captura de instantáneas y muchas más."
       },
       "authentication": {
         "heading": "Autenticación",
-        "paragraph": "Utilizo constantemente servicios de autenticación como AWS Cognito que gestionarán toda la autenticación sin hacerte pagar una fortuna mensual."
+        "paragraph": "Utilizamos constantemente servicios de autenticación como AWS Cognito que gestionarán toda la autenticación sin hacerte pagar una fortuna mensual."
       },
       "authorization": {
         "heading": "Autorización",
-        "paragraph": "Sé cómo almacenar correctamente tokens de autorización, cómo validarlos e invalidarlos, y cómo obtener nuevos tokens del servicio de autenticación."
+        "paragraph": "Sabemos cómo almacenar correctamente tokens de autorización, cómo validarlos e invalidarlos, y cómo obtener nuevos tokens del servicio de autenticación."
       },
       "api-consumption": {
         "heading": "Consumo de API",
-        "paragraph": "Siempre aplico las mejores prácticas en cuanto al consumo de API, ya sea de nuestra propia API o de una API de terceros."
+        "paragraph": "Siempre aplicamos las mejores prácticas en cuanto al consumo de APIs, ya sea de nuestra propia API o de una API de terceros."
       },
       "payments-integration": {
         "heading": "Integración de pagos",
-        "paragraph": "He integrado pagos en múltiples aplicaciones en el pasado para diversas plataformas, ya sea con Pagos dentro de la aplicación para iOS o Android, o métodos más tradicionales como pagos con tarjeta, pagos con PayPal, etc."
+        "paragraph": "Hemos integrado pagos en múltiples aplicaciones en el pasado para diversas plataformas, ya sea con In App Payments para iOS o Android, o métodos más tradicionales como pagos con tarjeta, pagos con PayPal, etc."
       },
       "file-handling": {
         "heading": "Manipulación de archivos",
-        "paragraph": "He trabajado en programas que utilizan formatos abiertos como JSON para guardar el proyecto actual y restaurar el estado del proyecto al abrirlo."
+        "paragraph": "Hemos trabajado en programas que utilizan formatos abiertos como JSON para guardar el proyecto actual y restaurar el estado del proyecto al abrirlo."
       },
       "maps": {
         "heading": "Mapas",
-        "paragraph": "He integrado mapas tanto en aplicaciones móviles como en aplicaciones web, ya sea con la API nativa de Google Maps o con bibliotecas de terceros que facilitan la tarea."
+        "paragraph": "Hemos integrado mapas tanto en aplicaciones móviles como en aplicaciones web, ya sea con la API nativa de Google Maps o con bibliotecas de terceros que facilitan la tarea."
       },
       "e-commerce": {
         "heading": "Comercio electrónico",
-        "paragraph": "He trabajado en sitios de comercio electrónico que deben centrarse en destacar productos, filtrado, paginación e integraciones de pago."
+        "paragraph": "Hemos trabajado en sitios de comercio electrónico que deben centrarse en destacar productos, filtrado, paginación e integraciones de pago."
       },
       "ads-integration": {
         "heading": "Integración de anuncios",
@@ -163,46 +163,46 @@
       },
       "media-streaming": {
         "heading": "Transmisión de medios",
-        "paragraph": "Cómo generar formatos de archivos en streaming como m3u8, cómo almacenarlos y servirlos a una aplicación cliente. En dispositivos móviles, he utilizado Expo AV para la reproducción de audio y video, incluida la reproducción en streaming."
+        "paragraph": "Cómo generar formatos de archivos en streaming como m3u8, cómo almacenarlos y servirlos a una aplicación cliente. En dispositivos móviles, hemos utilizado Expo AV para la reproducción de audio y video, incluida la reproducción en streaming."
       },
       "web-service-integration": {
         "heading": "Integración de servicios web",
-        "paragraph": "Sé cómo integrar y gestionar algunos servicios de AWS y GCP en aplicaciones web y móviles."
+        "paragraph": "Sabemos cómo integrar y gestionar algunos servicios de AWS y GCP en aplicaciones web y móviles."
       },
       "oauth": {
         "heading": "OAuth",
-        "paragraph": "Sé cómo permitir que las aplicaciones accedan a los datos de usuario de servicios externos sin compartir credenciales de inicio de sesión."
+        "paragraph": "Sabemos cómo permitir que las aplicaciones accedan a los datos de usuario de servicios externos sin compartir credenciales de inicio de sesión."
       }
     },
     "my-mastery-tech-stack": {
-      "heading": "El tech stack que domino",
+      "heading": "El tech stack que dominamos",
       "react-js": {
         "heading": "React.js",
-        "paragraph": "If you want me to develop a large scale web application with advanced features such as user authentication, extensive data fetching, complex routing or data driven components."
+        "paragraph": "Si deseas que desarrollemos una aplicación web a gran escala con funciones avanzadas como autenticación de usuario, obtención extensa de datos, enrutamiento complejo o componentes orientados a datos."
       },
       "react-native": {
         "heading": "React Native",
-        "paragraph": "If you want me to develop a cross platform mobile application that ships both for Android and iOS devices."
+        "paragraph": "Si quieres que desarrollemos una aplicación móvil multiplataforma que se lance tanto para dispositivos Android como iOS."
       },
       "next-js": {
         "heading": "Next.js",
-        "paragraph": "If you want me to develop a SEO focused website that mainly offers static UI components and content"
+        "paragraph": "Si quieres que desarrollemos un sitio web centrado en SEO que ofrezca principalmente contenidos y componentes de interfaz de usuario estáticos."
       },
       "node-js": {
         "heading": "Node.js",
-        "paragraph": "If you want me to develop a REST API that provides data and services for your client applications or programs"
+        "paragraph": "Si quieres que desarrollemos una API REST que proporcione datos y servicios para tus aplicaciones o programas cliente."
       },
       "dynamo-db": {
         "heading": "DynamoDB",
-        "paragraph": "If you want me to build and manage No-SQL databases for storing all of your business data."
+        "paragraph": "Si deseas que creemos y administremos bases de datos No-SQL para almacenar todos sus datos comerciales."
       },
       "aws": {
         "heading": "AWS",
-        "paragraph": "If you want me to integrate awesome web services to your application that won’t break the bank but still worth the money."
+        "paragraph": "Si deseas que integremos increíbles servicios web en tus aplicaciones, servicios que no te costarán mucho dinero pero que aún así valen la pena."
       }
     },
     "other-tech-i-know": {
-      "heading": "Otras tecnologías que conozco",
+      "heading": "Otras tecnologías que usamos",
       "figma": "Figma",
       "java": "Java",
       "amplify": "Amplify",
@@ -212,35 +212,35 @@
     }
   },
   "services-page": {
-    "heading": "Descubre mis <meaningful>servicios</meaningful>",
+    "heading": "Descubre nuestros <meaningful>servicios</meaningful>",
     "software-development": {
       "heading": "Desarrollo de software",
-      "card-paragraph": "Puedo desarrollar software de calidad empresarial que sea completamente escalable, fácil de actualizar y mantener.",
-      "paragraph-one": "Puedo desarrollar software de calidad empresarial que sea completamente escalable, fácil de actualizar y mantener.",
-      "paragraph-two": "Puedo crear <meaningful>aplicaciones web</meaningful>, <meaningful>aplicaciones móviles</meaningful>, <meaningful>sitios web</meaningful> o <meaningful>APIs REST</meaningful>."
+      "card-paragraph": "Podemos desarrollar software de calidad empresarial que sea completamente escalable, fácil de actualizar y mantener.",
+      "paragraph-one": "Podemos desarrollar software de calidad empresarial que sea completamente escalable, fácil de actualizar y mantener.",
+      "paragraph-two": "Podemos crear <meaningful>aplicaciones web</meaningful>, <meaningful>aplicaciones móviles</meaningful>, <meaningful>sitios web</meaningful> o <meaningful>APIs REST</meaningful>."
     },
     "software-maintenance": {
       "heading": "Mantenimiento de software",
-      "card-paragraph": "Puedo mantener el código creado por cualquier desarrollador. Si lo deseas, puedo agregar nuevas funcionalidades complejas o refactorizar código desordenado.",
-      "paragraph-one": "Puedo mantener el código creado por cualquier desarrollador. Si lo deseas, puedo <meaningful>agregar nuevas funcionalidades</meaningful> complejas o <meaningful>refactorizar código desordenado</meaningful>.",
-      "paragraph-two": "Contrátame por un período fijo de tiempo o solo para cumplir con n tareas, de cualquier manera, te ofreceré un precio justo."
+      "card-paragraph": "Podemos mantener el código creado por cualquier desarrollador. Si lo deseas, podemos agregar nuevas funcionalidades complejas o refactorizar código desordenado.",
+      "paragraph-one": "Podemos mantener el código creado por cualquier desarrollador. Si lo deseas, podemos <meaningful>agregar nuevas funcionalidades</meaningful> complejas o <meaningful>refactorizar código desordenado</meaningful>.",
+      "paragraph-two": "Contrátanos por un período fijo de tiempo o solo para cumplir con n tareas, de cualquier manera, te ofreceremos un precio justo."
     },
     "database-design": {
       "heading": "Diseño de bases de datos",
-      "card-paragraph": "Puedo diseñar toda tu base de datos según tus necesidades y requisitos. Ya sea que desees una base de datos relacional o una base de datos NoSQL, estás en buenas manos.",
-      "paragraph-one": "Puedo diseñar toda tu base de datos según tus necesidades y requisitos. Ya sea que desees una <meaningful>base de datos relacional</meaningful> o una <meaningful>base de datos NoSQL</meaningful>, estás en buenas manos.",
+      "card-paragraph": "Podemos diseñar toda tu base de datos según tus necesidades y requisitos. Ya sea que desees una base de datos relacional o una base de datos NoSQL, estás en buenas manos.",
+      "paragraph-one": "Podemos diseñar toda tu base de datos según tus necesidades y requisitos. Ya sea que desees una <meaningful>base de datos relacional</meaningful> o una <meaningful>base de datos NoSQL</meaningful>, estás en buenas manos.",
       "paragraph-two": ""
     },
     "consulting": {
       "heading": "Consultoría",
-      "card-paragraph": "Puedo poner mi conocimiento sobre la mesa y ofrecer mi experiencia en desarrollo de software para que puedas tomar decisiones acertadas en tu negocio.",
-      "paragraph-one": "Puedo poner mi conocimiento sobre la mesa y ofrecer mi experiencia en desarrollo de software para que puedas tomar decisiones acertadas en tu negocio.",
-      "paragraph-two": "Puedo orientarte en temas como <meaningful>tecnologías</meaningful>, <meaningful>bibliotecas</meaningful> y <meaningful>frameworks de desarrollo front-end</meaningful>, <meaningful>eventos</meaningful> y <meaningful>JavaScript avanzado en el navegador</meaningful>. También tengo conocimientos útiles relacionados con <meaningful>decisiones de bases de datos</meaningful>, <meaningful>reutilización de código</meaningful>, <meaningful>buenas prácticas</meaningful> y <meaningful>diseño de APIs</meaningful>."
+      "card-paragraph": "Podemos poner nuestro conocimiento sobre la mesa y ofrecer nuestra experiencia en desarrollo de software para que puedas tomar decisiones acertadas en tu negocio.",
+      "paragraph-one": "Podemos poner nuestro conocimiento sobre la mesa y ofrecer nuestra experiencia en desarrollo de software para que puedas tomar decisiones acertadas en tu negocio.",
+      "paragraph-two": "Podemos orientarte en temas como <meaningful>tecnologías</meaningful>, <meaningful>bibliotecas</meaningful> y <meaningful>frameworks de desarrollo front-end</meaningful>, <meaningful>eventos</meaningful> y <meaningful>JavaScript avanzado en el navegador</meaningful>. También tenemos conocimientos útiles relacionados con <meaningful>decisiones de bases de datos</meaningful>, <meaningful>reutilización de código</meaningful>, <meaningful>buenas prácticas</meaningful> y <meaningful>diseño de APIs</meaningful>."
     },
     "prototyping": {
       "heading": "Prototipado",
-      "card-paragraph": "Si deseas que cree prototipos visuales o productos mínimos viables para validar la propuesta de valor de tu producto de software.",
-      "paragraph-one": "Puedo crear <meaningful>prototipos visuales</meaningful> o <meaningful>productos mínimos viables</meaningful> para validar la propuesta de valor de tu producto de software.",
+      "card-paragraph": "Si deseas que creemos prototipos visuales o productos mínimos viables para validar la propuesta de valor de tu producto de software.",
+      "paragraph-one": "Podemos crear <meaningful>prototipos visuales</meaningful> o <meaningful>productos mínimos viables</meaningful> para validar la propuesta de valor de tu producto de software.",
       "paragraph-two": "Desde prototipos rápidos con presupuesto limitado hasta prototipos más complejos que pueden incluir funcionalidad parcial para que tus futuros usuarios puedan probar el producto que tienes en mente antes de tomar una decisión financiera."
     }
   },
@@ -393,13 +393,13 @@
     "other-projects": {
       "first-part": {
         "heading": "Otros proyectos",
-        "paragraph": "Durante mi carrera he completado múltiples proyectos de código, aquí puedes echar un vistazo a muchos de ellos."
+        "paragraph": "Durante nuestra existencia hemos completado múltiples proyectos de código, aquí puedes echar un vistazo a muchos de ellos."
       }
     }
   },
   "blog-page": {
     "heading": "Blog",
-    "paragraph": "Aquí es donde enseño todo lo que aprendo en mi propio camino",
+    "paragraph": "Aquí es donde enseñamos todo lo que aprendemos en nuestro camino",
     "checkbox-group": {
       "button-text": "Filtrar por etiquetas",
       "selected-text": "seleccionadas"
@@ -418,7 +418,7 @@
   },
   "about-page": {
     "first-part": {
-      "heading": "Conoce acerca de mí",
+      "heading": "Acerca del fundador",
       "paragraph": "Soy un ingeniero de software nacido y criado en Colombia, con más de 5 años de experiencia en el campo de la ingeniería de software.",
       "download-my-cv-button": "DESCARGAR MI CV",
       "learn-more-button": "CONOCE MÁS"

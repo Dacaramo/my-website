@@ -25,7 +25,6 @@ import {
   faLaptopCode,
   faLayerGroup,
   faMapLocationDot,
-  faMobileButton,
   faMobileScreen,
   faPalette,
   faPersonCircleCheck,

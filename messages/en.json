@@ -5,7 +5,7 @@
       "services-link": "Services",
       "portfolio-link": "Portfolio",
       "blog-link": "Blog",
-      "about-link": "About me"
+      "about-link": "About the founder"
     },
     "select": {
       "label": "Select a language",
@@ -24,20 +24,20 @@
     },
     "quick-links-section": {
       "heading": "Quick links",
-      "my-content-platforms-subheading": "My content platforms",
+      "my-content-platforms-subheading": "Content platforms",
       "other-relevant-platforms-subheading": "Other relevant platforms"
     },
     "other-info-section": {
       "heading": "Other info",
       "blog-sites-subsection": {
-        "heading": "Blog sites where I write articles",
+        "heading": "Blog sites where we write articles",
         "dev": "Dev",
         "medium": "Medium",
         "log-rocket": "Log Rocket"
       },
       "content-attribution-subsection": {
         "heading": "Content attribution",
-        "first-attribution": "Home gray self picture"
+        "first-attribution": "Home gray founder picture"
       }
     },
     "copyright": "© 2023 Ramzeis Software | All rights reserved"
@@ -45,117 +45,117 @@
   "home-page": {
     "first-part": {
       "heading": "We finally meet, I'm <meaningful>Daniel Ramírez</meaningful>",
-      "paragraph": "Your trusted full stack developer and tech consultant. Just tell me what you want to build and let’s make your dreams come true!",
-      "message-me-link": "Message me",
-      "send-me-an-email-link": "Send me and email",
+      "paragraph": "Founder of Ramzeis, full stack developer and tech consultant. Just tell me what you want to build and let’s make your dreams come true!",
+      "message-me-link": "Message us",
+      "send-me-an-email-link": "Send us an email",
       "download-my-cv-button": "Download my CV",
-      "discover-my-skills-button": "Discover my skills",
+      "discover-my-skills-button": "Discover our skills",
       "software-development": {
         "heading": "Software development",
-        "paragraph": "I ship full scalable software that can survive over a lifetime. I have learned the bests industry practices in order to write clean code that is easy to maintain and modify."
+        "paragraph": "We ship full scalable software that can survive over a lifetime. We have learned the bests industry practices in order to write clean code that is easy to maintain and modify."
       },
       "product-development": {
         "heading": "Product development",
-        "paragraph": "I know how to gather relevant requirements and how to shape your software products quickly so the users are ready to receive what they really want. Tell me more about your business model and I will help you develop your product."
+        "paragraph": "We know how to gather relevant requirements and how to shape your software products quickly so the users are ready to receive what they really want. Tell us more about your business model and we will help you develop your product."
       }
     },
     "my-software-skillset": {
-      "heading": "My software skillset",
+      "heading": "Our software skillset",
       "strategic-approach": {
         "heading": "Strategic approach",
-        "paragraph": "I will never ship lower quality code with unnecessary complexity just for the sake of shipping code faster. I always take my time to search for the better approach to implement any feature."
+        "paragraph": "We will never ship lower quality code with unnecessary complexity just for the sake of shipping code faster. We always take our time to search for the better approach to implement any feature."
       },
       "internationalization": {
         "heading": "Internationalization",
-        "paragraph": "I know how to properly implement multi language support in any kind of app. Even if my client does not want his app to allow multiple languages I like to leave the code ready for integrate that feature later."
+        "paragraph": "We know how to properly implement multi language support in any kind of app. Even if our clients does not want their app to allow multiple languages we like to leave the code ready for integrate that feature later."
       },
       "multiple-themes": {
         "heading": "Multiple themes",
-        "paragraph": "I have my own framework for allowing multiple themes inside any kind of app. Either if you want one theme or many themes I will always leave the code ready for allow multiple themes later."
+        "paragraph": "We have our own framework for allowing multiple themes inside any kind of app. Either if you want one theme or many themes, we will always leave the code ready for allow multiple themes later."
       },
       "state-management": {
         "heading": "State management",
-        "paragraph": "I know how to use React Contexts for efficient global state management that does not trigger unnecessary re-renders. I also use Zustand for managing global state."
+        "paragraph": "We know how to use React Contexts for efficient global state management that does not trigger unnecessary re-renders. We also use Zustand for managing global state."
       },
       "data-caching": {
         "heading": "Data caching",
-        "paragraph": "Data received from network requests must be cached so it is not refetched too frequently. I use Axios and TanStack Query to offer the best data caching strategy."
+        "paragraph": "Data received from network requests must be cached so it is not refetched too frequently. We use Axios and TanStack Query to offer the best data caching strategy."
       },
       "error-behaviors": {
         "heading": "Error behaviors",
-        "paragraph": "I like to use React error boundaries in order to customize how all of the possible errors are displayed within your application. I also provide alternatives when an error occurs so your users won’t remain confused."
+        "paragraph": "We like to use React error boundaries in order to customize how all of the possible errors are displayed within your application. We also provide alternatives when an error occurs so your users won’t remain confused."
       },
       "optimization": {
         "heading": "Optimization",
-        "paragraph": "I know how to properly optimize applications. Slow and laggy apps shouldn’t exist. I’m not talking only about time complexity in the code algorithms, I’m talking about preventing unnecessary re-renders and memory leaks."
+        "paragraph": "We know how to properly optimize applications. Slow and laggy apps shouldn’t exist. We are not talking only about time complexity in the code algorithms, we are talking about preventing unnecessary re-renders and memory leaks."
       },
       "applied-mathematics": {
         "heading": "Applied mathematics",
-        "paragraph": "I learned how to apply advanced mathematics to software development. I know how to use linear algebra to make an adobe illustrator type program or physics to develop movement based games or animations."
+        "paragraph": "We have learned how to apply advanced mathematics to software development. We know how to use linear algebra to make an adobe illustrator type program or physics to develop movement based games or animations."
       },
       "loading-behaviors": {
         "heading": "Loading behaviors",
-        "paragraph": "I like to use React suspense boundaries in order to customize every loading scene within your application with lazy loading, loading spinners or content skeletons."
+        "paragraph": "We like to use React suspense boundaries in order to customize every loading scene within your application with lazy loading, loading spinners or content skeletons."
       },
       "accessibility": {
         "heading": "Accessibility",
-        "paragraph": "I always develop my software thinking in every kind of person. My applications will always offer accessibility to the users who have a disability like blindness, etc."
+        "paragraph": "We always develop my software thinking in every kind of person. Our applications will always offer accessibility to users who have a disability like blindness, etc."
       },
       "complex-components": {
         "heading": "Complex components",
-        "paragraph": "I know how to create complex components that are library ready like bar charts, custom input fields, dial knobs, audio and video players, etc."
+        "paragraph": "We know how to create complex components that are library ready like bar charts, custom input fields, dial knobs, audio and video players, etc."
       },
       "bundle-size-reduction": {
         "heading": "Bundle size reduction",
-        "paragraph": "I try always to make my own components or use the smallest available libraries that won’t make your application bundle too large."
+        "paragraph": "We try always to make our own components or use the smallest available libraries that won’t make your application bundle too large."
       },
       "css-animations": {
         "heading": "CSS animations",
-        "paragraph": "I know how to apply some CSS animations that will make your web applications look stunning."
+        "paragraph": "We know how to apply some CSS animations that will make your web applications look stunning."
       },
       "responsiveness": {
         "heading": "Responsiveness",
-        "paragraph": "When developing apps I will always keep in mind every kind of device screen and aspect ratio, so you don’t have to worry about your application looking weird in some devices because it won’t."
+        "paragraph": "When developing apps we will always keep in mind every kind of device screen and aspect ratio, so you don’t have to worry about your application looking weird in some devices because it won’t."
       },
       "deep-modules": {
         "heading": "Deep modules",
-        "paragraph": "Functions, components, endpoints and services must hide a big, complex and useful functionality behind a simple and easy to use interface. That’s my philosophy and I always develop my software accordingly."
+        "paragraph": "Functions, components, endpoints and services must hide a big, complex and useful functionality behind a simple and easy to use interface. That’s our philosophy and we always develop our software accordingly."
       },
       "seo": {
         "heading": "SEO",
-        "paragraph": "When writing HTML I like to make correct use of semantic tags and apply other Search Engine Optimization techniques so your website is easily found by the world."
+        "paragraph": "When writing HTML we like to make correct use of semantic tags and apply other Search Engine Optimization techniques so your website is easily found by the world."
       },
       "testing": {
         "heading": "Testing",
-        "paragraph": "I will always create the necessary software tests so your app won’t be shipped with bugs. I like to use Jest and React Testing Library in order to write integration tests, hook tests, snapshot testing and many more."
+        "paragraph": "We will always create the necessary software tests so your app won’t be shipped with bugs. We like to use Jest and React Testing Library in order to write integration tests, hook tests, snapshot testing and many more."
       },
       "authentication": {
         "heading": "Authentication",
-        "paragraph": "I constantly use authentication services like AWS Cognito that will manage all of the authentication hustle for us without making you pay a monthly fortune."
+        "paragraph": "We constantly use authentication services like AWS Cognito that will manage all of the authentication hustle for us without making you pay a monthly fortune."
       },
       "authorization": {
         "heading": "Authorization",
-        "paragraph": "I know how to correctly store authorization tokens, how to validate and invalidate them and how to get new tokens from the authentication service."
+        "paragraph": "We know how to correctly store authorization tokens, how to validate and invalidate them and how to get new tokens from the authentication service."
       },
       "api-consumption": {
         "heading": "API consumption",
-        "paragraph": "I always apply the best practices regarding API consumption, either our own API or a third party API. "
+        "paragraph": "We always apply the best practices regarding API consumption, either our own API or a third party API."
       },
       "payments-integration": {
         "heading": "Payments integration",
-        "paragraph": "I’ve integrated payments in multiple apps in the past for multiple platforms, either In App Payments for iOS or Android, or more traditional methods like card payments, Pay Pal payments, etc. "
+        "paragraph": "We have integrated payments in multiple apps for multiple platforms, either In App Payments for iOS or Android, or more traditional methods like card payments, Pay Pal payments, etc. "
       },
       "file-handling": {
         "heading": "File handling",
-        "paragraph": "I have worked on programs that use open formats like JSON for saving the current project and restore the state of the project when opened."
+        "paragraph": "We have worked on programs that use open formats like JSON for saving the current project and restore the state of the project when opened."
       },
       "maps": {
         "heading": "Maps",
-        "paragraph": "I have integrated maps in both mobile apps and web apps either with the native Google Maps API or with third party libraries that make the job easier."
+        "paragraph": "We have integrated maps in both mobile apps and web apps either with the native Google Maps API or with third party libraries that make the job easier."
       },
       "e-commerce": {
         "heading": "E-commerce",
-        "paragraph": "I’ve work on e-commerce sites that must have an special focus on product highlighting, filtering, pagination and payment integrations."
+        "paragraph": "We have worked on e-commerce sites that must have an special focus on product highlighting, filtering, pagination and payment integrations."
       },
       "ads-integration": {
         "heading": "Ads integration",
@@ -163,46 +163,46 @@
       },
       "media-streaming": {
         "heading": "Media streaming",
-        "paragraph": "How to generate streaming file formats like m3u8, how to store them and serve them to a client application. On mobile devices I have used Expo AV for audio and video playback, including streamed playback."
+        "paragraph": "We know how to generate streaming file formats like m3u8, how to store them and serve them to a client application. On mobile devices We have used Expo AV for audio and video playback, including streamed playback."
       },
       "web-service-integration": {
         "heading": "Web service integration",
-        "paragraph": "I know how to integrate and manage some AWS and GCP services to web and mobile applications."
+        "paragraph": "We know how to integrate and manage some AWS and GCP services to web and mobile applications."
       },
       "oauth": {
         "heading": "OAuth",
-        "paragraph": "I know how to allow applications to access user data from external services without sharing login credentials."
+        "paragraph": "We know how to allow applications to access user data from external services without sharing login credentials."
       }
     },
     "my-mastery-tech-stack": {
-      "heading": "My mastery tech stack",
+      "heading": "Our mastery tech stack",
       "react-js": {
         "heading": "React.js",
-        "paragraph": "If you want me to develop a large scale web application with advanced features such as user authentication, extensive data fetching, complex routing or data driven components."
+        "paragraph": "If you want us to develop a large scale web application with advanced features such as user authentication, extensive data fetching, complex routing or data driven components."
       },
       "react-native": {
         "heading": "React Native",
-        "paragraph": "If you want me to develop a cross platform mobile application that ships both for Android and iOS devices."
+        "paragraph": "If you want us to develop a cross platform mobile application that ships both for Android and iOS devices."
       },
       "next-js": {
         "heading": "Next.js",
-        "paragraph": "If you want me to develop a SEO focused website that mainly offers static UI components and content"
+        "paragraph": "If you want us to develop a SEO focused website that mainly offers static UI components and content"
       },
       "node-js": {
         "heading": "Node.js",
-        "paragraph": "If you want me to develop a REST API that provides data and services for your client applications or programs"
+        "paragraph": "If you want us to develop a REST API that provides data and services for your client applications or programs"
       },
       "dynamo-db": {
         "heading": "DynamoDB",
-        "paragraph": "If you want me to build and manage No-SQL databases for storing all of your business data."
+        "paragraph": "If you want us to build and manage No-SQL databases for storing all of your business data."
       },
       "aws": {
         "heading": "AWS",
-        "paragraph": "If you want me to integrate awesome web services to your application that won’t break the bank but still worth the money."
+        "paragraph": "If you want us to integrate awesome web services to your application that won’t break the bank but still worth the money."
       }
     },
     "other-tech-i-know": {
-      "heading": "Other tech I know",
+      "heading": "Other tech we use",
       "figma": "Figma",
       "java": "Java",
       "amplify": "Amplify",
@@ -212,35 +212,35 @@
     }
   },
   "services-page": {
-    "heading": "Discover my <meaningful>services</meaningful>",
+    "heading": "Discover our <meaningful>services</meaningful>",
     "software-development": {
       "heading": "Software development",
-      "card-paragraph": "I can develop enterprise grade software that is fully scalable, easy to update and easy to maintain.",
-      "paragraph-one": "I can develop enterprise grade software that is fully scalable, easy to update and easy to maintain.",
-      "paragraph-two": "I can build <meaningful>web apps</meaningful>, <meaningful>mobile apps</meaningful>, <meaningful>websites</meaningful> or <meaningful>REST APIs</meaningful>."
+      "card-paragraph": "We can develop enterprise grade software that is fully scalable, easy to update and easy to maintain.",
+      "paragraph-one": "We can develop enterprise grade software that is fully scalable, easy to update and easy to maintain.",
+      "paragraph-two": "We can build <meaningful>web apps</meaningful>, <meaningful>mobile apps</meaningful>, <meaningful>websites</meaningful> or <meaningful>REST APIs</meaningful>."
     },
     "software-maintenance": {
       "heading": "Software maintenance",
-      "card-paragraph": "I can maintain code made by any developer. If you want, I can either add new complex functionalities or refactor spaghetti code.",
-      "paragraph-one": "I can maintain code made by any developer. If you want, I can either <meaningful>add new complex functionalities</meaningful> or <meaningful>refactor spaghetti code</meaningful>.",
-      "paragraph-two": "Hire me for a fixed period of time or just for accomplishing n tasks, either way I will give you a fair price."
+      "card-paragraph": "We can maintain code made by any developer. If you want, we can either add new complex functionalities or refactor spaghetti code.",
+      "paragraph-one": "We can maintain code made by any developer. If you want, we can either <meaningful>add new complex functionalities</meaningful> or <meaningful>refactor spaghetti code</meaningful>.",
+      "paragraph-two": "Hire us for a fixed period of time or just for accomplishing n tasks, either way we will give you a fair price."
     },
     "database-design": {
       "heading": "Database design",
-      "card-paragraph": "I can design your whole database based on your needs and requirements. If you want either a relational database or a No-SQL database your good to go.",
-      "paragraph-one": "I can design your whole database based on your needs and requirements. If you want either a <meaningful>relational database</meaningful> or a <meaningful>No-SQL database</meaningful> your good to go.",
+      "card-paragraph": "We can design your whole database based on your needs and requirements. If you want either a relational database or a No-SQL database your good to go.",
+      "paragraph-one": "We can design your whole database based on your needs and requirements. If you want either a <meaningful>relational database</meaningful> or a <meaningful>No-SQL database</meaningful> your good to go.",
       "paragraph-two": ""
     },
     "consulting": {
       "heading": "Consulting",
-      "card-paragraph": "I can put my knowledge on the table and offer my software development knowledge so you can take good decisions regarding your business.",
-      "paragraph-one": "I can put my knowledge on the table and offer my software development knowledge so you can take good decisions regarding your business.",
-      "paragraph-two": "I can orient you in topics such as <meaningful>front-end technologies</meaningful>, <meaningful>libraries</meaningful> and <meaningful>frameworks</meaningful>, <meaningful>events</meaningful> and <meaningful>advanced browser JavaScript</meaningful>. I also have useful knowledge regarding <meaningful>database related decisions</meaningful>, <meaningful>code re-utilization</meaningful>, <meaningful>good practices</meaningful> and also <meaningful>API design</meaningful>."
+      "card-paragraph": "We can put our knowledge on the table and offer our software development knowledge so you can take good decisions regarding your business.",
+      "paragraph-one": "We can put our knowledge on the table and offer our software development knowledge so you can take good decisions regarding your business.",
+      "paragraph-two": "We can orient you in topics such as <meaningful>front-end technologies</meaningful>, <meaningful>libraries</meaningful> and <meaningful>frameworks</meaningful>, <meaningful>events</meaningful> and <meaningful>advanced browser JavaScript</meaningful>. We also have useful knowledge regarding <meaningful>database related decisions</meaningful>, <meaningful>code re-utilization</meaningful>, <meaningful>good practices</meaningful> and also <meaningful>API design</meaningful>."
     },
     "prototyping": {
       "heading": "Prototyping",
-      "card-paragraph": "If you want me to create visual prototypes or minimum viable products in order to validate the value proposition of your software product.",
-      "paragraph-one": "I can create <meaningful>visual prototypes</meaningful> or <meaningful>minimum viable products</meaningful> in order to validate the value proposition of your software product.",
+      "card-paragraph": "If you want, we can create visual prototypes or minimum viable products in order to validate the value proposition of your software product.",
+      "paragraph-one": "We can create <meaningful>visual prototypes</meaningful> or <meaningful>minimum viable products</meaningful> in order to validate the value proposition of your software product.",
       "paragraph-two": "From low budget quick prototypes all the way to more complex prototypes that can include partial functionality so your future users are able to test the product you have in mind before making the financial decision."
     }
   },
@@ -393,13 +393,13 @@
     "other-projects": {
       "first-part": {
         "heading": "Other projects",
-        "paragraph": "During my career I completed multiple code projects, here you can take a look at many of them."
+        "paragraph": "During our existence we have completed multiple code projects, here you can take a look at many of them."
       }
     }
   },
   "blog-page": {
     "heading": "Blog",
-    "paragraph": "Here’s where I teach everything that I learn on my own road",
+    "paragraph": "Here’s where we teach everything that we learn on our road",
     "checkbox-group": {
       "button-text": "Filter by tags",
       "selected-text": "chosen"
@@ -418,13 +418,13 @@
   },
   "about-page": {
     "first-part": {
-      "heading": "Learn about me",
+      "heading": "About the founder",
       "paragraph": "I’m a software engineer born and raised in Colombia and I have more than 5 years of experience working in software engineering.",
       "download-my-cv-button": "DOWNLOAD MY CV",
       "learn-more-button": "LEAR MORE"
     },
     "college": {
-      "description": "I hold a bachelor's degree in Software Engineering from the Pontifical Xavierian University, one of the top universities in Latin America.",
+      "description": "I hold a bachelor's degree in Software Engineering from the Pontifical Xavierian University.",
       "check-badge-button": "CHECK BADGE"
     },
     "grade-project": {
