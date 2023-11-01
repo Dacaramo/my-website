@@ -165,14 +165,14 @@ const AboutPage: FC<Props> = ({ params: { locale } }) => {
               height={imgHeight}
             />
           </div>
-          <div className='flex flex-col gap-[20px]'>
+          <div className='flex-1 flex flex-col gap-[20px]'>
             <p className={`${pClasses} text-center sm:text-start`}>
               {t('certifications-description')}
             </p>
           </div>
         </div>
         <div className='px-[20px] sm:px-[65px] flex flex-row flex-wrap items-center gap-[50px]'>
-          <div className='flex flex-col gap-[20px]'>
+          <div className='flex-1 flex flex-col gap-[20px]'>
             <p className={`${pClasses} text-center sm:text-end`}>
               {t('content-creation.description')}
             </p>

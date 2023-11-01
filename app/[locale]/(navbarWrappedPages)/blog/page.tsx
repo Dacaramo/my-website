@@ -17,7 +17,6 @@ import {
   getTranslatedTagSections,
 } from '@/app/axios/axiosRequestSenders';
 import SearchInput from '@/app/components/SearchInput/SearchInput';
-import Select, { Option } from '@/app/components/Select/Select';
 import CheckboxGroup from '@/app/components/SelectGroup/CheckboxGroup';
 import { ACID_GREEN } from '@/app/constants/colors';
 import { PostMeta } from '@/app/model/Post';
@@ -150,6 +149,7 @@ const BlogPage: FC<Props> = ({ params: { locale } }) => {
                         quality={100}
                         priority
                         fill
+                        sizes='(max-width: 640px) 0vw, 20vw'
                       />
                     </div>
                     <div className='sm:py-2 sm:px-4 flex flex-col gap-2 flex-4'>

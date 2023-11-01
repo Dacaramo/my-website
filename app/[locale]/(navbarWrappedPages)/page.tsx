@@ -65,14 +65,34 @@ const HomePage: FC<Props> = () => {
   const cardIconSize = 85;
   const softwareSkillsetCards: Array<CardProps> = [
     {
-      headingText: t('my-software-skillset.strategic-approach.heading'),
-      paragraphText: t('my-software-skillset.strategic-approach.paragraph'),
-      icon: faChessRook,
+      headingText: t('my-software-skillset.e-commerce.heading'),
+      paragraphText: t('my-software-skillset.e-commerce.paragraph'),
+      icon: faBoxesStacked,
     },
     {
-      headingText: t('my-software-skillset.internationalization.heading'),
-      paragraphText: t('my-software-skillset.internationalization.paragraph'),
-      icon: faLanguage,
+      headingText: t('my-software-skillset.payments-integration.heading'),
+      paragraphText: t('my-software-skillset.payments-integration.paragraph'),
+      icon: faCreditCard,
+    },
+    {
+      headingText: t('my-software-skillset.ads-integration.heading'),
+      paragraphText: t('my-software-skillset.ads-integration.paragraph'),
+      icon: faRectangleAd,
+    },
+    {
+      headingText: t('my-software-skillset.seo.heading'),
+      paragraphText: t('my-software-skillset.seo.paragraph'),
+      icon: faSearchengin,
+    },
+    {
+      headingText: t('my-software-skillset.responsiveness.heading'),
+      paragraphText: t('my-software-skillset.responsiveness.paragraph'),
+      icon: faMobileScreen,
+    },
+    {
+      headingText: t('my-software-skillset.accessibility.heading'),
+      paragraphText: t('my-software-skillset.accessibility.paragraph'),
+      icon: faPersonCircleCheck,
     },
     {
       headingText: t('my-software-skillset.multiple-themes.heading'),
@@ -80,19 +100,14 @@ const HomePage: FC<Props> = () => {
       icon: faPalette,
     },
     {
-      headingText: t('my-software-skillset.state-management.heading'),
-      paragraphText: t('my-software-skillset.state-management.paragraph'),
-      icon: faShop,
+      headingText: t('my-software-skillset.internationalization.heading'),
+      paragraphText: t('my-software-skillset.internationalization.paragraph'),
+      icon: faLanguage,
     },
     {
-      headingText: t('my-software-skillset.data-caching.heading'),
-      paragraphText: t('my-software-skillset.data-caching.paragraph'),
-      icon: faDatabase,
-    },
-    {
-      headingText: t('my-software-skillset.error-behaviors.heading'),
-      paragraphText: t('my-software-skillset.error-behaviors.paragraph'),
-      icon: faTriangleExclamation,
+      headingText: t('my-software-skillset.maps.heading'),
+      paragraphText: t('my-software-skillset.maps.paragraph'),
+      icon: faMapLocationDot,
     },
     {
       headingText: t('my-software-skillset.optimization.heading'),
@@ -105,49 +120,9 @@ const HomePage: FC<Props> = () => {
       icon: faSquareRootAlt,
     },
     {
-      headingText: t('my-software-skillset.loading-behaviors.heading'),
-      paragraphText: t('my-software-skillset.loading-behaviors.paragraph'),
-      icon: faSpinner,
-    },
-    {
-      headingText: t('my-software-skillset.accessibility.heading'),
-      paragraphText: t('my-software-skillset.accessibility.paragraph'),
-      icon: faPersonCircleCheck,
-    },
-    {
-      headingText: t('my-software-skillset.complex-components.heading'),
-      paragraphText: t('my-software-skillset.complex-components.paragraph'),
-      icon: faPuzzlePiece,
-    },
-    {
-      headingText: t('my-software-skillset.bundle-size-reduction.heading'),
-      paragraphText: t('my-software-skillset.bundle-size-reduction.paragraph'),
-      icon: faFileZipper,
-    },
-    {
       headingText: t('my-software-skillset.css-animations.heading'),
       paragraphText: t('my-software-skillset.css-animations.paragraph'),
       icon: faCss3,
-    },
-    {
-      headingText: t('my-software-skillset.responsiveness.heading'),
-      paragraphText: t('my-software-skillset.responsiveness.paragraph'),
-      icon: faMobileScreen,
-    },
-    {
-      headingText: t('my-software-skillset.deep-modules.heading'),
-      paragraphText: t('my-software-skillset.deep-modules.paragraph'),
-      icon: faLayerGroup,
-    },
-    {
-      headingText: t('my-software-skillset.seo.heading'),
-      paragraphText: t('my-software-skillset.seo.paragraph'),
-      icon: faSearchengin,
-    },
-    {
-      headingText: t('my-software-skillset.testing.heading'),
-      paragraphText: t('my-software-skillset.testing.paragraph'),
-      icon: faFlaskVial,
     },
     {
       headingText: t('my-software-skillset.authentication.heading'),
@@ -165,34 +140,24 @@ const HomePage: FC<Props> = () => {
       icon: faServer,
     },
     {
-      headingText: t('my-software-skillset.payments-integration.heading'),
-      paragraphText: t('my-software-skillset.payments-integration.paragraph'),
-      icon: faCreditCard,
+      headingText: t('my-software-skillset.media-streaming.heading'),
+      paragraphText: t('my-software-skillset.media-streaming.paragraph'),
+      icon: faTowerCell,
+    },
+    {
+      headingText: t('my-software-skillset.bundle-size-reduction.heading'),
+      paragraphText: t('my-software-skillset.bundle-size-reduction.paragraph'),
+      icon: faFileZipper,
+    },
+    {
+      headingText: t('my-software-skillset.testing.heading'),
+      paragraphText: t('my-software-skillset.testing.paragraph'),
+      icon: faFlaskVial,
     },
     {
       headingText: t('my-software-skillset.file-handling.heading'),
       paragraphText: t('my-software-skillset.file-handling.paragraph'),
       icon: faFile,
-    },
-    {
-      headingText: t('my-software-skillset.maps.heading'),
-      paragraphText: t('my-software-skillset.maps.paragraph'),
-      icon: faMapLocationDot,
-    },
-    {
-      headingText: t('my-software-skillset.e-commerce.heading'),
-      paragraphText: t('my-software-skillset.e-commerce.paragraph'),
-      icon: faBoxesStacked,
-    },
-    {
-      headingText: t('my-software-skillset.ads-integration.heading'),
-      paragraphText: t('my-software-skillset.ads-integration.paragraph'),
-      icon: faRectangleAd,
-    },
-    {
-      headingText: t('my-software-skillset.media-streaming.heading'),
-      paragraphText: t('my-software-skillset.media-streaming.paragraph'),
-      icon: faTowerCell,
     },
     {
       headingText: t('my-software-skillset.web-service-integration.heading'),
@@ -211,6 +176,41 @@ const HomePage: FC<Props> = () => {
         />
       ),
     },
+    {
+      headingText: t('my-software-skillset.complex-components.heading'),
+      paragraphText: t('my-software-skillset.complex-components.paragraph'),
+      icon: faPuzzlePiece,
+    },
+    {
+      headingText: t('my-software-skillset.strategic-approach.heading'),
+      paragraphText: t('my-software-skillset.strategic-approach.paragraph'),
+      icon: faChessRook,
+    },
+    {
+      headingText: t('my-software-skillset.deep-modules.heading'),
+      paragraphText: t('my-software-skillset.deep-modules.paragraph'),
+      icon: faLayerGroup,
+    },
+    {
+      headingText: t('my-software-skillset.state-management.heading'),
+      paragraphText: t('my-software-skillset.state-management.paragraph'),
+      icon: faShop,
+    },
+    {
+      headingText: t('my-software-skillset.data-caching.heading'),
+      paragraphText: t('my-software-skillset.data-caching.paragraph'),
+      icon: faDatabase,
+    },
+    {
+      headingText: t('my-software-skillset.error-behaviors.heading'),
+      paragraphText: t('my-software-skillset.error-behaviors.paragraph'),
+      icon: faTriangleExclamation,
+    },
+    {
+      headingText: t('my-software-skillset.loading-behaviors.heading'),
+      paragraphText: t('my-software-skillset.loading-behaviors.paragraph'),
+      icon: faSpinner,
+    },
   ];
   const masteryTechStackCards: Array<CardProps> = [
     {
@@ -221,7 +221,7 @@ const HomePage: FC<Props> = () => {
     {
       headingText: t('my-mastery-tech-stack.react-native.heading'),
       paragraphText: t('my-mastery-tech-stack.react-native.paragraph'),
-      icon: faMobileButton,
+      icon: faMobileScreen,
     },
     {
       headingText: t('my-mastery-tech-stack.next-js.heading'),
@@ -350,7 +350,7 @@ const HomePage: FC<Props> = () => {
               icon={faFileArrowDown}
             /> */}
             <HomePageLink
-              href={'#my-software-skillset'}
+              href={'#secondary-section'}
               isAnchorElement
               text={t('first-part.discover-my-skills-button')}
               icon={faBrain}
@@ -400,6 +400,7 @@ const HomePage: FC<Props> = () => {
           </section>
         </section>
         <section
+          id='secondary-section'
           className={`px-[20px] sm:px-[65px] py-[50px] ${flexColClasses} gap-[50px]`}
         >
           <section

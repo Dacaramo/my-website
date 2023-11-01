@@ -5,7 +5,7 @@
       "services-link": "Services",
       "portfolio-link": "Portefeuille",
       "blog-link": "Blog",
-      "about-link": "À propos"
+      "about-link": "À propos de moi"
     },
     "select": {
       "label": "Sélectionnez une langue",
@@ -49,7 +49,7 @@
       "message-me-link": "Envoyez-moi un message",
       "send-me-an-email-link": "Envoyez-moi un e-mail",
       "download-my-cv-button": "Téléchargez mon CV",
-      "discover-my-skills-button": "Découvre mes compétences",
+      "discover-my-skills-button": "Découvrez mes compétences",
       "software-development": {
         "heading": "Développement de logiciels",
         "paragraph": "Je crée des logiciels entièrement évolutifs qui peuvent perdurer toute une vie. J'ai appris les meilleures pratiques de l'industrie pour écrire un code propre, facile à comprendre et à modifier."

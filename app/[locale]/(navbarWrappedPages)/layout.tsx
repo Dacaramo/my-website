@@ -64,16 +64,17 @@ import Select, { Option } from '../../components/Select/Select';
 
 interface Props {
   children: ReactNode;
+  params: {
+    locale: string;
+  };
 }
 
-const Layout: FC<Props> = ({ children }) => {
-  const [language, setLanguage] = useState<string>('');
-
+const Layout: FC<Props> = ({ children, params: { locale } }) => {
   const [_, startTransition] = useTransition();
   const pathname = usePathname();
   const t = useTranslations();
   const router = useRouter();
-  const locale = useLocale();
+  const stateLocale = useLocale();
 
   const backLinkRef = useRef<HTMLAnchorElement | null>(null);
 
@@ -95,7 +96,7 @@ const Layout: FC<Props> = ({ children }) => {
     es: 'Español 🇪🇸',
     fr: 'Français 🇫🇷',
   };
-  const displayLanguage = language || localeLanguages[locale];
+  const displayLanguage = localeLanguages[stateLocale];
 
   const handleLocaleChange = (selectedOpt: Option | null) => {
     if (!selectedOpt) {
@@ -103,8 +104,9 @@ const Layout: FC<Props> = ({ children }) => {
     }
 
     startTransition(() => {
-      setLanguage(selectedOpt.value);
+      // setLanguage(selectedOpt.value);
       router.replace(pathname, { locale: selectedOpt.key });
+      router.refresh();
     });
   };
 
@@ -122,6 +124,9 @@ const Layout: FC<Props> = ({ children }) => {
     link.href = '#';
     link.click();
   };
+
+  console.log('@@@@@routeLocale', locale);
+  console.log('@@@@@stateLocale', stateLocale);
 
   return (
     <>
@@ -316,7 +321,7 @@ const Layout: FC<Props> = ({ children }) => {
             <address className={`${footerFlexColClasses} not-italic`}>
               <Link
                 className='flex flex-row gap-2 items-center text-paragraph'
-                href={getWhatsAppMessageMeLink(locale)}
+                href={getWhatsAppMessageMeLink(stateLocale)}
                 target='_blank'
               >
                 {t.rich('footer.contact-info-section.phone', {
@@ -328,7 +333,7 @@ const Layout: FC<Props> = ({ children }) => {
               </Link>
               <Link
                 className='flex flex-row gap-2 items-center text-paragraph'
-                href={getMailToLink(locale)}
+                href={getMailToLink(stateLocale)}
                 target='_blank'
               >
                 {t.rich('footer.contact-info-section.email', {
@@ -444,7 +449,7 @@ const Layout: FC<Props> = ({ children }) => {
         </p>
       </footer>
       <Link
-        href={getWhatsAppMessageMeLink(locale)}
+        href={getWhatsAppMessageMeLink(stateLocale)}
         target='_blank'
         className={`${floatingButtonClasses} hidden sm:flex bottom-[60px] right-[5px] sm:bottom-[10px] sm:right-[45px] w-[50px] h-[50px] hover:w-[55px] hover:h-[55px] sm:w-[65px] sm:h-[65px] sm:hover:w-[70px] sm:hover:h-[70px] text-[25px] hover:text-[30px] sm:text-[35px] sm:hover:text-[40px] opacity-100`}
         style={{

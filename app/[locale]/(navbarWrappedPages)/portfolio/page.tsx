@@ -46,8 +46,8 @@ const PortfolioPage: FC<Props> = () => {
   const imageClasses = 'rounded-xl';
   const otherProjectsLogoImageClasses =
     'relative w-[100px] h-[100px] sm:w-[250px] sm:h-[250px]';
-  const imageWidth = 830;
-  const imageHeight = 1;
+  const imageWidth = 1000;
+  const imageHeight = 1000;
   const imageQuality = 100;
   const innerSectionClasses = 'px-[20px] sm:px-[65px] flex flex-col gap-[50px]';
   const otherProjectsLogoCaptionClasses =
@@ -208,6 +208,7 @@ const PortfolioPage: FC<Props> = () => {
                     className='object-contain grayscale hover:grayscale-0 transition-all'
                     src='/visionCivilLogo.png'
                     fill
+                    sizes='(max-width: 640px) 50vw, 20vw'
                     alt='Visión Civil'
                   />
                 </div>
@@ -227,6 +228,7 @@ const PortfolioPage: FC<Props> = () => {
                     className='object-contain grayscale hover:grayscale-0 transition-all'
                     src='/companyWebsiteLogo.png'
                     fill
+                    sizes='(max-width: 640px) 50vw, 20vw'
                     alt='Company website'
                   />
                 </div>
@@ -301,7 +303,7 @@ const PortfolioPage: FC<Props> = () => {
                 <div className={`${featureDivClasses} flex-wrap-reverse`}>
                   <div className='relative mt-[41px] mr-[20px] sm:mt-[78.5px] sm:mr-[48px]'>
                     <Image
-                      className={`${imageClasses} shadow-classic-hovered sm:shadow-classic`}
+                      className={`${imageClasses} w-[830px] shadow-classic-hovered sm:shadow-classic`}
                       src='/shapeCreatorFeatureOneMain.png'
                       alt="Polygon with all of it's nodes unselected"
                       quality={imageQuality}
@@ -313,7 +315,7 @@ const PortfolioPage: FC<Props> = () => {
                       src='/shapeCreatorFeatureOneSide.png'
                       alt='Toolbar with action buttons'
                       quality={imageQuality}
-                      width={96}
+                      width={imageWidth}
                       height={imageHeight}
                     />
                   </div>
@@ -327,7 +329,7 @@ const PortfolioPage: FC<Props> = () => {
                   </p>
                   <div className='relative mb-[41px] ml-[20px] sm:mb-[78.5px] sm:ml-[48px]'>
                     <Image
-                      className={`${imageClasses} shadow-classic-hovered sm:shadow-classic`}
+                      className={`${imageClasses} w-[830px] shadow-classic-hovered sm:shadow-classic`}
                       src='/shapeCreatorFeatureTwoMain.png'
                       alt="Polygon with all of it's nodes unselected"
                       quality={imageQuality}
@@ -339,14 +341,14 @@ const PortfolioPage: FC<Props> = () => {
                       src='/shapeCreatorFeatureTwoSide.png'
                       alt='Toolbar with action buttons'
                       quality={imageQuality}
-                      width={96}
+                      width={imageWidth}
                       height={imageHeight}
                     />
                   </div>
                 </div>
                 <div className={`${featureDivClasses} flex-wrap-reverse`}>
                   <Image
-                    className={`${imageClasses} shadow-classic-hovered`}
+                    className={`${imageClasses} w-[830px] shadow-classic-hovered`}
                     src='/shapeCreatorFeatureThree.png'
                     alt="Polygon with all of it's nodes unselected"
                     quality={imageQuality}
@@ -362,7 +364,7 @@ const PortfolioPage: FC<Props> = () => {
                     {t('shape-creator.features.feature-four')}
                   </p>
                   <Image
-                    className={`${imageClasses} shadow-classic-hovered`}
+                    className={`${imageClasses} w-[830px] shadow-classic-hovered`}
                     src='/shapeCreatorFeatureFour.png'
                     alt="Polygon with all of it's nodes unselected"
                     quality={imageQuality}
@@ -385,9 +387,9 @@ const PortfolioPage: FC<Props> = () => {
                 className={`${innerSectionClasses}`}
               >
                 <div className={`${featureDivClasses} flex-wrap-reverse`}>
-                  <div className='relative mb-[28px] mr-[28px] sm:mb-[50px] sm:mr-[48px]'>
+                  <div className='relative mb-[28px] mr-[20px] sm:mb-[50px] sm:mr-[48px]'>
                     <Image
-                      className={`${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                      className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
                       src='/pokeBowlStoreFeatureOneMain.png'
                       alt="Polygon with all of it's nodes unselected"
                       quality={imageQuality}
@@ -395,11 +397,11 @@ const PortfolioPage: FC<Props> = () => {
                       height={imageHeight}
                     />
                     <Image
-                      className={`absolute bottom-[-28px] right-[-20px] sm:bottom-[-50px] sm:right-[-48px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                      className={`absolute bottom-[-28px] right-[-20px] sm:bottom-[-50px] sm:right-[-48px] ${imageClasses} w-[500px] shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
                       src='/pokeBowlStoreFeatureOneSide.png'
                       alt='Toolbar with action buttons'
                       quality={imageQuality}
-                      width={600}
+                      width={imageWidth}
                       height={imageHeight}
                     />
                   </div>
@@ -413,7 +415,7 @@ const PortfolioPage: FC<Props> = () => {
                   </p>
                   <div className='relative mb-[45px] ml-[20px] mt-[30px] mr-[36px] sm:mb-[71.25px] sm:ml-[48px] sm:mt-[36.25px] sm:mr-[48px]'>
                     <Image
-                      className={`${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                      className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
                       src='/pokeBowlStoreFeatureTwoOne.png'
                       alt="Polygon with all of it's nodes unselected"
                       quality={imageQuality}
@@ -421,19 +423,19 @@ const PortfolioPage: FC<Props> = () => {
                       height={imageHeight}
                     />
                     <Image
-                      className={`absolute bottom-[-45px] left-[-20px] sm:bottom-[-71.25px] sm:left-[-48px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                      className={`absolute bottom-[-45px] left-[-20px] sm:bottom-[-71.25px] sm:left-[-48px] ${imageClasses} w-[500px] shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
                       src='/pokeBowlStoreFeatureTwoTwo.png'
                       alt='Toolbar with action buttons'
                       quality={imageQuality}
-                      width={400}
+                      width={imageWidth}
                       height={imageHeight}
                     />
                     <Image
-                      className={`absolute top-[-30px] right-[-36px] sm:top-[-36.25px] sm:right-[-48px] ${imageClasses} shadow-classic-hovered sm:shadow-inverted-classic`}
+                      className={`absolute top-[-30px] right-[-36px] sm:top-[-36.25px] sm:right-[-48px] ${imageClasses} w-[500px] shadow-classic-hovered sm:shadow-inverted-classic`}
                       src='/pokeBowlStoreFeatureTwoThree.png'
                       alt='Toolbar with action buttons'
                       quality={imageQuality}
-                      width={400}
+                      width={imageWidth}
                       height={imageHeight}
                     />
                   </div>
@@ -441,19 +443,19 @@ const PortfolioPage: FC<Props> = () => {
                 <div className={`${featureDivClasses} flex-wrap-reverse`}>
                   <div className='relative mb-[27.5px] mr-[20px] sm:mb-[54px] sm:mr-[48px]'>
                     <Image
-                      className={`${imageClasses} shadow-inverted-classic`}
+                      className={`w-[830px] ${imageClasses} shadow-inverted-classic`}
                       src='/pokeBowlStoreFeatureFourMain.png'
                       alt="Polygon with all of it's nodes unselected"
                       quality={imageQuality}
-                      width={826}
+                      width={imageWidth}
                       height={imageHeight}
                     />
                     <Image
-                      className={`absolute bottom-[-27.5px] right-[-20px] sm:bottom-[-54px] sm:right-[-48px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                      className={`absolute bottom-[-27.5px] right-[-20px] sm:bottom-[-54px] sm:right-[-48px] ${imageClasses} w-[500px] shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
                       src='/pokeBowlStoreFeatureFourSide.png'
                       alt='Toolbar with action buttons'
                       quality={imageQuality}
-                      width={456}
+                      width={imageWidth}
                       height={imageHeight}
                     />
                   </div>
@@ -476,7 +478,7 @@ const PortfolioPage: FC<Props> = () => {
                     src='/pokeBowlStoreFeatureFive.png'
                     alt='Poke Bowl Store on a mobile device'
                     quality={imageQuality}
-                    width={250}
+                    width={imageWidth}
                     height={imageHeight}
                   />
                 </div>
@@ -491,7 +493,7 @@ const PortfolioPage: FC<Props> = () => {
               >
                 <div className={`${featureDivClasses} flex-wrap-reverse`}>
                   <Image
-                    className={`${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
                     src='/rickMortiumFeatureOne.png'
                     alt="Polygon with all of it's nodes unselected"
                     quality={imageQuality}
@@ -507,7 +509,7 @@ const PortfolioPage: FC<Props> = () => {
                     {t('rick-mortium.features.feature-two')}
                   </p>
                   <Image
-                    className={`${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
                     src='/rickMortiumFeatureTwo.png'
                     alt="Polygon with all of it's nodes unselected"
                     quality={imageQuality}
@@ -518,19 +520,19 @@ const PortfolioPage: FC<Props> = () => {
                 <div className={`${featureDivClasses} flex-wrap-reverse`}>
                   <div className='relative mb-[75px] ml-[20px] sm:mb-[220px] sm:ml-[20px]'>
                     <Image
-                      className={`${imageClasses} shadow-inverted-classic rotate-[-5deg]`}
+                      className={`w-[700px] ${imageClasses} shadow-inverted-classic rotate-[-5deg]`}
                       src='/rickMortiumFeatureThreeOne.png'
                       alt="Polygon with all of it's nodes unselected"
                       quality={imageQuality}
-                      width={714}
+                      width={imageWidth}
                       height={imageHeight}
                     />
                     <Image
-                      className={`absolute bottom-[-75px] left-[-20px] sm:bottom-[-220px] sm:left-[-20px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic rotate-[5deg]`}
+                      className={`absolute bottom-[-75px] left-[-20px] sm:bottom-[-220px] sm:left-[-20px] ${imageClasses} w-[700px] shadow-inverted-classic-hovered sm:shadow-inverted-classic rotate-[5deg]`}
                       src='/rickMortiumFeatureThreeTwo.png'
                       alt='Toolbar with action buttons'
                       quality={imageQuality}
-                      width={830}
+                      width={imageWidth}
                       height={imageHeight}
                     />
                   </div>
@@ -553,7 +555,7 @@ const PortfolioPage: FC<Props> = () => {
                     src='/rickMortiumFeatureFour.png'
                     alt='Poke Bowl Store on a mobile device'
                     quality={imageQuality}
-                    width={250}
+                    width={imageWidth}
                     height={imageHeight}
                   />
                 </div>

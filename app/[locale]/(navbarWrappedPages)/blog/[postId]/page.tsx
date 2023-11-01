@@ -19,15 +19,17 @@ const page: FC<Props> = async ({ params: { locale, postId } }) => {
   return (
     <>
       <div className='fixed top-0 -z-10 w-full h-full bg-pale-black' />
-      <h1
-        className='w-full min-h-[40vh] px-[20px] 2xl:px-[500px] py-2 flex items-center text-subtitle sm:text-title font-bold text-acid-green bg-center bg-cover'
+      <div
+        className='relative w-full min-h-[40vh] px-[20px] 2xl:px-[500px] py-2 flex items-center bg-center bg-cover'
         style={{
           backgroundImage: `url(${post.meta.coverImageSrc})`,
         }}
       >
-        {post.meta.title}
-      </h1>
-      <div className='w-full h-full bg-translucid-black-700' />
+        <div className='absolute top-0 left-0 w-full h-full bg-translucid-black-200' />
+        <h1 className='z-[10] text-subtitle sm:text-title font-bold text-acid-green'>
+          {post.meta.title}
+        </h1>
+      </div>
       <section className='px-[20px] 2xl:px-[500px] mb-[25px] flex flex-row flex-wrap gap-2 py-2 justify-between items-center border-t border-b border-pale-acid-green bg-translucid-black-200'>
         <span className='text-paragraph text-pale-acid-green font-medium'>
           <Link

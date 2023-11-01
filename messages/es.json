@@ -5,7 +5,7 @@
       "services-link": "Servicios",
       "portfolio-link": "Portafolio",
       "blog-link": "Blog",
-      "about-link": "Acerca de"
+      "about-link": "Acerca de mí"
     },
     "select": {
       "label": "Selecciona un idioma",
@@ -83,11 +83,11 @@
       },
       "error-behaviors": {
         "heading": "Comportamientos de errores",
-        "paragraph": "Me gusta usar límites de errores de React para personalizar cómo se muestran todos los posibles errores dentro de tu aplicación. También ofrezco alternativas cuando ocurre un error para que tus usuarios no se queden confundidos."
+        "paragraph": "Me gusta usar error boundaries de React para personalizar cómo se muestran todos los posibles errores dentro de tu aplicación. También ofrezco alternativas cuando ocurre un error para que tus usuarios no se queden confundidos."
       },
       "optimization": {
         "heading": "Optimización",
-        "paragraph": "Sé cómo optimizar adecuadamente las aplicaciones. Las aplicaciones lentas y lentas no deberían existir. No estoy hablando solo de la complejidad de tiempo en los algoritmos de código, estoy hablando de evitar renderizaciones innecesarias y fugas de memoria."
+        "paragraph": "Sé cómo optimizar adecuadamente las aplicaciones. Las aplicaciones lentas y con lag no deberían existir. No estoy hablando solo de la complejidad de tiempo en los algoritmos de código, estoy hablando de evitar renderizaciones innecesarias y fugas de memoria."
       },
       "applied-mathematics": {
         "heading": "Matemáticas aplicadas",
@@ -95,7 +95,7 @@
       },
       "loading-behaviors": {
         "heading": "Comportamientos de carga",
-        "paragraph": "Me gusta usar límites de suspense de React para personalizar cada escena de carga dentro de tu aplicación con carga diferida, indicadores de carga o esqueletos de contenido."
+        "paragraph": "Me gusta usar suspense boundaries de React para personalizar cada escena de carga dentro de tu aplicación con carga diferida, indicadores de carga o esqueletos de contenido."
       },
       "accessibility": {
         "heading": "Accesibilidad",
@@ -175,7 +175,7 @@
       }
     },
     "my-mastery-tech-stack": {
-      "heading": "My mastery tech stack",
+      "heading": "El tech stack que domino",
       "react-js": {
         "heading": "React.js",
         "paragraph": "If you want me to develop a large scale web application with advanced features such as user authentication, extensive data fetching, complex routing or data driven components."
@@ -202,7 +202,7 @@
       }
     },
     "other-tech-i-know": {
-      "heading": "Other tech I know",
+      "heading": "Otras tecnologías que conozco",
       "figma": "Figma",
       "java": "Java",
       "amplify": "Amplify",
