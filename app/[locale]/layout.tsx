@@ -52,10 +52,10 @@ interface GenerateMetadataProps {
 }
 
 /* eslint-disable-next-line */
-export const generateMetadata = (
-  generateMetadataProps: GenerateMetadataProps
-): Metadata => {
-  const locale = generateMetadataProps.params.locale;
+export const generateMetadata = ({
+  params,
+}: GenerateMetadataProps): Metadata => {
+  const { locale } = params;
 
   const openGraph: OpenGraph = {
     images:

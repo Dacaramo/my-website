@@ -16,10 +16,10 @@ interface GenerateMetadataProps {
 }
 
 /* eslint-disable-next-line */
-export const generateMetadata = async (
-  generateMetadataProps: GenerateMetadataProps
-): Promise<Metadata> => {
-  const { locale, postId } = generateMetadataProps.params;
+export const generateMetadata = async ({
+  params,
+}: GenerateMetadataProps): Promise<Metadata> => {
+  const { locale, postId } = params;
   const post = await getPostByName(`${postId}.mdx`, locale);
 
   const metadata: Metadata = {
@@ -38,8 +38,8 @@ export const generateMetadata = async (
       description: post.meta.description,
       images: post.meta.coverImageSrc,
       url: `https://www.ramzeis.com/${
-        locale !== 'en' ? locale : ''
-      }/blog/${postId}`,
+        locale !== 'en' ? `${locale}/` : ''
+      }blog/${postId}`,
       type: 'website',
       siteName: 'Ramzeis Software',
       locale,
