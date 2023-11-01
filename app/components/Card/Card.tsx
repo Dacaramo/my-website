@@ -30,7 +30,7 @@ const Card: FC<CardProps> = ({
 
   return (
     <li
-      className='p-5 basis-[450px] flex-1 flex flex-col justify-between gap-5 items-center text-pale-acid-green bg-prune rounded-xl shadow-classic hover:shadow-classic-hovered transition-all'
+      className='p-5 basis-[450px] flex-1 flex flex-col justify-between gap-5 items-center text-pale-acid-green bg-prune rounded-xl shadow-classic-hovered sm:shadow-classic hover:shadow-classic-hovered transition-all'
       style={{
         cursor: handleClick ? 'pointer' : 'default',
         ...style,

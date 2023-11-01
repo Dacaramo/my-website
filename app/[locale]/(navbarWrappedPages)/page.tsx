@@ -323,7 +323,9 @@ const HomePage: FC<Props> = () => {
           <p className={`text-paragraph sm:text-subtitle text-start`}>
             {t('first-part.paragraph')}
           </p>
-          <nav className={`mb-5 ${flexRowClasses} gap-4`}>
+          <nav
+            className={`mb-5 max-w-[280px] sm:max-w-max ${flexRowClasses} gap-4`}
+          >
             <HomePageLink
               href={getWhatsAppMessageMeLink(locale)}
               text={t('first-part.message-me-link')}
@@ -359,12 +361,12 @@ const HomePage: FC<Props> = () => {
         <section className={`w-full min-h-[30vh] ${flexRowClasses}`}>
           <section
             id='software-development'
-            className={`relative p-2 ${flexColClasses} justify-center items-center gap-2 flex-1 sm:flex-2 bg-black`}
+            className={`relative px-[20px] sm:px-[65px] py-[20px] min-w-[280px] ${flexColClasses} justify-center items-center gap-2 flex-1 sm:flex-2 bg-black`}
           >
             <h1 className='text-subtitle text-center font-bold text-acid-green'>
               {t('first-part.software-development.heading')}
             </h1>
-            <p className={`w-[75%] ${pClasses}`}>
+            <p className={`${pClasses}`}>
               {t('first-part.software-development.paragraph')}
             </p>
             <div className='absolute top-[-597px] left-[-115px] w-[712px] h-[597px] -z-20 sm:hidden'>
@@ -379,12 +381,12 @@ const HomePage: FC<Props> = () => {
           </section>
           <section
             id='product-development'
-            className={`relative p-2 ${flexColClasses} justify-center items-center gap-2 flex-1 sm:flex-3 bg-pale-black`}
+            className={`relative px-[20px] sm:px-[65px] py-[20px] min-w-[280px] ${flexColClasses} justify-center items-center gap-2 flex-1 sm:flex-3 bg-pale-black`}
           >
             <h1 className='text-subtitle text-center font-bold text-acid-green'>
               {t('first-part.product-development.heading')}
             </h1>
-            <p className={`w-[75%] ${pClasses}`}>
+            <p className={`${pClasses}`}>
               {t('first-part.product-development.paragraph')}
             </p>
             <div className='absolute top-[-597px] w-[712px] h-[597px] -z-10 hidden sm:block'>

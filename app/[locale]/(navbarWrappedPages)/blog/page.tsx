@@ -108,7 +108,7 @@ const BlogPage: FC<Props> = ({ params: { locale } }) => {
         <p className='text-paragraph sm:text-subtitle'>{t('paragraph')}</p>
         <section
           id='filter-section'
-          className='self-end flex flex-col sm:flex-row gap-2'
+          className='w-full flex flex-col sm:flex-row justify-end items-stretch gap-2'
         >
           <SearchInput
             id='blog-name-input'

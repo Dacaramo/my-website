@@ -40,7 +40,7 @@ const SearchInput: FC<Props> = ({
       <input
         id={id}
         type='text'
-        className='w-full h-[35px] py-[4px] pl-[8px] pr-[36px] bg-transparent rounded-lg text-acid-green border text-paragraph border-acid-green placeholder:text-pale-acid-green outline-none'
+        className='w-full min-h-[35px] py-[4px] pl-[8px] pr-[36px] bg-transparent rounded-lg text-acid-green border text-paragraph border-acid-green placeholder:text-pale-acid-green outline-none'
         placeholder={placeholder}
         value={value}
         onChange={handleChange}

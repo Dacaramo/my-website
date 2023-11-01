@@ -1,9 +1,8 @@
 'use client';
 
-import { FC, ReactNode, useRef, useState, useTransition } from 'react';
+import { FC, ReactNode, useRef, useTransition } from 'react';
 import {
   faLinkedin,
-  faServicestack,
   faWhatsapp,
   faYoutube,
 } from '@fortawesome/free-brands-svg-icons';
@@ -17,17 +16,12 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons/faEnvelope';
 import {
   faAnglesUp,
   faArrowLeft,
-  faArrowUp,
   faBars,
   faBellConcierge,
   faBriefcase,
-  faCircleLeft,
   faFilePen,
   faHome,
   faQuestion,
-  faRocket,
-  faUpLong,
-  faX,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
@@ -37,15 +31,7 @@ import { usePathname, useRouter } from 'next-intl/client';
 import RamzeisIcon from '@/app/components/icons/RamzeisIcon';
 import WhatsAppIcon from '@/app/components/icons/WhatsAppIcon';
 import QuickLink from '@/app/components/QuickLink/QuickLink';
-import {
-  ACID_GREEN,
-  BLACK,
-  PALE_ACID_GREEN,
-  PALE_BLACK,
-  PALE_PRUNE,
-  PRUNE,
-  WHITE,
-} from '@/app/constants/colors';
+import { ACID_GREEN, BLACK } from '@/app/constants/colors';
 import {
   DEV_PROFILE_LINK,
   getMailToLink,
@@ -104,7 +90,6 @@ const Layout: FC<Props> = ({ children, params: { locale } }) => {
     }
 
     startTransition(() => {
-      // setLanguage(selectedOpt.value);
       router.replace(pathname, { locale: selectedOpt.key });
       router.refresh();
     });
@@ -125,9 +110,6 @@ const Layout: FC<Props> = ({ children, params: { locale } }) => {
     link.click();
   };
 
-  console.log('@@@@@routeLocale', locale);
-  console.log('@@@@@stateLocale', stateLocale);
-
   return (
     <>
       <header
@@ -139,8 +121,8 @@ const Layout: FC<Props> = ({ children, params: { locale } }) => {
         >
           <FontAwesomeIcon
             icon={faBars}
-            style={{ fontSize: iconSize }}
-            width={20}
+            style={{ fontSize: 30 }}
+            width={30}
           />
         </a>
         <div
@@ -155,8 +137,8 @@ const Layout: FC<Props> = ({ children, params: { locale } }) => {
             >
               <FontAwesomeIcon
                 icon={faArrowLeft}
-                style={{ fontSize: iconSize }}
-                width={20}
+                style={{ fontSize: 30 }}
+                width={30}
               />
             </a>
             <Select
