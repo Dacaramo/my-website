@@ -1,10 +1,57 @@
 import { FC } from 'react';
+import { Metadata, ResolvingMetadata } from 'next';
 import Link from 'next/link';
 
 import { getPostByName } from '@/app/axios/axiosRequestSenders';
 import getFormattedDate from '@/app/utils/strings';
 
 import 'highlight.js/styles/tomorrow-night-bright.css';
+
+interface GenerateMetadataProps {
+  params: {
+    locale: string;
+    postId: string;
+  };
+  parent: ResolvingMetadata;
+}
+
+/* eslint-disable-next-line */
+export const generateMetadata = async (
+  generateMetadataProps: GenerateMetadataProps
+): Promise<Metadata> => {
+  const { locale, postId } = generateMetadataProps.params;
+  const post = await getPostByName(`${postId}.mdx`, locale);
+
+  const metadata: Metadata = {
+    title: post.meta.title,
+    description: post.meta.description,
+    generator: 'Next.js',
+    applicationName: 'Ramzeis Software',
+    creator: 'Daniel Ramírez',
+    authors: {
+      name: post.meta.author,
+      url: post.meta.attributionLink,
+    },
+    keywords: post.meta.tags,
+    openGraph: {
+      title: post.meta.title,
+      description: post.meta.description,
+      images: post.meta.coverImageSrc,
+      url: `https://www.ramzeis.com/${
+        locale !== 'en' ? locale : ''
+      }/blog/${postId}`,
+      type: 'website',
+      siteName: 'Ramzeis Software',
+      locale,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      images: post.meta.coverImageSrc,
+    },
+  };
+
+  return metadata;
+};
 
 interface Props {
   params: {
