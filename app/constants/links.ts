@@ -29,6 +29,10 @@ export const RICK_MORTIUM_PROJECT_REPO_LINK =
   'https://github.com/Dacaramo/rick-mortium';
 export const COMPANY_WEBSITE_PROJECT_REPO_LINK =
   'https://github.com/Dacaramo/bloom-react-app';
+export const GITHUB_API_URL =
+  'https://api.github.com/repos/Dacaramo/my-blog-posts';
+export const GITHUB_MASTER_BRANCH_LINK =
+  'https://api.github.com/repos/Dacaramo/my-blog-posts/branches/master';
 export const GITHUB_LOCALE_EN_TREE_LINK =
   'https://api.github.com/repos/Dacaramo/my-blog-posts/git/trees/1863ddc0536eac0a015edecde32cf5a427d8846e';
 export const GITHUB_LOCALE_ES_TREE_LINK =
@@ -119,18 +123,6 @@ export const getProjectRepoLink = (id: PortfolioProjectId): string => {
     default:
       throw new NotFoundError(idNotFoundMessage);
   }
-};
-
-export const getGitHubLocaleTreeLink = (locale: string): string => {
-  if (locale === 'en') {
-    return GITHUB_LOCALE_EN_TREE_LINK;
-  } else if (locale === 'es') {
-    return GITHUB_LOCALE_ES_TREE_LINK;
-  } else if (locale === 'fr') {
-    return GITHUB_LOCALE_FR_TREE_LINK;
-  }
-
-  throw new NotFoundError(localeNotFoundMessage);
 };
 
 export const getGitHubLocaleRawContentLink = (locale: string): string => {

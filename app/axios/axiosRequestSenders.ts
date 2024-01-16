@@ -8,7 +8,7 @@ import CustomImage from '../components/CustomImage/CustomImage';
 import YoutubeVideo from '../components/YoutubeVideo/YoutubeVideo';
 import {
   getGitHubLocaleRawContentLink,
-  getGitHubLocaleTreeLink,
+  GITHUB_API_URL,
   GITHUB_RAW_CONTENT_BASE_URL,
 } from '../constants/links';
 import { Post, PostMeta } from '../model/Post';
@@ -16,7 +16,7 @@ import { Post, PostMeta } from '../model/Post';
 import { axiosInstance } from './axiosConfig';
 
 interface GitHubFileTree {
-  tree: Array<{ path: string }>;
+  tree: Array<{ path: string; url: string }>;
 }
 
 export const getPostByName = async (
@@ -82,12 +82,39 @@ export const getPostByName = async (
 export const getPostsMeta = async (
   locale: string
 ): Promise<Array<PostMeta>> => {
-  const axiosResponse = await axiosInstance.get(
-    getGitHubLocaleTreeLink(locale)
-  );
+  const rootSha = (
+    await axiosInstance.get<{ commit: { sha: string } }>(
+      `${GITHUB_API_URL}/branches/master`
+    )
+  ).data.commit.sha;
 
-  const fileTree = axiosResponse.data as GitHubFileTree;
-  const fileNames = fileTree.tree
+  const rootFileTree = (
+    await axiosInstance.get<GitHubFileTree>(
+      `${GITHUB_API_URL}/git/trees/${rootSha}`
+    )
+  ).data.tree;
+
+  let targetFileTree = rootFileTree;
+
+  if (locale === 'en') {
+    targetFileTree = rootFileTree;
+  } else if (locale === 'es') {
+    const esFileTreeUrl = rootFileTree.find((node) => {
+      return node.path === 'es';
+    })!.url;
+    const esFileTree = (await axiosInstance.get<GitHubFileTree>(esFileTreeUrl))
+      .data.tree;
+    targetFileTree = esFileTree;
+  } else if (locale === 'fr') {
+    const frFileTreeUrl = rootFileTree.find((node) => {
+      return node.path === 'fr';
+    })!.url;
+    const frFileTree = (await axiosInstance.get<GitHubFileTree>(frFileTreeUrl))
+      .data.tree;
+    targetFileTree = frFileTree;
+  }
+
+  const fileNames = targetFileTree
     .map((obj) => {
       return obj.path;
     })
