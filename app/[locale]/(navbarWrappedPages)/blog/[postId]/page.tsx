@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Metadata, ResolvingMetadata } from 'next';
+import { Metadata } from 'next';
 import Link from 'next/link';
 
 import { getPostByName } from '@/app/axios/axiosRequestSenders';
@@ -72,7 +72,7 @@ const page: FC<Props> = async ({ params: { locale, postId } }) => {
           backgroundImage: `url(${post.meta.coverImageSrc})`,
         }}
       >
-        <div className='absolute top-0 left-0 w-full h-full bg-translucid-black-200' />
+        <div className='absolute top-0 left-0 w-full h-full bg-translucid-black-700' />
         <h1 className='z-[10] text-subtitle sm:text-title font-bold text-acid-green'>
           {post.meta.title}
         </h1>

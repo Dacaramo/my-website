@@ -17,7 +17,7 @@ const CustomImage: FC<Props> = (props) => {
         className='rounded-[10px] w-full'
         priority={priority}
         quality={quality}
-        width={650}
+        width={1000}
         height={650}
         {...props}
       />
