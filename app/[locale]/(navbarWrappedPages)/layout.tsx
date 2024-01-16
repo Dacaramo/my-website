@@ -29,6 +29,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from 'next-intl/client';
 
 import RamzeisIcon from '@/app/components/icons/RamzeisIcon';
+import RamzeisLogo from '@/app/components/icons/RamzeisLogo';
 import WhatsAppIcon from '@/app/components/icons/WhatsAppIcon';
 import QuickLink from '@/app/components/QuickLink/QuickLink';
 import { ACID_GREEN, BLACK } from '@/app/constants/colors';
@@ -233,7 +234,7 @@ const Layout: FC<Props> = ({ children, params: { locale } }) => {
           href='/'
           className='hidden sm:flex flex-row gap-2 font-light text-[20px] items-center text-pale-acid-green hover:text-acid-green transition-all'
         >
-          <RamzeisIcon fontSize={35} />
+          <RamzeisLogo fontSize={35} />
           RAMZEIS
         </Link>
         <nav className={`${flexRowClasses} hidden ml-auto sm:flex`}>
