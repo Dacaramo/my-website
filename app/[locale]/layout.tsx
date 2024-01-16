@@ -180,7 +180,7 @@ const RootLayout: FC<Props> = async ({ children, params: { locale } }) => {
       lang={locale}
     >
       <body
-        className={`h-[100%] ${rubik.variable} font-sans font-light bg-pale-prune text-white`}
+        className={`h-[100%] ${rubik.variable} font-sans font-light bg-pale-prune text-white overflow-x-clip`}
       >
         <NextIntlClientProvider
           locale={locale}

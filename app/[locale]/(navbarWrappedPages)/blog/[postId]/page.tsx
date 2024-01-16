@@ -65,7 +65,7 @@ const page: FC<Props> = async ({ params: { locale, postId } }) => {
 
   return (
     <>
-      <div className='fixed top-0 -z-10 w-full h-full bg-pale-black' />
+      <div className='fixed top-0 -z-10 w-full h-screen bg-pale-black' />
       <div
         className='relative w-full min-h-[40vh] px-[20px] 2xl:px-[500px] py-2 flex items-center bg-center bg-cover'
         style={{

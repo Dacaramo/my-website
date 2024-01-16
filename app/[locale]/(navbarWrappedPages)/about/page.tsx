@@ -29,7 +29,7 @@ const AboutPage: FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <div className='fixed top-0 -z-10 w-full h-full bg-pale-black' />
+      <div className='fixed top-0 -z-10 w-full h-screen bg-pale-black' />
       <div className='absolute top-0 -z-10 w-full h-[100vh] bg-[url("/aboutPageCover.png")] bg-cover bg-center' />
       <section
         id='first-section'

@@ -97,7 +97,7 @@ const BlogPage: FC<Props> = ({ params: { locale } }) => {
 
   return (
     <>
-      <div className='fixed top-0 -z-10 w-full h-full bg-pale-black' />
+      <div className='fixed top-0 -z-10 w-full h-screen bg-pale-black' />
       <section
         id='first-part'
         className='px-[20px] sm:px-[65px] min-h-[92.5vh] flex flex-col gap-4'
