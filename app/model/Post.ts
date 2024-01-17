@@ -9,6 +9,8 @@ export interface PostMeta {
   attributionLink: string;
   coverImageSrc: string;
   tags: Array<string>;
+  lastModified: string;
+  readingDuration: number;
 }
 
 export interface Post {

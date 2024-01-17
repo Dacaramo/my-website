@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { compileMDX } from 'next-mdx-remote/rsc';
+import readingTime from 'reading-time';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeHighlight from 'rehype-highlight';
 import rehypeSlug from 'rehype-slug';
@@ -28,15 +29,9 @@ export const getPostByName = async (
   );
   const rawMDX = axiosResponse.data as string;
 
-  const { frontmatter, content } = await compileMDX<{
-    title: string;
-    description: string;
-    date: string;
-    author: string;
-    attributionLink: string;
-    coverImageSrc: string;
-    tags: Array<string>;
-  }>({
+  const { frontmatter, content } = await compileMDX<
+    Omit<PostMeta, 'id' | 'readingDuration'>
+  >({
     source: rawMDX,
     components: {
       CustomImage,
@@ -62,21 +57,14 @@ export const getPostByName = async (
 
   const id = name.replace(/\.mdx$/, '');
 
-  const post: Post = {
+  return {
     meta: {
+      ...frontmatter,
       id,
-      title: frontmatter.title,
-      description: frontmatter.description,
-      date: frontmatter.date,
-      author: frontmatter.author,
-      attributionLink: frontmatter.attributionLink,
-      coverImageSrc: frontmatter.coverImageSrc,
-      tags: frontmatter.tags,
+      readingDuration: Math.round(readingTime(rawMDX).minutes),
     },
     content,
   };
-
-  return post;
 };
 
 export const getPostsMeta = async (

@@ -1,5 +1,5 @@
 import { FC, ReactNode } from 'react';
-import type { Metadata, ResolvingMetadata } from 'next';
+import type { Metadata } from 'next';
 import { OpenGraph } from 'next/dist/lib/metadata/types/opengraph-types';
 import localFont from 'next/font/local';
 import { notFound } from 'next/navigation';
