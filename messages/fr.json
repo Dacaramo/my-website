@@ -414,7 +414,8 @@
   },
   "post-id-page": {
     "author-prefix": "Par",
-    "tags-prefix": "Étiquettes:"
+    "tags-prefix": "Étiquettes:",
+    "reading-duration-label": "min de lecture"
   },
   "about-page": {
     "first-part": {

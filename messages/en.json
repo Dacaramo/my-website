@@ -414,7 +414,8 @@
   },
   "post-id-page": {
     "author-prefix": "By",
-    "tags-prefix": "Tags:"
+    "tags-prefix": "Tags:",
+    "reading-duration-label": "min read"
   },
   "about-page": {
     "first-part": {
