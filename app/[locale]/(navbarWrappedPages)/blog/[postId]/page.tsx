@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 import { getPostByName } from '@/app/axios/axiosRequestSenders';
+import { Locale } from '@/app/model/Locale';
 import getFormattedDate from '@/app/utils/strings';
 
 import 'highlight.js/styles/tomorrow-night-bright.css';
@@ -62,12 +63,22 @@ interface Props {
 
 const page: FC<Props> = async ({ params: { locale, postId } }) => {
   const post = await getPostByName(`${postId}.mdx`, locale);
+  const timeDurationAfterTextAlternatives: Record<Locale, string> = {
+    en: 'min read',
+    es: 'min de lectura',
+    fr: 'min de lecture',
+  };
+  const lastModifiedBeforeTextAlternatives: Record<Locale, string> = {
+    en: 'Updated',
+    es: 'Actualizado',
+    fr: 'Mis à jour',
+  };
 
   return (
     <>
       <div className='fixed top-0 -z-10 w-full h-screen bg-pale-black' />
       <div
-        className='relative w-full min-h-[40vh] px-[20px] 2xl:px-[500px] py-2 flex items-center bg-center bg-cover'
+        className='relative w-full min-h-[40vh] px-[20px] md:px-[20vw] py-2 flex items-center bg-center bg-cover'
         style={{
           backgroundImage: `url(${post.meta.coverImageSrc})`,
         }}
@@ -77,25 +88,37 @@ const page: FC<Props> = async ({ params: { locale, postId } }) => {
           {post.meta.title}
         </h1>
       </div>
-      <section className='px-[20px] 2xl:px-[500px] mb-[25px] flex flex-row flex-wrap gap-2 py-2 justify-between items-center border-t border-b border-pale-acid-green bg-translucid-black-200'>
-        <span className='text-paragraph text-pale-acid-green font-medium'>
-          <Link
-            href={post.meta.attributionLink}
-            target='_blank'
-          >
-            <strong>{post.meta.author}</strong>
-          </Link>
-        </span>
-        <span className='text-paragraph text-pale-acid-green font-medium'>
-          {getFormattedDate(post.meta.date, locale)}
-        </span>
+      <section className='px-[20px] md:px-[20vw] mb-[25px] flex flex-row flex-wrap gap-2 py-2 justify-between items-center border-t border-b border-pale-acid-green bg-translucid-black-200'>
+        <div className='flex flex-col'>
+          <span className='text-paragraph text-pale-acid-green font-medium'>
+            <Link
+              href={post.meta.attributionLink}
+              target='_blank'
+            >
+              <strong>{post.meta.author}</strong>
+            </Link>
+          </span>
+          <span className='text-paragraph text-pale-acid-green font-light opacity-50'>{`${
+            post.meta.readingDuration
+          } ${timeDurationAfterTextAlternatives[locale as Locale]}`}</span>
+        </div>
+        <div className='flex flex-col items-start xs:items-end'>
+          <span className='text-paragraph text-pale-acid-green font-medium'>
+            {getFormattedDate(post.meta.date, locale)}
+          </span>
+          <span className='text-paragraph text-pale-acid-green font-light opacity-50'>
+            {`${lastModifiedBeforeTextAlternatives[locale as Locale]} ${
+              post.meta.lastModified
+            }`}
+          </span>
+        </div>
       </section>
-      <article className='px-[20px] 2xl:px-[500px] mb-[25px] flex flex-col items-stretch gap-[25px] bg-transparent'>
+      <article className='px-[20px] md:px-[20vw] mb-[25px] flex flex-col items-stretch gap-[25px] bg-transparent'>
         {post.content}
       </article>
       <section
         id='tags-section'
-        className='mb-[25px] px-[20px] 2xl:px-[500px] py-2 flex flex-col gap-2 border-y border-pale-acid-green bg-translucid-black-200'
+        className='mb-[25px] px-[20px] md:px-[20vw] py-2 flex flex-col gap-2 border-y border-pale-acid-green bg-translucid-black-200'
       >
         <ul className='flex flex-row flex-wrap gap-2'>
           {post.meta.tags.map((tag) => {

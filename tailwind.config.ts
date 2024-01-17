@@ -41,6 +41,9 @@ const config: Config = {
         'inverted-classic': '-12px -10px 4px 0 rgba(0, 0, 0, 0.45)',
         'inverted-classic-hovered': '-6px -5px 4px 0 rgba(0, 0, 0, 0.45)',
       },
+      screens: {
+        xs: '450px',
+      },
     },
   },
   plugins: [require('@tailwindcss/aspect-ratio')],
