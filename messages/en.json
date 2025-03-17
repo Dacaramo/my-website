@@ -5,7 +5,7 @@
       "services-link": "Services",
       "portfolio-link": "Portfolio",
       "blog-link": "Blog",
-      "about-link": "About the founder"
+      "about-link": "About"
     },
     "select": {
       "label": "Select a language",
@@ -40,12 +40,12 @@
         "first-attribution": "Home gray founder picture"
       }
     },
-    "copyright": "© 2023 Ramzeis Software | All rights reserved"
+    "copyright": "© 2025 Ramzeis Software | All rights reserved"
   },
   "home-page": {
     "first-part": {
       "heading": "We finally meet, I'm <meaningful>Daniel Ramírez</meaningful>",
-      "paragraph": "Founder of Ramzeis, full stack developer and tech consultant. Just tell me what you want to build and let’s make your dreams come true!",
+      "paragraph": "Full stack developer and IT savvy. Just tell me what you want to build and let’s make your dreams come true!",
       "message-me-link": "Message us",
       "send-me-an-email-link": "Send us an email",
       "download-my-cv-button": "Download my CV",
@@ -204,11 +204,11 @@
     "other-tech-i-know": {
       "heading": "Other tech we use",
       "figma": "Figma",
-      "java": "Java",
-      "amplify": "Amplify",
+      "docker": "Docker",
+      "gh-actions": "Github Actions",
       "python": "Python",
-      "mongo-db": "MongoDB",
-      "firebase": "Firebase"
+      "postgre-sql": "PostgreSQL",
+      "stripe": "Stripe"
     }
   },
   "services-page": {
@@ -247,6 +247,72 @@
   "portfolio-page": {
     "mobile-select": "View other project ⏷",
     "used-libraries-heading": "Used libraries",
+    "used-libraries": {
+      "react": {
+        "heading": "React",
+        "paragraph": "For creating scalable Single Page Applications."
+      },
+      "zustand": {
+        "heading": "Zustand",
+        "paragraph": "For managing the global state of the app."
+      },
+      "react-tooltip": {
+        "heading": "React Tooltip",
+        "paragraph": "For the tooltip components that appears on top of every toolbar button when hovering over them."
+      },
+      "tanstack-query": {
+        "heading": "TanStack Query",
+        "paragraph": "For managing response data, error states and loading states related to network requests."
+      },
+      "react-paginate": {
+        "heading": "React Paginate",
+        "paragraph": "For the page selector component."
+      },
+      "react-spinners": {
+        "heading": "React Spinners",
+        "paragraph": "For the spinners components displayed when something is loading in the app."
+      },
+      "react-hook-form": {
+        "heading": "React Hook Form",
+        "paragraph": "For handling form validation and state management with ease."
+      },
+      "stripe": {
+        "heading": "Stripe",
+        "paragraph": "For handling secure online payments and subscriptions."
+      },
+      "daisy-ui": {
+        "heading": "Daisy UI",
+        "paragraph": "For providing pre-styled UI components based on Tailwind CSS."
+      },
+      "axios": {
+        "heading": "Axios",
+        "paragraph": "For making HTTP requests and handling API interactions efficiently."
+      },
+      "framer-motion": {
+        "heading": "Framer Motion",
+        "paragraph": "For adding smooth animations and transitions to UI components."
+      },
+      "tailwind": {
+        "heading": "Tailwind CSS",
+        "paragraph": "For writing highly customizable and responsive styles using utility-first CSS."
+      },
+      "valibot": {
+        "heading": "Valibot",
+        "paragraph": "For validating form inputs and ensuring data integrity."
+      },
+      "jest": {
+        "heading": "Jest",
+        "paragraph": "For writing and running unit tests to ensure code reliability."
+      },
+      "react-router": {
+        "heading": "React Router",
+        "paragraph": "For handling client-side navigation and routing in the application."
+      },
+      "next": {
+        "heading": "Next.js",
+        "paragraph": "For building server-rendered React applications with performance optimizations."
+      }
+    },
     "shape-creator": {
       "first-part": {
         "heading": "Shape Creator",
@@ -262,20 +328,6 @@
         "feature-three": "Load a background image if you want to use Shape Creator as an annotation software.",
         "feature-four": "Resize the canvas and all of the content inside of it will be rescaled.",
         "feature-five": "Export the whole canvas as a PNG file."
-      },
-      "used-libraries": {
-        "react": {
-          "heading": "React",
-          "paragraph": "For creating scalable Single Page Applications."
-        },
-        "zustand": {
-          "heading": "Zustand",
-          "paragraph": "For managing the global state of the app."
-        },
-        "react-tooltip": {
-          "heading": "React Tooltip",
-          "paragraph": "For the tooltip components that appears on top of every toolbar button when hovering over them."
-        }
       }
     },
     "poke-bowl-store": {
@@ -293,36 +345,6 @@
         "feature-three": "In-memory shopping cart so you can add the products you want to purchase and make a single transaction.",
         "feature-four": "Gigantic amount of API data cached for every listed product, any unnecessary request sending is avoided.",
         "feature-five": "You can try Poke Bowl Store on your mobile device since the app is mobile responsive."
-      },
-      "used-libraries": {
-        "react": {
-          "heading": "React",
-          "paragraph": "For creating scalable Single Page Applications."
-        },
-        "tanstack-query": {
-          "heading": "TanStack Query",
-          "paragraph": "For managing response data, error states and loading states related to network requests."
-        },
-        "zustand": {
-          "heading": "Zustand",
-          "paragraph": "For managing the global state of the app."
-        },
-        "react-router": {
-          "heading": "React Router",
-          "paragraph": "For managing navigation."
-        },
-        "axios": {
-          "heading": "Axios",
-          "paragraph": "For sending network requests."
-        },
-        "react-paginate": {
-          "heading": "React Paginate",
-          "paragraph": "For the page selector component."
-        },
-        "react-spinners": {
-          "heading": "React Spinners",
-          "paragraph": "For the spinners components displayed when something is loading in the app."
-        }
       }
     },
     "rick-mortium": {
@@ -339,32 +361,6 @@
         "feature-two": "In memory data saving so you can go see your favorite characters, locations or episodes at a later time while your using the app",
         "feature-three": "Wide variety of server oriented filters that can be applied simultaneously.",
         "feature-four": "You can try Rick Mortium on your mobile device since the app is mobile responsive."
-      },
-      "used-libraries": {
-        "react": {
-          "heading": "React",
-          "paragraph": "For creating scalable Single Page Applications."
-        },
-        "tanstack-query": {
-          "heading": "TanStack Query",
-          "paragraph": "For managing response data, error states and loading states related to network requests."
-        },
-        "zustand": {
-          "heading": "Zustand",
-          "paragraph": "For managing the global state of the app."
-        },
-        "axios": {
-          "heading": "Axios",
-          "paragraph": "For sending network requests."
-        },
-        "react-router": {
-          "heading": "React Router",
-          "paragraph": "For managing navigation."
-        },
-        "react-spinners": {
-          "heading": "React Spinners",
-          "paragraph": "For the spinners components displayed when something is loading in the app."
-        }
       }
     },
     "company-website": {
@@ -378,16 +374,58 @@
       },
       "features": {
         "feature-one": "You can try Company website on your mobile device since the app is mobile responsive."
+      }
+    },
+    "abc-movies": {
+      "first-part": {
+        "heading": "ABC Movies",
+        "paragraph": "An online browser to discover ratings and details on over 1000 movies",
+        "device-description": "This is a web app",
+        "read-details-button": "READ DETAILS",
+        "see-online-button": "TRY IT",
+        "browse-repo-button": "BROWSE REPO"
       },
-      "used-libraries": {
-        "react": {
-          "heading": "React",
-          "paragraph": "For creating scalable Single Page Applications."
-        },
-        "react-router": {
-          "heading": "React Router",
-          "paragraph": "For managing navigation."
-        }
+      "features": {
+        "feature-one": "Server oriented pagination with page selector",
+        "feature-two": "Local Storage data saving so you can save your favorite movies and the data is persisted",
+        "feature-three": "Ultimate search feature",
+        "feature-four": "Get to know all of details of a movie, such as de main cat, the release date and the number of reviews",
+        "feature-five": "You can try ABC Movies on your mobile device since the app is mobile responsive"
+      }
+    },
+    "glp-website": {
+      "first-part": {
+        "heading": "GLP website",
+        "paragraph": "The official website of the \"Gimnasio Los Pinos\" international school",
+        "device-description": "This is a web app",
+        "read-details-button": "READ DETAILS",
+        "see-online-button": "TRY IT",
+        "browse-repo-button": "BROWSE REPO"
+      },
+      "features": {
+        "feature-one": "Academic directory that can be easily updated by changing the loaded CSV file",
+        "feature-two": "Top design and improved metadata for enhanced SEO",
+        "feature-three": "Built in gallery containing a wide variety of images and videos",
+        "feature-four": "You can try GLP website on your mobile device since the app is mobile responsive"
+      }
+    },
+    "ramz": {
+      "first-part": {
+        "heading": "Ramz",
+        "paragraph": "A marketplace for selling custom and artisan products. This marketplace is the improved version of Etsy for Latam",
+        "device-description": "This is a web app",
+        "read-details-button": "READ DETAILS",
+        "see-online-button": "TRY IT",
+        "browse-repo-button": "BROWSE REPO"
+      },
+      "features": {
+        "feature-one": "Unique product listings with scroll triggered animations",
+        "feature-two": "Supports over 10 languages, 40 regions and 100 currencies",
+        "feature-three": "Filter products by price, color, seller, category or subcategory",
+        "feature-four": "Allow users to link multiple addresses to their account and uses a geocoding feature to display the location of the specified address",
+        "feature-five": "Allow to link multiple payment methods, so the buyers can reuse those methods on future purchases",
+        "feature-six": "Accept multiple payment methods depending on the buyer's country such as wallets, easy transfers and cards",
+        "feature-seven": "You can try Ramz on your mobile device since the app is mobile responsive"
       }
     },
     "other-projects": {
@@ -419,7 +457,7 @@
   },
   "about-page": {
     "first-part": {
-      "heading": "About the founder",
+      "heading": "About",
       "paragraph": "I’m a software engineer born and raised in Colombia and I have more than 5 years of experience working in software engineering.",
       "download-my-cv-button": "DOWNLOAD MY CV",
       "learn-more-button": "LEARN MORE"

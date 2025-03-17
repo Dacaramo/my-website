@@ -34,9 +34,12 @@ const PortfolioPage: FC<Props> = () => {
   const t = useTranslations('portfolio-page');
 
   const bgImagePath: Record<PortfolioProjectId, string> = {
+    ramz: '/ramzBase.png',
     'shape-creator': '/shapeCreatorBase.png',
     'poke-bowl-store': '/pokeBowlStoreBase.png',
     'rick-mortium': '/rickMortiumBase.png',
+    'abc-movies': '/abcMoviesBase.png',
+    'glp-website': '/glpWebsiteBase.png',
     'other-projects': '/otherProjectsBase.jpg',
   };
   const liClasses =
@@ -53,36 +56,64 @@ const PortfolioPage: FC<Props> = () => {
   const otherProjectsLogoCaptionClasses =
     'text-paragraph font-medium text-acid-green text-center';
   const usedLibrariesKeys: Record<PortfolioProjectId, Array<string>> = {
-    'shape-creator': ['react', 'zustand', 'react-tooltip'],
+    ramz: [
+      'next',
+      'react',
+      'zustand',
+      'tanstack-query',
+      'react-paginate',
+      'react-hook-form',
+      'stripe',
+      'daisy-ui',
+      'axios',
+      'framer-motion',
+      'tailwind',
+      'valibot',
+      'jest',
+    ],
+    'shape-creator': ['react', 'zustand', 'react-tooltip', 'tailwind', 'jest'],
     'poke-bowl-store': [
       'react',
-      'tanstack-query',
-      'zustand',
       'react-router',
-      'axios',
+      'zustand',
+      'tanstack-query',
       'react-paginate',
       'react-spinners',
+      'axios',
+      'tailwind',
+      'jest',
     ],
     'rick-mortium': [
       'react',
-      'tanstack-query',
-      'zustand',
       'react-router',
-      'axios',
+      'zustand',
+      'tanstack-query',
       'react-spinners',
+      'axios',
+      'tailwind',
+      'jest',
     ],
+    'abc-movies': [
+      'next',
+      'react',
+      'zustand',
+      'tanstack-query',
+      'react-paginate',
+      'daisy-ui',
+      'axios',
+      'framer-motion',
+      'tailwind',
+      'jest',
+    ],
+    'glp-website': ['next', 'react', 'zustand', 'daisy-ui', 'tailwind', 'jest'],
     'other-projects': [],
   };
   const usedLibrariesCards: Array<CardProps> = usedLibrariesKeys[
     selectedProjectId
   ].map((libraryKey) => {
     return {
-      headingText: t(
-        `${selectedProjectId}.used-libraries.${libraryKey}.heading`
-      ),
-      paragraphText: t(
-        `${selectedProjectId}.used-libraries.${libraryKey}.paragraph`
-      ),
+      headingText: t(`used-libraries.${libraryKey}.heading`),
+      paragraphText: t(`used-libraries.${libraryKey}.paragraph`),
     };
   });
 
@@ -128,12 +159,24 @@ const PortfolioPage: FC<Props> = () => {
                 value: 'Shape Creator',
               },
               {
+                key: 'ramz',
+                value: 'Ramz',
+              },
+              {
                 key: 'poke-bowl-store',
                 value: 'Poke Bowl Store',
               },
               {
                 key: 'rick-mortium',
                 value: 'Rick Mortium',
+              },
+              {
+                key: 'abc-movies',
+                value: 'ABC Movies',
+              },
+              {
+                key: 'glp-website',
+                value: 'GLP website',
               },
               {
                 key: 'other-projects',
@@ -258,6 +301,16 @@ const PortfolioPage: FC<Props> = () => {
         <li
           className={`${liClasses}`}
           style={{
+            backgroundColor: selectedProjectId === 'ramz' ? PRUNE : PALE_PRUNE,
+            color: selectedProjectId === 'ramz' ? ACID_GREEN : '',
+          }}
+          onClick={() => handleClickOnLi('ramz')}
+        >
+          {t(`ramz.first-part.heading`)}
+        </li>
+        <li
+          className={`${liClasses}`}
+          style={{
             backgroundColor:
               selectedProjectId === 'poke-bowl-store' ? PRUNE : PALE_PRUNE,
             color: selectedProjectId === 'poke-bowl-store' ? ACID_GREEN : '',
@@ -276,6 +329,28 @@ const PortfolioPage: FC<Props> = () => {
           onClick={() => handleClickOnLi('rick-mortium')}
         >
           {t(`rick-mortium.first-part.heading`)}
+        </li>
+        <li
+          className={`${liClasses}`}
+          style={{
+            backgroundColor:
+              selectedProjectId === 'abc-movies' ? PRUNE : PALE_PRUNE,
+            color: selectedProjectId === 'abc-movies' ? ACID_GREEN : '',
+          }}
+          onClick={() => handleClickOnLi('abc-movies')}
+        >
+          {t(`abc-movies.first-part.heading`)}
+        </li>
+        <li
+          className={`${liClasses}`}
+          style={{
+            backgroundColor:
+              selectedProjectId === 'glp-website' ? PRUNE : PALE_PRUNE,
+            color: selectedProjectId === 'glp-website' ? ACID_GREEN : '',
+          }}
+          onClick={() => handleClickOnLi('glp-website')}
+        >
+          {t(`glp-website.first-part.heading`)}
         </li>
         <li
           className={`${liClasses} rounded-tr-3xl`}
@@ -559,6 +634,229 @@ const PortfolioPage: FC<Props> = () => {
                     height={imageHeight}
                   />
                 </div>
+              </div>
+            </>
+          )}
+          {selectedProjectId === 'ramz' && (
+            <>
+              <section
+                id='features'
+                className={`${innerSectionClasses}`}
+              >
+                <div className={`${featureDivClasses} flex-wrap-reverse`}>
+                  <Image
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/ramzFeatureOne.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                  <p className={`${pClasses} text-center sm:text-start flex-1`}>
+                    {t('ramz.features.feature-one')}
+                  </p>
+                </div>
+                <div className={`${featureDivClasses} flex-wrap`}>
+                  <p className={`${pClasses} text-center sm:text-end flex-1`}>
+                    {t('ramz.features.feature-two')}
+                  </p>
+                  <Image
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/ramzFeatureTwo.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                </div>
+                <div className={`${featureDivClasses} flex-wrap-reverse`}>
+                  <Image
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/ramzFeatureThree.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                  <p className={`${pClasses} text-center sm:text-start flex-1`}>
+                    {t('ramz.features.feature-three')}
+                  </p>
+                </div>
+                <div className={`${featureDivClasses} flex-wrap`}>
+                  <p className={`${pClasses} text-center sm:text-end flex-1`}>
+                    {t('ramz.features.feature-four')}
+                  </p>
+                  <Image
+                    className={`w-[600px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/ramzFeatureFour.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                </div>
+                <div className={`${featureDivClasses} flex-wrap-reverse`}>
+                  <Image
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/ramzFeatureFive.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                  <p className={`${pClasses} text-center sm:text-start flex-1`}>
+                    {t('ramz.features.feature-five')}
+                  </p>
+                </div>
+                <div className={`${featureDivClasses} flex-wrap`}>
+                  <p className={`${pClasses} text-center sm:text-end flex-1`}>
+                    {t('ramz.features.feature-six')}
+                  </p>
+                  <Image
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/ramzFeatureSix.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                </div>
+              </section>
+              <div
+                className={
+                  'px-[20px] py-[20px] sm:px-[65px] sm:py-[50-px] relative w-full sm:h-[250px] flex flex-col gap-[20px] sm:gap-[50px] sm:flex-row items-center bg-black sm:mt-[125px]'
+                }
+              >
+                <p className={`flex-1 ${pClasses} text-center `}>
+                  {t(`ramz.features.feature-seven`)}
+                </p>
+              </div>
+            </>
+          )}
+          {selectedProjectId === 'abc-movies' && (
+            <>
+              <section
+                id='features'
+                className={`${innerSectionClasses}`}
+              >
+                <div className={`${featureDivClasses} flex-wrap-reverse`}>
+                  <Image
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/abcMoviesFeatureOne.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                  <p className={`${pClasses} text-center sm:text-start flex-1`}>
+                    {t('abc-movies.features.feature-one')}
+                  </p>
+                </div>
+                <div className={`${featureDivClasses} flex-wrap`}>
+                  <p className={`${pClasses} text-center sm:text-end flex-1`}>
+                    {t('abc-movies.features.feature-two')}
+                  </p>
+                  <Image
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/abcMoviesFeatureTwo.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                </div>
+                <div className={`${featureDivClasses} flex-wrap-reverse`}>
+                  <Image
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/abcMoviesFeatureThree.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                  <p className={`${pClasses} text-center sm:text-start flex-1`}>
+                    {t('abc-movies.features.feature-three')}
+                  </p>
+                </div>
+                <div className={`${featureDivClasses} flex-wrap`}>
+                  <p className={`${pClasses} text-center sm:text-end flex-1`}>
+                    {t('abc-movies.features.feature-four')}
+                  </p>
+                  <Image
+                    className={`w-[600px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/abcMoviesFeatureFour.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                </div>
+              </section>
+              <div
+                className={
+                  'px-[20px] py-[20px] sm:px-[65px] sm:py-[50-px] relative w-full sm:h-[250px] flex flex-col gap-[20px] sm:gap-[50px] sm:flex-row items-center bg-black sm:mt-[125px]'
+                }
+              >
+                <p className={`flex-1 ${pClasses} text-center `}>
+                  {t(`abc-movies.features.feature-five`)}
+                </p>
+              </div>
+            </>
+          )}
+          {selectedProjectId === 'glp-website' && (
+            <>
+              <section
+                id='features'
+                className={`${innerSectionClasses}`}
+              >
+                <div className={`${featureDivClasses} flex-wrap-reverse`}>
+                  <Image
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/glpWebsiteFeatureOne.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                  <p className={`${pClasses} text-center sm:text-start flex-1`}>
+                    {t('glp-website.features.feature-one')}
+                  </p>
+                </div>
+                <div className={`${featureDivClasses} flex-wrap`}>
+                  <p className={`${pClasses} text-center sm:text-end flex-1`}>
+                    {t('glp-website.features.feature-two')}
+                  </p>
+                  <Image
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/glpWebsiteFeatureTwo.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                </div>
+                <div className={`${featureDivClasses} flex-wrap-reverse`}>
+                  <Image
+                    className={`w-[830px] ${imageClasses} shadow-inverted-classic-hovered sm:shadow-inverted-classic`}
+                    src='/glpWebsiteFeatureThree.png'
+                    alt="Polygon with all of it's nodes unselected"
+                    quality={imageQuality}
+                    width={imageWidth}
+                    height={imageHeight}
+                  />
+                  <p className={`${pClasses} text-center sm:text-start flex-1`}>
+                    {t('glp-website.features.feature-three')}
+                  </p>
+                </div>
+              </section>
+              <div
+                className={
+                  'px-[20px] py-[20px] sm:px-[65px] sm:py-[50-px] relative w-full sm:h-[250px] flex flex-col gap-[20px] sm:gap-[50px] sm:flex-row items-center bg-black sm:mt-[125px]'
+                }
+              >
+                <p className={`flex-1 ${pClasses} text-center `}>
+                  {t(`glp-website.features.feature-four`)}
+                </p>
               </div>
             </>
           )}

@@ -1,7 +1,13 @@
 'use client';
 
 import { FC } from 'react';
-import { faJava, faPython } from '@fortawesome/free-brands-svg-icons';
+import {
+  faDocker,
+  faGithub,
+  faJava,
+  faPython,
+  faStripe,
+} from '@fortawesome/free-brands-svg-icons';
 import { faAws } from '@fortawesome/free-brands-svg-icons/faAws';
 import { faCss3 } from '@fortawesome/free-brands-svg-icons/faCss3';
 import { faFigma } from '@fortawesome/free-brands-svg-icons/faFigma';
@@ -245,52 +251,34 @@ const HomePage: FC<Props> = () => {
   ];
   const percentageInformers: Array<PercentageInformerProps> = [
     {
-      legend: t('other-tech-i-know.figma'),
-      percentage: 95,
-      icon: faFigma,
-    },
-    {
-      legend: t('other-tech-i-know.java'),
-      percentage: 75,
-      icon: faJava,
-    },
-    {
-      legend: t('other-tech-i-know.amplify'),
-      percentage: 75,
-      icon: (
-        <AmplifyIcon
-          width={cardIconSize}
-          height={cardIconSize}
-          fill={PALE_ACID_GREEN}
-        />
-      ),
-    },
-    {
       legend: t('other-tech-i-know.python'),
-      percentage: 70,
+      percentage: 100,
       icon: faPython,
     },
     {
-      legend: t('other-tech-i-know.mongo-db'),
-      percentage: 70,
-      icon: (
-        <MongoDBIcon
-          width={cardIconSize}
-          height={cardIconSize}
-          fill={PALE_ACID_GREEN}
-        />
-      ),
+      legend: t('other-tech-i-know.figma'),
+      percentage: 100,
+      icon: faFigma,
     },
     {
-      legend: t('other-tech-i-know.firebase'),
-      percentage: 70,
-      icon: (
-        <FirebaseIcon
-          width={cardIconSize}
-          height={cardIconSize}
-          fill={PALE_ACID_GREEN}
-        />
-      ),
+      legend: t('other-tech-i-know.stripe'),
+      percentage: 100,
+      icon: faStripe,
+    },
+    {
+      legend: t('other-tech-i-know.docker'),
+      percentage: 75,
+      icon: faDocker,
+    },
+    {
+      legend: t('other-tech-i-know.gh-actions'),
+      percentage: 75,
+      icon: faGithub,
+    },
+    {
+      legend: t('other-tech-i-know.postgre-sql'),
+      percentage: 75,
+      icon: faDatabase,
     },
   ];
   const homePageButtonIconSize = 20;

@@ -5,7 +5,7 @@
       "services-link": "Services",
       "portfolio-link": "Portefeuille",
       "blog-link": "Blog",
-      "about-link": "À propos du fondateur"
+      "about-link": "À propos"
     },
     "select": {
       "label": "Sélectionnez une langue",
@@ -40,12 +40,12 @@
         "first-attribution": "Image grise du fondateur de la page d'accueil"
       }
     },
-    "copyright": "© 2023 Ramzeis Software | Tous droits réservés"
+    "copyright": "© 2025 Ramzeis Software | Tous droits réservés"
   },
   "home-page": {
     "first-part": {
       "heading": "Nous nous rencontrons enfin, je suis <meaningful>Daniel Ramírez</meaningful>",
-      "paragraph": "Fondateur de Ramzeis, développeur full-stack et consultant en technologie. Dites-moi simplement ce que vous souhaitez construire et réalisons vos rêves!",
+      "paragraph": "Développeur full-stack et féru du IT. Dites-moi simplement ce que vous souhaitez construire et réalisons vos rêves!",
       "message-me-link": "Envoyez-nous un message",
       "send-me-an-email-link": "Envoyez-nous un e-mail",
       "download-my-cv-button": "Téléchargez mon CV",
@@ -202,13 +202,13 @@
       }
     },
     "other-tech-i-know": {
-      "heading": "Autres technologies que nous utilisons",
+      "heading": "Other tech we use",
       "figma": "Figma",
-      "java": "Java",
-      "amplify": "Amplify",
+      "docker": "Docker",
+      "gh-actions": "Github Actions",
       "python": "Python",
-      "mongo-db": "MongoDB",
-      "firebase": "Firebase"
+      "postgre-sql": "PostgreSQL",
+      "stripe": "Stripe"
     }
   },
   "services-page": {
@@ -247,6 +247,72 @@
   "portfolio-page": {
     "mobile-select": "Voir un autre projet ⏷",
     "used-libraries-heading": "Bibliothèques utilisées",
+    "used-libraries": {
+      "react": {
+        "heading": "React",
+        "paragraph": "Pour créer des applications monopages évolutives."
+      },
+      "zustand": {
+        "heading": "Zustand",
+        "paragraph": "Pour gérer l'état global de l'application."
+      },
+      "react-tooltip": {
+        "heading": "React Tooltip",
+        "paragraph": "Pour les infobulles qui apparaissent au-dessus de chaque bouton de la barre d'outils lors du survol."
+      },
+      "tanstack-query": {
+        "heading": "TanStack Query",
+        "paragraph": "Pour gérer les données de réponse, les états d'erreur et les états de chargement liés aux requêtes réseau."
+      },
+      "react-paginate": {
+        "heading": "React Paginate",
+        "paragraph": "Pour le composant de sélection de page."
+      },
+      "react-spinners": {
+        "heading": "React Spinners",
+        "paragraph": "Pour les composants de chargement affichés lorsque quelque chose est en cours de chargement dans l'application."
+      },
+      "react-hook-form": {
+        "heading": "React Hook Form",
+        "paragraph": "Pour gérer la validation des formulaires et l'état des entrées de manière simple."
+      },
+      "stripe": {
+        "heading": "Stripe",
+        "paragraph": "Pour gérer les paiements en ligne sécurisés et les abonnements."
+      },
+      "daisy-ui": {
+        "heading": "Daisy UI",
+        "paragraph": "Pour fournir des composants d'interface utilisateur pré-stylisés basés sur Tailwind CSS."
+      },
+      "axios": {
+        "heading": "Axios",
+        "paragraph": "Pour effectuer des requêtes HTTP et gérer efficacement les interactions avec les API."
+      },
+      "framer-motion": {
+        "heading": "Framer Motion",
+        "paragraph": "Pour ajouter des animations fluides et des transitions aux composants de l'interface utilisateur."
+      },
+      "tailwind": {
+        "heading": "Tailwind CSS",
+        "paragraph": "Pour écrire des styles hautement personnalisables et réactifs avec une approche basée sur les utilitaires."
+      },
+      "valibot": {
+        "heading": "Valibot",
+        "paragraph": "Pour la validation des données de manière simple et efficace."
+      },
+      "jest": {
+        "heading": "Jest",
+        "paragraph": "Pour écrire et exécuter des tests unitaires afin de garantir la fiabilité du code."
+      },
+      "react-router": {
+        "heading": "React Router",
+        "paragraph": "Pour gérer la navigation côté client et le routage dans l'application."
+      },
+      "next": {
+        "heading": "Next.js",
+        "paragraph": "Pour la création d'applications React rendues côté serveur avec des optimisations de performance."
+      }
+    },
     "shape-creator": {
       "first-part": {
         "heading": "Shape Creator",
@@ -262,20 +328,6 @@
         "feature-three": "Chargez une image d'arrière-plan si vous souhaitez utiliser Shape Creator comme logiciel d'annotation.",
         "feature-four": "Redimensionnez le canevas et tout son contenu sera redimensionné.",
         "feature-five": "Exportez l'ensemble du canevas sous forme de fichier PNG."
-      },
-      "used-libraries": {
-        "react": {
-          "heading": "React",
-          "paragraph": "Pour créer des applications monopages évolutives."
-        },
-        "zustand": {
-          "heading": "Zustand",
-          "paragraph": "Pour gérer l'état global de l'application."
-        },
-        "react-tooltip": {
-          "heading": "React Tooltip",
-          "paragraph": "Pour les composants de info-bulle qui apparaissent au-dessus de chaque bouton de la barre d'outils lorsque vous survolez."
-        }
       }
     },
     "poke-bowl-store": {
@@ -293,36 +345,6 @@
         "feature-three": "Une grande variété de filtres orientés mémoire qui peuvent être appliqués simultanément.",
         "feature-four": "Une énorme quantité de données d'API mises en cache pour chaque produit répertorié, évitant ainsi les demandes inutiles.",
         "feature-five": "Vous pouvez essayer Poke Bowl Store sur votre appareil mobile, car l'application est adaptée aux mobiles."
-      },
-      "used-libraries": {
-        "react": {
-          "heading": "React",
-          "paragraph": "Pour créer des applications monopages évolutives."
-        },
-        "tanstack-query": {
-          "heading": "TanStack Query",
-          "paragraph": "Pour gérer les données de réponse, les états d'erreur et les états de chargement liés aux demandes réseau."
-        },
-        "zustand": {
-          "heading": "Zustand",
-          "paragraph": "Pour gérer l'état global de l'application."
-        },
-        "react-router": {
-          "heading": "React Router",
-          "paragraph": "Pour gérer la navigation."
-        },
-        "axios": {
-          "heading": "Axios",
-          "paragraph": "Pour envoyer des demandes réseau."
-        },
-        "react-paginate": {
-          "heading": "React Paginate",
-          "paragraph": "Pour le composant de sélecteur de page."
-        },
-        "react-spinners": {
-          "heading": "React Spinners",
-          "paragraph": "Pour les composants de chargement affichés lorsqu'une opération est en cours dans l'application."
-        }
       }
     },
     "rick-mortium": {
@@ -339,32 +361,58 @@
         "feature-two": "Sauvegarde des données en mémoire pour que vous puissiez consulter vos personnages, lieux ou épisodes préférés ultérieurement pendant que vous utilisez l'application.",
         "feature-three": "Grande variété de filtres orientés serveur pouvant être appliqués simultanément.",
         "feature-four": "Vous pouvez essayer Rick Mortium sur votre appareil mobile, car l'application est adaptée aux mobiles."
+      }
+    },
+    "abc-movies": {
+      "first-part": {
+        "heading": "ABC Movies",
+        "paragraph": "Un navigateur en ligne pour découvrir les notes et les détails de plus de 1000 films",
+        "device-description": "Ceci est une application web",
+        "read-details-button": "LIRE LES DÉTAILS",
+        "see-online-button": "ESSAYER",
+        "browse-repo-button": "EXPLORER LE RÉPÔSITOIRE"
       },
-      "used-libraries": {
-        "react": {
-          "heading": "React",
-          "paragraph": "Pour créer des applications monopages évolutives."
-        },
-        "tanstack-query": {
-          "heading": "TanStack Query",
-          "paragraph": "Pour gérer les données de réponse, les états d'erreur et les états de chargement liés aux demandes réseau."
-        },
-        "zustand": {
-          "heading": "Zustand",
-          "paragraph": "Pour gérer l'état global de l'application."
-        },
-        "axios": {
-          "heading": "Axios",
-          "paragraph": "Pour envoyer des demandes réseau."
-        },
-        "react-router": {
-          "heading": "React Router",
-          "paragraph": "Pour gérer la navigation."
-        },
-        "react-spinners": {
-          "heading": "React Spinners",
-          "paragraph": "Pour les composants d'indicateurs de chargement affichés lorsqu'un élément est en cours de chargement dans l'application."
-        }
+      "features": {
+        "feature-one": "Pagination côté serveur avec sélecteur de page",
+        "feature-two": "Sauvegarde des données dans le stockage local pour conserver vos films préférés",
+        "feature-three": "Fonction de recherche avancée",
+        "feature-four": "Découvrez tous les détails d'un film, y compris le casting principal, la date de sortie et le nombre d'avis",
+        "feature-five": "Vous pouvez essayer ABC Movies sur votre appareil mobile, car l'application est responsive"
+      }
+    },
+    "glp-website": {
+      "first-part": {
+        "heading": "Site Web de GLP",
+        "paragraph": "Le site officiel du collège international \"Gimnasio Los Pinos\"",
+        "device-description": "Ceci est une application web",
+        "read-details-button": "LIRE LES DÉTAILS",
+        "see-online-button": "ESSAYER",
+        "browse-repo-button": "EXPLORER LE RÉPÔSITOIRE"
+      },
+      "features": {
+        "feature-one": "Annuaire académique facilement mis à jour en changeant le fichier CSV téléchargé",
+        "feature-two": "Design de haute qualité et métadonnées optimisées pour un meilleur référencement SEO",
+        "feature-three": "Galerie intégrée avec une large variété d'images et de vidéos",
+        "feature-four": "Vous pouvez essayer le site Web de GLP sur votre appareil mobile, car l'application est responsive"
+      }
+    },
+    "ramz": {
+      "first-part": {
+        "heading": "Ramz",
+        "paragraph": "Une marketplace pour la vente de produits personnalisés et artisanaux. Ce marketplace est la version améliorée d'Etsy pour l'Amérique latine",
+        "device-description": "Ceci est une application web",
+        "read-details-button": "LIRE LES DÉTAILS",
+        "see-online-button": "ESSAYER",
+        "browse-repo-button": "EXPLORER LE RÉPÔSITOIRE"
+      },
+      "features": {
+        "feature-one": "Listes de produits uniques avec animations activées par défilement",
+        "feature-two": "Prend en charge plus de 10 langues, 40 régions et 100 devises",
+        "feature-three": "Filtrez les produits par prix, couleur, vendeur, catégorie ou sous-catégorie",
+        "feature-four": "Permet aux utilisateurs d'associer plusieurs adresses à leur compte et utilise une fonction de géocodage pour afficher l'emplacement de l'adresse spécifiée",
+        "feature-five": "Permet de lier plusieurs méthodes de paiement pour que les acheteurs puissent les réutiliser lors d'achats futurs",
+        "feature-six": "Accepte plusieurs méthodes de paiement en fonction du pays de l'acheteur, telles que les portefeuilles numériques, les virements rapides et les cartes bancaires",
+        "feature-seven": "Vous pouvez essayer Ramz sur votre appareil mobile, car l'application est responsive"
       }
     },
     "company-website": {
@@ -378,16 +426,6 @@
       },
       "features": {
         "feature-one": "Vous pouvez essayer le site web de l'entreprise sur votre appareil mobile, car l'application est adaptée aux mobiles."
-      },
-      "used-libraries": {
-        "react": {
-          "heading": "React",
-          "paragraph": "Pour créer des applications monopages évolutives."
-        },
-        "react-router": {
-          "heading": "React Router",
-          "paragraph": "Pour gérer la navigation."
-        }
       }
     },
     "other-projects": {
@@ -419,7 +457,7 @@
   },
   "about-page": {
     "first-part": {
-      "heading": "À propos du fondateur",
+      "heading": "À propos",
       "paragraph": "Je suis un ingénieur en logiciel né et élevé en Colombie et j'ai plus de 5 ans d'expérience en ingénierie logicielle.",
       "download-my-cv-button": "TÉLÉCHARGER MON CV",
       "learn-more-button": "EN SAVOIR PLUS"

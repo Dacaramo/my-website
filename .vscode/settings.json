@@ -9,5 +9,6 @@
   "editor.formatOnSaveMode": "file",
   "files.autoSave": "off",
   "cSpell.words": ["dhand", "freckleface", "mortium", "postbuild", "snakecase"],
-  "i18n-ally.localesPaths": ["messages"]
+  "i18n-ally.localesPaths": ["messages"],
+  "i18n-ally.keystyle": "nested"
 }

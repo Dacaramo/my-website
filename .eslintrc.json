@@ -56,7 +56,7 @@
         ]
       }
     ],
-    "max-lines": ["warn", { "max": 500 }],
+    "max-lines": ["warn", { "max": 1500 }],
     "sort-vars": ["warn"],
     "spaced-comment": ["warn"],
     "yoda": ["warn", "never"],

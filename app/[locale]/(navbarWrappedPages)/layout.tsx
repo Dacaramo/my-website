@@ -170,7 +170,7 @@ const Layout: FC<Props> = ({ children, params: { locale } }) => {
               {t('header.navbar.home-link')}
             </Link>
             {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
-            <Link
+            {/* <Link
               className={`${hamburgerMenuLinkClasses}`}
               style={pathname === '/services' ? { color: ACID_GREEN } : {}}
               href={'/services'}
@@ -181,7 +181,7 @@ const Layout: FC<Props> = ({ children, params: { locale } }) => {
                 width={25}
               />
               {t('header.navbar.services-link')}
-            </Link>
+            </Link> */}
             {/* <div className='w-full h-[1px] sm:w-[1px] sm:h-[25px] bg-pale-acid-green' /> */}
             <Link
               className={`${hamburgerMenuLinkClasses}`}
@@ -230,13 +230,13 @@ const Layout: FC<Props> = ({ children, params: { locale } }) => {
             {t('footer.copyright')}
           </p>
         </div>
-        <Link
+        {/* <Link
           href='/'
           className='hidden sm:flex flex-row gap-2 font-light text-[20px] items-center text-pale-acid-green hover:text-acid-green transition-all'
         >
           <RamzeisLogo fontSize={35} />
           RAMZEIS
-        </Link>
+        </Link> */}
         <nav className={`${flexRowClasses} hidden ml-auto sm:flex`}>
           <Link
             className={`${navbarLinkClasses}`}
@@ -245,13 +245,13 @@ const Layout: FC<Props> = ({ children, params: { locale } }) => {
           >
             {t('header.navbar.home-link')}
           </Link>
-          <Link
+          {/* <Link
             className={`${navbarLinkClasses}`}
             style={pathname === '/services' ? { color: ACID_GREEN } : {}}
             href={'/services'}
           >
             {t('header.navbar.services-link')}
-          </Link>
+          </Link> */}
           <Link
             className={`${navbarLinkClasses}`}
             style={pathname === '/portfolio' ? { color: ACID_GREEN } : {}}

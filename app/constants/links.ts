@@ -2,8 +2,9 @@ import { PortfolioProjectId } from '../model/PortfolioProject';
 
 export const YOUTUBE_CHANNEL_LINK =
   'https://www.youtube.com/channel/UCwurci10rEbYy8r2fzdgbaA';
-export const INSTAGRAM_PROFILE_LINK = 'https://www.instagram.com/dacaramo/';
-export const TIKTOK_PROFILE_LINK = 'https://www.tiktok.com/@ramzeis.software';
+export const INSTAGRAM_PROFILE_LINK =
+  'https://www.instagram.com/ramzeis.education/';
+export const TIKTOK_PROFILE_LINK = 'https://www.tiktok.com/@ramzeis.edu';
 export const LINKED_IN_PROFILE_LINK =
   'https://www.linkedin.com/in/daniel-ramírez-molina-6465a1211';
 export const LOCATION_GOOGLE_MAPS_LINK =
@@ -19,6 +20,10 @@ export const POKE_BOWL_STORE_PROJECT_RUNNING_LINK =
   'https://dacaramo.github.io/poke-bowl-store/';
 export const RICK_MORTIUM_PROJECT_RUNNING_LINK =
   'https://dacaramo.github.io/rick-mortium/';
+export const RAMZ_PROJECT_RUNNING_LINK = 'https://store.ramzeis.com/en';
+export const GLP_WEBSITE_PROJECT_RUNNING_LINK =
+  'https://gimnasiolospinos.edu.co/en';
+export const ABC_MOVIES_PROJECT_RUNNING_LINK = 'https://abc-movies.vercel.app/';
 export const COMPANY_WEBSITE_PROJECT_RUNNING_LINK =
   'https://dacaramo.github.io/bloom-react-app/';
 export const SHAPE_CREATOR_PROJECT_REPO_LINK =
@@ -27,6 +32,12 @@ export const POKE_BOWL_STORE_PROJECT_REPO_LINK =
   'https://github.com/Dacaramo/poke-bowl-store';
 export const RICK_MORTIUM_PROJECT_REPO_LINK =
   'https://github.com/Dacaramo/rick-mortium';
+export const RAMZ_PROJECT_REPO_LINK =
+  'https://github.com/Ramzeis/ramzeis-store-front';
+export const GLP_WEBSITE_PROJECT_REPO_LINK =
+  'https://github.com/Ramondarioglp/gimnasio-los-pinos-website';
+export const ABC_MOVIES_PROJECT_REPO_LINK =
+  'https://github.com/Dacaramo/abc-movies';
 export const COMPANY_WEBSITE_PROJECT_REPO_LINK =
   'https://github.com/Dacaramo/bloom-react-app';
 export const GITHUB_API_URL =
@@ -107,6 +118,12 @@ export const getProjectRunningLink = (id: PortfolioProjectId): string => {
       return POKE_BOWL_STORE_PROJECT_RUNNING_LINK;
     case 'rick-mortium':
       return RICK_MORTIUM_PROJECT_RUNNING_LINK;
+    case 'abc-movies':
+      return ABC_MOVIES_PROJECT_RUNNING_LINK;
+    case 'glp-website':
+      return GLP_WEBSITE_PROJECT_RUNNING_LINK;
+    case 'ramz':
+      return RAMZ_PROJECT_RUNNING_LINK;
     default:
       throw new NotFoundError(idNotFoundMessage);
   }
@@ -120,6 +137,12 @@ export const getProjectRepoLink = (id: PortfolioProjectId): string => {
       return POKE_BOWL_STORE_PROJECT_REPO_LINK;
     case 'rick-mortium':
       return RICK_MORTIUM_PROJECT_REPO_LINK;
+    case 'abc-movies':
+      return ABC_MOVIES_PROJECT_REPO_LINK;
+    case 'glp-website':
+      return GLP_WEBSITE_PROJECT_REPO_LINK;
+    case 'ramz':
+      return RAMZ_PROJECT_REPO_LINK;
     default:
       throw new NotFoundError(idNotFoundMessage);
   }

@@ -5,7 +5,7 @@
       "services-link": "Servicios",
       "portfolio-link": "Portafolio",
       "blog-link": "Blog",
-      "about-link": "Acerca del fundador"
+      "about-link": "Acerca de"
     },
     "select": {
       "label": "Selecciona un idioma",
@@ -40,12 +40,12 @@
         "first-attribution": "Imagen del fundador en tono gris"
       }
     },
-    "copyright": "© 2023 Ramzeis Software | Todos los derechos reservados"
+    "copyright": "© 2025 Ramzeis Software | Todos los derechos reservados"
   },
   "home-page": {
     "first-part": {
       "heading": "Finalmente nos conocemos, soy <meaningful>Daniel Ramírez</meaningful>",
-      "paragraph": "Fundador de Ramzeis, desarrollador full stack y consultor tecnológico. ¡Solo dime qué quieres construir y hagamos realidad tus sueños!",
+      "paragraph": "Desarrollador full stack y experto en TI. ¡Solo dime qué quieres construir y hagamos realidad tus sueños!",
       "message-me-link": "Envíanos un mensaje",
       "send-me-an-email-link": "Envíanos un email",
       "download-my-cv-button": "Descarga mi CV",
@@ -202,13 +202,13 @@
       }
     },
     "other-tech-i-know": {
-      "heading": "Otras tecnologías que usamos",
+      "heading": "Other tech we use",
       "figma": "Figma",
-      "java": "Java",
-      "amplify": "Amplify",
+      "docker": "Docker",
+      "gh-actions": "Github Actions",
       "python": "Python",
-      "mongo-db": "MongoDB",
-      "firebase": "Firebase"
+      "postgre-sql": "PostgreSQL",
+      "stripe": "Stripe"
     }
   },
   "services-page": {
@@ -247,6 +247,72 @@
   "portfolio-page": {
     "mobile-select": "Mira otro proyecto ⏷",
     "used-libraries-heading": "Librerías utilizadas",
+    "used-libraries": {
+      "react": {
+        "heading": "React",
+        "paragraph": "Para crear aplicaciones de una sola página escalables."
+      },
+      "zustand": {
+        "heading": "Zustand",
+        "paragraph": "Para gestionar el estado global de la aplicación."
+      },
+      "react-tooltip": {
+        "heading": "React Tooltip",
+        "paragraph": "Para los componentes de información emergente que aparecen sobre cada botón de la barra de herramientas al pasar el cursor."
+      },
+      "tanstack-query": {
+        "heading": "TanStack Query",
+        "paragraph": "Para gestionar datos de respuesta, estados de error y estados de carga relacionados con solicitudes de red."
+      },
+      "react-paginate": {
+        "heading": "React Paginate",
+        "paragraph": "Para el componente de selección de página."
+      },
+      "react-spinners": {
+        "heading": "React Spinners",
+        "paragraph": "Para los componentes de carga que se muestran cuando algo está cargando en la aplicación."
+      },
+      "react-hook-form": {
+        "heading": "React Hook Form",
+        "paragraph": "Para manejar la validación de formularios y la gestión de su estado de manera sencilla."
+      },
+      "stripe": {
+        "heading": "Stripe",
+        "paragraph": "Para gestionar pagos en línea seguros y suscripciones."
+      },
+      "daisy-ui": {
+        "heading": "Daisy UI",
+        "paragraph": "Para proporcionar componentes de UI preestilizados basados en Tailwind CSS."
+      },
+      "axios": {
+        "heading": "Axios",
+        "paragraph": "Para realizar solicitudes HTTP y gestionar interacciones con APIs de manera eficiente."
+      },
+      "framer-motion": {
+        "heading": "Framer Motion",
+        "paragraph": "Para agregar animaciones y transiciones fluidas a los componentes de la interfaz de usuario."
+      },
+      "tailwind": {
+        "heading": "Tailwind CSS",
+        "paragraph": "Para escribir estilos altamente personalizables y responsivos con un enfoque basado en utilidades."
+      },
+      "valibot": {
+        "heading": "Valibot",
+        "paragraph": "Para la validación de datos de manera sencilla y eficiente."
+      },
+      "jest": {
+        "heading": "Jest",
+        "paragraph": "Para escribir y ejecutar pruebas unitarias que garanticen la confiabilidad del código."
+      },
+      "react-router": {
+        "heading": "React Router",
+        "paragraph": "Para gestionar la navegación y el enrutamiento en el cliente dentro de la aplicación."
+      },
+      "next": {
+        "heading": "Next.js",
+        "paragraph": "Para construir aplicaciones React renderizadas en el servidor con optimizaciones de rendimiento."
+      }
+    },
     "shape-creator": {
       "first-part": {
         "heading": "Shape Creator",
@@ -367,6 +433,58 @@
         }
       }
     },
+    "abc-movies": {
+      "first-part": {
+        "heading": "ABC Movies",
+        "paragraph": "Un navegador en línea para descubrir calificaciones y detalles de más de 1000 películas",
+        "device-description": "Esta es una aplicación web",
+        "read-details-button": "LEER DETALLES",
+        "see-online-button": "PRUÉBALO",
+        "browse-repo-button": "EXPLORAR REPOSITORIO"
+      },
+      "features": {
+        "feature-one": "Paginación orientada al servidor con selector de página",
+        "feature-two": "Guardado de datos en Local Storage para que puedas guardar tus películas favoritas y los datos se conserven",
+        "feature-three": "Función de búsqueda avanzada",
+        "feature-four": "Conoce todos los detalles de una película, como el elenco principal, la fecha de estreno y el número de reseñas",
+        "feature-five": "Puedes probar ABC Movies en tu dispositivo móvil, ya que la aplicación es responsive"
+      }
+    },
+    "glp-website": {
+      "first-part": {
+        "heading": "Sitio web de GLP",
+        "paragraph": "El sitio web oficial del colegio internacional \"Gimnasio Los Pinos\"",
+        "device-description": "Esta es una aplicación web",
+        "read-details-button": "LEER DETALLES",
+        "see-online-button": "PRUÉBALO",
+        "browse-repo-button": "EXPLORAR REPOSITORIO"
+      },
+      "features": {
+        "feature-one": "Directorio académico que se puede actualizar fácilmente cambiando el archivo CSV cargado",
+        "feature-two": "Diseño de alta calidad y metadatos optimizados para un mejor SEO",
+        "feature-three": "Galería integrada con una amplia variedad de imágenes y videos",
+        "feature-four": "Puedes probar el sitio web de GLP en tu dispositivo móvil, ya que la aplicación es responsive"
+      }
+    },
+    "ramz": {
+      "first-part": {
+        "heading": "Ramz",
+        "paragraph": "Un marketplace para la venta de productos personalizados y artesanales. Este marketplace es la versión mejorada de Etsy para Latam",
+        "device-description": "Esta es una aplicación web",
+        "read-details-button": "LEER DETALLES",
+        "see-online-button": "PRUÉBALO",
+        "browse-repo-button": "EXPLORAR REPOSITORIO"
+      },
+      "features": {
+        "feature-one": "Listados de productos únicos con animaciones activadas por desplazamiento",
+        "feature-two": "Soporta más de 10 idiomas, 40 regiones y 100 monedas",
+        "feature-three": "Filtra productos por precio, color, vendedor, categoría o subcategoría",
+        "feature-four": "Permite a los usuarios vincular múltiples direcciones a su cuenta y utiliza una función de geocodificación para mostrar la ubicación de la dirección especificada",
+        "feature-five": "Permite vincular múltiples métodos de pago para que los compradores puedan reutilizarlos en futuras compras",
+        "feature-six": "Acepta múltiples métodos de pago según el país del comprador, como billeteras digitales, transferencias rápidas y tarjetas",
+        "feature-seven": "Puedes probar Ramz en tu dispositivo móvil, ya que la aplicación es responsive"
+      }
+    },
     "company-website": {
       "first-part": {
         "heading": "Company website",
@@ -419,7 +537,7 @@
   },
   "about-page": {
     "first-part": {
-      "heading": "Acerca del fundador",
+      "heading": "Acerca de",
       "paragraph": "Soy un ingeniero de software nacido y criado en Colombia, con más de 5 años de experiencia en el campo de la ingeniería de software.",
       "download-my-cv-button": "DESCARGAR MI CV",
       "learn-more-button": "CONOCE MÁS"
